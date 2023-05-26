@@ -5,7 +5,6 @@ draft: false
 
 ---
 
-## Eingeladene Vorträge 
 - „Approaching the History of Literature as a (Digital) History of Conflict”, Information Studies Colloquium, UCLA, Los Angeles/online, 04.05.2023. 
 - „ChatGPT in der Lehre. Wie KI und (geisteswissenschaftliche) Fachexpertise verbinden?“, Workshop Intelligente Lernprozesse mit künstlicher Intelligenz: Hochschullehre im Veränderungsprozess, Hochschuldidaktische Arbeitsstelle, TU Darmstadt/online, 17.04.2023.
 - „Computational Literary Studies as an Emerging Field”, Veranstaltung Redefining Reading? Computational Literary Studies in Israel: Scholarship, Communities, Beit HaSofrim, Beer Sheva, 08.02.2023.

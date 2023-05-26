@@ -5,7 +5,7 @@ draft: false
 
 ---
 
-## Konferenzbeiträge 
+
 - „Narrativität und Handlung“ (mit Hans Ole Hatzel, Haimo Stiemer und Chris Biemann), Konferenz DHd2023, Trier/Luxemburg, 13.–17.03.2023.
 - „Konflikte als Theorie, Modell und Text – Ein kategorientheoretischer Zugang zur Operationalisierung von Konflikten“ (mit Dominik Gerstorfer), Konferenz DHd2023, Trier/Luxemburg, 13.–17.03.2023.
 - „Opening a Journal. Erfahrungen bei der Gründung des Journal of Computational Literary Studies“ (mit Peer Trilcke, Christof Schöch, Dominik Gerstorfer, Svenja Guhr, Elodie Ripoll und Henny Sluyter-Gäthje), Konferenz DHd2023, Trier/Luxemburg, 13.–17.03.2023.
