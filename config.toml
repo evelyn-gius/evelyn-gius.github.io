@@ -264,7 +264,12 @@ uglyURLs = false
     displayHeaderInHome = true
     # Note: invalid for header layout flex
 
-    headerBackground = "linear-gradient(90deg, #f795331a 0, #f370551a 15%, #ef4e7b1a 30%, #a166ab1a 44%, #5073b81a 58%, #1098ad1a 72%, #07b39b1a 86%, #6dba821a 100%)"
+#background farbe
+    #headerBackground = "linear-gradient(220deg,#f795331a 0, #f370551a 15%, #ef4e7b1a 30%, #a166ab1a 44%, #5073b81a 58%, #1098ad1a 72%, #07b39b1a 86%, #6dba821a 100%)"
+    #headerBackground = "linear-gradient(220deg,#f795331a 0, #f370551a 45%,#a166ab1a 44%,#5073b81a 58%, #1098ad1a 36%,#6dba821a 89%)"
+    headerBackground = "linear-gradient(220deg,#f795331a 0, #f370551a 38%,#a166ab1a 44%,#5073b81a 58%)"
+
+
     # Note: https://developer.mozilla.org/en-US/docs/Web/CSS/background
 
     headerLayout = "flex"
@@ -287,7 +292,7 @@ uglyURLs = false
     # If true, put your SVG in the `SVG.toml`
     # file and configure the following options.
     # Unit: px
-    siteBrandSVGWidth = 250
+    siteBrandSVGWidth = 200
     siteBrandSVGHeight = 100
     siteBrandSVGFill = "#fff"
     # If false, your site title will be
@@ -297,7 +302,7 @@ uglyURLs = false
     # family can be configured in typography
     # section at the bottom of this file.
     # Unit: em
-    siteBrandFontSize = 3
+    siteBrandFontSize = 1.5
     siteBrandFontColor = "var(--color-contrast-high)"
 
 
@@ -536,7 +541,7 @@ uglyURLs = false
     ######################################
     # Dark Mode
 
-    enableDarkMode = true
+    #enableDarkMode = true
 
     defaultTheme = "light"
     # Note: light or dark
@@ -795,7 +800,7 @@ uglyURLs = false
     duration = 0.5
 
     # Primary color of light mode
-    primaryColorLight = "142, 16%, 56%"
+    primaryColorLight = "240, 26%, 66%"
     # Primary color of dark mode
     primaryColorDark = "201, 65%, 62%"
     # ATTENTION: only HSL color values ​​are
@@ -1050,7 +1055,7 @@ uglyURLs = false
     ######################################
     ## Font Size (unit: px)
 
-    fontSize = 21
+    fontSize = 18
 
     ######################################
     ## Tab Size
@@ -1060,7 +1065,7 @@ uglyURLs = false
     ######################################
     ## Line Height
 
-    lineHeight = 1.618
+    lineHeight = 1.5
     # Note: apply to post paragraph & toc
     #       only
 
@@ -1113,7 +1118,7 @@ uglyURLs = false
     ######################################
     ## Small Caps
 
-    enableSmallCaps = true
+    enableSmallCaps = false
     # Note: apply to headings & post toc
     #       title only
     #       *global settings*
@@ -1325,7 +1330,7 @@ uglyURLs = false
     #       https://busuanzi.ibruce.info/
 
     # Socials
-    enableSocials = true
+    enableSocials = false
     # Note: see data/Socials.toml
 
 
