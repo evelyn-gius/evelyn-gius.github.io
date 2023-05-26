@@ -2,7 +2,7 @@
 # Site Settings
 
 baseURL = "https://example.com/"
-title = "Evelyn Webpage"
+title = "Evelyn Gius"
 languageCode = "en"
 hasCJKLanguage = false
 # Copyright information (Markdown supported)
@@ -98,17 +98,17 @@ uglyURLs = false
 # Author’s information
 [author]
     # Name
-    name = "reuixiy"
+    #name = "Mari"
     # Email
-    email = "reuixiy@gmail.com"
+    #email = "evelyn.gius@tu-darmstadt.com"
     # Motto or introduction
-    motto = "Viva La Vida"
+    #motto = "Viva La Vida"
     # Avatar
     avatar = "/icons/apple-touch-icon.png"
     # Personal website, default: baseURL
     website = "https://io-oi.me/"
     # Twitter
-    twitter = "reuixiy"
+    twitter = "EvelynGius"
 
 # Related content
 [related]
@@ -297,7 +297,7 @@ uglyURLs = false
     # family can be configured in typography
     # section at the bottom of this file.
     # Unit: em
-    siteBrandFontSize = 1
+    siteBrandFontSize = 3
     siteBrandFontColor = "var(--color-contrast-high)"
 
 
@@ -362,7 +362,7 @@ uglyURLs = false
     siteLogo = "/icons/apple-touch-icon.png"
     # Note: used for JSON-LD, Open Graph
 
-    siteDescription = "MemE is a powerful and highly customizable GoHugo theme for personal blogs."
+    siteDescription = "Huhu"
     # Note: used for HTML head meta, JSON-LD,
     #       Open Graph, Atom, RSS
 
@@ -370,7 +370,7 @@ uglyURLs = false
     # ATTENTION: keep this format, change
     #            the number
 
-    siteTwitter = "reuixiy"
+    siteTwitter = "EvelynGius"
     # Note: used for Twitter Cards
 
 
@@ -466,7 +466,7 @@ uglyURLs = false
     groupByMonth = true
 
     # Enable Chinese zodiac?
-    chineseZodiac = true
+    chineseZodiac = false
 
     # Translate the year? (valid for title)
     i18nYear = false
@@ -795,7 +795,7 @@ uglyURLs = false
     duration = 0.5
 
     # Primary color of light mode
-    primaryColorLight = "220, 90%, 56%"
+    primaryColorLight = "142, 16%, 56%"
     # Primary color of dark mode
     primaryColorDark = "201, 65%, 62%"
     # ATTENTION: only HSL color values ​​are
@@ -826,7 +826,7 @@ uglyURLs = false
     ######################################
     # Post Meta Info
 
-    enablePostMeta = true
+    # enablePostMeta = true
     # Note: *global settings*
     #       `meta` in post’s Front Matter
     #       has a higher priority than here
@@ -1015,9 +1015,9 @@ uglyURLs = false
     #       brand.
 
     # Site brand
-    fontFamilySiteBrand = "Open Sans"
+    fontFamilySiteBrand = "'Open Sans'"
     # Menu bar
-    fontFamilyMenu = "Open Sans"
+    fontFamilyMenu = "'Open Sans'"
     # Post title, post subtitle, list title, year and month title of the list, related posts title, previous/next post title, header of table, term/name in a definition list
     fontFamilyTitle = "Open Sans"
     # Headings, toc title
@@ -1050,7 +1050,7 @@ uglyURLs = false
     ######################################
     ## Font Size (unit: px)
 
-    fontSize = 18
+    fontSize = 21
 
     ######################################
     ## Tab Size
@@ -1091,7 +1091,7 @@ uglyURLs = false
     ######################################
     ## Drop Cap
 
-    enableDropCap = true
+    enableDropCap = false
     # Note: *global settings*
     #       `dropCap` in post’s Front Matter
     #       has a higher priority than here
@@ -1200,16 +1200,16 @@ uglyURLs = false
 
     displayShareOnText = false
 
-    shareOnTwitter = true
-    shareOnFacebook = true
-    shareOnLinkedIn = true
-    shareOnTelegram = true
-    shareOnWeibo = true
-    shareOnDouban = true
-    shareOnQQ = true
-    shareOnQzone = true
+    shareOnTwitter = false
+    shareOnFacebook = false
+    shareOnLinkedIn = false
+    shareOnTelegram = false
+    shareOnWeibo = false
+    shareOnDouban = false
+    shareOnQQ = false
+    shareOnQzone = false
 
-    shareViaQRCode = true
+    shareViaQRCode = false
 
 
     ######################################
@@ -1296,11 +1296,11 @@ uglyURLs = false
     displayCopyleftSymbol = false
     displayCopyrightSymbol = true
 
-    displaySiteCreatedYear = true
+    displaySiteCreatedYear = false
 
     # Leave it empty("") if you don’t want
     # the icon
-    iconBetweenYearAndAuthor = "heart"
+    iconBetweenYearAndAuthor = ""
     iconColor = "#f06292"
     # Enable heartbeat animation?
     iconAnimation = true
@@ -1439,7 +1439,7 @@ uglyURLs = false
     ######################################
     # 404 Page
 
-    fofPoster = ""
+    fofPoster = "Evelyn ist bald für dich da"
 
     fofVideoWebm = ""
     fofVideoMp4 = ""
