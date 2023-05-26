@@ -303,7 +303,7 @@ uglyURLs = false
     # section at the bottom of this file.
     # Unit: em
     siteBrandFontSize = 1.5
-    siteBrandFontColor = "var(--color-contrast-high)"
+    siteBrandFontColor = "#707070"
 
 
     ######################################
