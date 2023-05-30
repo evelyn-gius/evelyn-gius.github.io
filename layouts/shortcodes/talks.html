@@ -1,0 +1,28 @@
+{{ $files := split (.Get "files") " " }}
+{{ $currentFile := .Page.File.Path }}
+
+<ul class="file-navigation">
+  {{ range $files }}
+    {{ $file := . }}
+    {{ $page := $.Site.GetPage $file }}
+    <li>
+      <a href="{{ $page.RelPermalink }}" {{ if eq $currentFile $file }}class="active"{{ end }}>{{ $page.Params.title }}</a>
+    </li>
+  {{ end }}
+</ul>
+
+{{ range $files }}
+  {{ $file := . }}
+  {{ $page := $.Site.GetPage $file }}
+  {{ with $page }}
+    {{ if eq $currentFile $file }}
+      <h2>{{ .Params.title }}</h2>
+      <ul>
+        {{ range .Params.entries }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+      <div class="content">{{ .Content }}</div>
+    {{ end }}
+  {{ end }}
+{{ end }}

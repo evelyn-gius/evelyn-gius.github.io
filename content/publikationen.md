@@ -1,5 +1,5 @@
 ---
-title: Publikationen
+
 date: false
 draft: false
 

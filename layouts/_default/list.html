@@ -14,12 +14,14 @@
                 <div class="content list-group">
                     {{ if .Site.Params.displayListTitle }}
                         {{ if (eq .Kind "section") }}
-                            <h1 class="list-title">{{ .Title | default (delimit (last 1 (split (strings.TrimSuffix "/_index.md" $path) "/")) " ") }}</h1>
+                            <h1 class="list-title" style="float:left; margin: auto; margin-right: 80%;">{{ .Title | default (delimit (last 1 (split (strings.TrimSuffix "/_index.md" $path) "/")) " ") }}</h1>
                         {{ end }}
                         {{ if (eq .Kind "term") }}
-                            <h1 class="list-title">{{ .Title | default .Data.Term | default (delimit (last 1 (split (strings.TrimSuffix "/_index.md" $path) "/")) " ") }}</h1>
+                            <h1 class="list-title" style="float:left; margin: auto; margin-right: 80%;">{{ .Title | default .Data.Term | default (delimit (last 1 (split (strings.TrimSuffix "/_index.md" $path) "/")) " ") }}</h1>
                         {{ end }}
                     {{ end }}
+                    <br>
+                    <br>
 
                     {{ .Scratch.Delete "pages" }}
 

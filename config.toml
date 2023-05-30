@@ -266,8 +266,8 @@ uglyURLs = false
 
 #background farbe
     #headerBackground = "linear-gradient(220deg,#f795331a 0, #f370551a 15%, #ef4e7b1a 30%, #a166ab1a 44%, #5073b81a 58%, #1098ad1a 72%, #07b39b1a 86%, #6dba821a 100%)"
-    #headerBackground = "linear-gradient(220deg,#f795331a 0, #f370551a 45%,#a166ab1a 44%,#5073b81a 58%, #1098ad1a 36%,#6dba821a 89%)"
-    headerBackground = "linear-gradient(220deg,#f795331a 0, #f370551a 38%,#a166ab1a 44%,#5073b81a 58%)"
+    headerBackground = "linear-gradient(220deg,#f795331a 0,#6dba821a 98%,#1098ad1a 39%)"
+    #headerBackground = "linear-gradient(220deg,#f795331a 0, #f370551a 38%,#a166ab1a 44%,#5073b81a 58%)"
 
 
     # Note: https://developer.mozilla.org/en-US/docs/Web/CSS/background

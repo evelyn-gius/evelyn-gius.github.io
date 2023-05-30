@@ -1,9 +1,8 @@
 ---
-title: Über Mich
 date: 2023-04-25T10:05:19+02:00
 draft: false
 ---
-
+## Über Mich
 Ich bin Professorin für Digital Philology und Neuere deutsche Literaturwissenschaft am Institut für Sprach – und Literaturwissenschaft der Technischen Universität Darmstadt. Dort leite ich das [fortext lab](https://fortext.org), welches in den Digital Humanities mit einem speziellen Fokus auf Computational Literary Studies und Computational Narratology forscht. Außerdem bin ich Vorsitzende des Verbands *Digital Humanities im deutschsprachigen Raum* ([DHd](https://dig-hum.de)) und Mitherausgeberin der Open Access-Zeitschrift *Journal of Computational Literary Studies* ([JCLS](https://jcls.io)) sowie der deutsch- und englischsprachigen Reihe ([*Digitale Literaturwissenschaft*](https://www.springer.com/series/16777)) (Metzler). 
 
 ## Interessen
