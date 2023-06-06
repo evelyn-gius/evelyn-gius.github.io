@@ -8,6 +8,7 @@
 
     {{ if and (eq .Kind "section") .Content }}
         {{ partial "pages/post.html" . }}
+    
     {{ else }}
         <main class="main list" id="main">
             <div class="main-inner">
@@ -22,6 +23,7 @@
                     {{ end }}
                     <br>
                     <br>
+        
 
                     {{ .Scratch.Delete "pages" }}
 
@@ -89,12 +91,20 @@
                                 {{ end }}
                                {{ $month := $.Scratch.Get "month" }} -->
                                 {{ partial "utils/list-item.html" (dict "$" .) }}  
+                                {{ range .Pages }}
+                                {{ .Content }}
+                                {{ end }}
+                               
                             {{ end }}
                         {{ else }} 
                             {{ partial "utils/list-item.html" (dict "$" .) }}
-                           <!-- {{ range .Pages }}
+
+                            {{ range .Pages }}
+                            {{ .Title }}
+                            <li>
                                 {{ .Content }}
-                            {{ end }}-->
+                            </li>
+                            {{ end }}
                         {{ end }}
                     {{ end }}
                 </div>
