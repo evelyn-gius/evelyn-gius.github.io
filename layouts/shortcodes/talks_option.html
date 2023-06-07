@@ -1,0 +1,47 @@
+{{ $folderPath := "talks" }}
+{{ $contentDir := .Site.GetPage "section" $folderPath }}
+
+{{ range $file := $contentDir.Pages }}
+    {{ with $file }}
+        {{ $filePath := $file.Path }}
+        {{ $ext := path.Ext $filePath }}
+        {{ if eq $ext ".md" }}
+            {{ $title := .Params.title }}
+            {{ $content := .Content }}
+            <h3 class="toggle-title" onclick="toggleContent(this)">{{ $title }} <span class="toggle-icon">▼</span></h3>
+            <div class="content" style="display: none;">{{ $content | markdownify }}</div>
+        {{ end }}
+    {{ end }}
+{{ end }}
+
+<script>
+    function toggleContent(titleElement) {
+        var contentElement = titleElement.nextElementSibling;
+        var iconElement = titleElement.querySelector('.toggle-icon');
+        if (contentElement.style.display === "none") {
+            contentElement.style.display = "block";
+            iconElement.textContent = "▲";
+            titleElement.classList.add('active');
+        } else {
+            contentElement.style.display = "none";
+            iconElement.textContent = "▼";
+            titleElement.classList.remove('active');
+        }
+    }
+</script>
+
+<style>
+    .toggle-title {
+        cursor: pointer;
+      
+    }
+
+    .active {
+        font-weight: bold;
+    }
+
+    .toggle-icon {
+        margin-left: 3px;
+        font-size: 10px;
+    }
+</style>

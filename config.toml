@@ -235,6 +235,11 @@ uglyURLs = false
         name = "Talks"
         weight = 6
         pre = "internal"
+        [[menu.main]]
+        pageref = "talks2"
+        name = "Talks2"
+        weight = 7
+        pre = "internal"
         
     [[menu.main]]
         weight = 8

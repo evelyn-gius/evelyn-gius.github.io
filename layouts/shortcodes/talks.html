@@ -1,3 +1,49 @@
+<html>
+    <head>
+    <style>
+        .container {
+            align-items: center;
+
+        }
+        .toggle-title {
+            display: inline-block;
+            cursor: pointer;
+            margin: 10px;
+
+          
+        }
+    
+        .active {
+            font-weight: bold;
+        }
+    
+        .toggle-icon {
+            margin-left: 3px;
+            font-size: 10px;
+        }
+    </style>
+    <script>
+        function toggleContent(titleElement) {
+            var contentElement = titleElement.nextElementSibling;
+            var iconElement = titleElement.querySelector('.toggle-icon');
+            if (contentElement.style.display === "none") {
+                contentElement.style.display = "block";
+                iconElement.textContent = "▲";
+                titleElement.classList.add('active');
+            } else {
+                contentElement.style.display = "none";
+                iconElement.textContent = "▼";
+                titleElement.classList.remove('active');
+            }
+        }
+    </script>
+    </head>
+    
+<main class="main-single">
+    <body>
+        <article>
+ 
+
 {{ $folderPath := "talks" }}
 {{ $contentDir := .Site.GetPage "section" $folderPath }}
 
@@ -14,34 +60,8 @@
     {{ end }}
 {{ end }}
 
-<script>
-    function toggleContent(titleElement) {
-        var contentElement = titleElement.nextElementSibling;
-        var iconElement = titleElement.querySelector('.toggle-icon');
-        if (contentElement.style.display === "none") {
-            contentElement.style.display = "block";
-            iconElement.textContent = "▲";
-            titleElement.classList.add('active');
-        } else {
-            contentElement.style.display = "none";
-            iconElement.textContent = "▼";
-            titleElement.classList.remove('active');
-        }
-    }
-</script>
+</article>
+</body>
+</main>
 
-<style>
-    .toggle-title {
-        cursor: pointer;
-      
-    }
-
-    .active {
-        font-weight: bold;
-    }
-
-    .toggle-icon {
-        margin-left: 3px;
-        font-size: 10px;
-    }
-</style>
+</html>
