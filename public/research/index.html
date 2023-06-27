@@ -58,7 +58,7 @@
         "@context": "https://schema.org",
         "@type": "WebPage",
         "datePublished": "1969-07-20T20:17:43+00:00",
-        "dateModified": "2023-05-29T23:58:08+02:00",
+        "dateModified": "2023-06-27T18:14:04+02:00",
         "url": "https://example.com/research/",
         "name": "",
         "description": "Laufende Forschungsprojekte Aktuell leite ich folgende Drittmittel-finanzierten Forschungsprojekte (weitere Informationen zu den Projekten gibt es auf der entsprechenden Seite des fortext lab):\n„Das forTEXT-Portal – Routinen, Ressourcen und Tools für die Digital Humanities Lehre“, gefördert durch die Stiftung Innovation in der Hochschullehre „Prinzipiengestützte Kategorienentwicklung für die Digital Humanities.",
@@ -129,32 +129,63 @@
         
         
             
-                <li class="menu-item"><a href="/"><span class="menu-item-name">Home</span></a>
+                <li class="menu-item"><a href="/">
+                        <span class="menu-link"><span class="menu-item-name">Home</span>
+                        </span>
+                    </a>
                 </li>
             
         
             
-                <li class="menu-item"><a href="/publikationen/"><span class="menu-item-name">Publikationen</span></a>
+                <li class="menu-item"><a href="/publikationen/">
+                        <span class="menu-link"><span class="menu-item-name">Publikationen</span>
+                        </span>
+                    </a>
                 </li>
             
         
             
-                <li class="menu-item active"><a href="/research/"><span class="menu-item-name">Research</span></a>
+                <li class="menu-item active"><a href="/research/">
+                        <span class="menu-link"><span class="menu-item-name">Forschung</span>
+                        </span>
+                    </a>
                 </li>
             
         
             
-                <li class="menu-item"><a href="/talks/"><span class="menu-item-name">Talks</span></a>
+                <li class="menu-item"><a href="/talks/">
+                        <span class="menu-link"><span class="menu-item-name">Talks</span>
+                        </span>
+                    </a>
                 </li>
             
         
             
-                <li class="menu-item"><a href="/talks2/"><span class="menu-item-name">Talks2</span></a>
+                <li class="menu-item"><a href="/talks2/">
+                        <span class="menu-link"><span class="menu-item-name">Talks2</span>
+                                <span class="drop-icon" for="Talks2">▾</span>
+                                <ul class="sub-menu">
+                                    
+                                        <li class="">
+                                            <a href="#Konferenzbeitr%c3%a4ge">Konferenzbeiträge</a>
+                                        </li>
+                                    
+                                        <li class="">
+                                            <a href="#vortr%c3%a4ge">vorträge</a>
+                                        </li>
+                                    
+                                </ul>
+                            
+                        </span>
+                    </a>
                 </li>
             
         
             
-                <li class="menu-item"><a href=""></a>
+                <li class="menu-item"><a href="">
+                        <span class="menu-link">
+                        </span>
+                    </a>
                 </li>
             
         
@@ -163,28 +194,81 @@
             
         
             
-                <li class="menu-item search-item">
-                        <form id="search" class="search" role="search">
-    <label for="search-input"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon search-icon"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></label>
-    <input type="search" id="search-input" class="search-input">
-</form>
-
-<template id="search-result" hidden>
-    <article class="content post">
-        <h2 class="post-title"><a class="summary-title-link"></a></h2>
-        <summary class="summary"></summary>
-        <div class="read-more-container">
-            <a class="read-more-link">Read More »</a>
-        </div>
-    </article>
-</template>
-
-                    </li>
-                
+                <li class="menu-item"><a href="">
+                        <span class="menu-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon search"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+                        </span>
+                    </a>
+                </li>
             
         
     </ul>
 </nav>
+
+
+<style>
+    .menu-item {
+        position: relative;
+    }
+    
+    .sub-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        z-index: 999;
+        background-color: transparent;
+        padding: 0.5rem 0;
+        white-space: nowrap;
+    }
+  
+
+    
+    .sub-menu li {
+        display: inline-block;
+        margin-right: 0.5rem;
+    }
+    
+    .sub-menu .sub-menu {
+        top: 0;
+        left: 100%;
+    }
+    
+    .menu-item:hover .sub-menu {
+        display: block;
+    }
+</style>
+
+
+<script>
+    const menuItems = document.querySelectorAll('.menu-item');
+
+menuItems.forEach(item => {
+  const dropIcon = item.querySelector('.drop-icon');
+  const subMenu = item.querySelector('.sub-menu');
+
+  if (dropIcon && subMenu) {
+    item.addEventListener('mouseenter', () => {
+      subMenu.style.display = 'block';
+    });
+
+    item.addEventListener('mouseleave', () => {
+      subMenu.style.display = 'none';
+    });
+
+    const submenuLinks = subMenu.querySelectorAll('a');
+    submenuLinks.forEach(link => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        const offset = targetElement.offsetTop - 100; 
+        window.scrollTo({ top: offset, behavior: 'smooth' });
+      });
+    });
+  }
+});
+
+</script>
 
                     
                 </div>
@@ -210,9 +294,10 @@
 
         <article class="content post h-entry" data-align="default" data-type="page" data-toc-num="true">
 
-        <h1 class="list-title" style="float:left; margin: auto;"></h1>
-        
-     <br>
+            <h1 class="post-title p-name"></h1>
+
+            
+
             
                 
             
@@ -220,7 +305,7 @@
             
 
             <div class="post-body e-content">
-                <h2 id="laufende-forschungsprojekte">Laufende Forschungsprojekte</h2>
+                <h3 id="laufende-forschungsprojekte">Laufende Forschungsprojekte</h3>
 <p>Aktuell leite ich folgende Drittmittel-finanzierten Forschungsprojekte (weitere Informationen zu den Projekten gibt es auf der entsprechenden Seite des fortext lab):</p>
 <ul>
 <li>„Das forTEXT-Portal – Routinen, Ressourcen und Tools für die Digital Humanities Lehre“, gefördert durch die Stiftung Innovation in der Hochschullehre</li>
@@ -228,13 +313,13 @@
 <li>„Evaluating Events in Narrative Theory (EvENT)”, gefördert im DFG-Schwerpunktprogramm 2207 (mit Chris Biemann)</li>
 <li>„Unitizing PLot to advance Analysis of Narrative Structure (PLANS)”, gefördert im DFG-Schwerpunktprogramm 2207 (mit Chris Biemann)</li>
 </ul>
-<h2 id="abgeschlossene-forschungsprojekte">Abgeschlossene Forschungsprojekte</h2>
+<h3 id="abgeschlossene-forschungsprojekte">Abgeschlossene Forschungsprojekte</h3>
 <ul>
 <li>„forTEXT – Forschungsumgebung zur kollaborativen Texterschließung“, gefördert im DFG-Programm „Wissenschaftliche Literaturversorgungs- und Informationssysteme“</li>
 <li>„Shared Task Initiative“: Shared Task zur Erstellung von Annotationsrichtlinien für Erzählebenen, teilweise gefördert von der VolkswagenStiftung (mit Nils Reiter und Marcus Willand)</li>
 <li>„Zur Annotation genderspezifischer Darstellung von Krankheit in literarischen Texten“ (Teilprojekt im Forschungsverbund „Automatisierte Modellierung hermeneutischer Prozesse – Der Einsatz von Annotationen für sozial- und geisteswissenschaftliche Analysen im Gesundheitsbereich“, hermA), gefördert von der Landesforschungsförderung Hamburg</li>
 </ul>
-<h2 id="aktuelle-funktionen-in-der-dh-forschungscommunity-auswahl">Aktuelle Funktionen in der DH-Forschungscommunity (Auswahl)</h2>
+<h3 id="aktuelle-funktionen-in-der-dh-forschungscommunity-auswahl">Aktuelle Funktionen in der DH-Forschungscommunity (Auswahl)</h3>
 <ul>
 <li>Erste Vorsitzende des Verbands Digital Humanities im deutschsprachigen Raum (DHd e.V.)</li>
 <li>Zweite Vorsitzende des Centrums für Reflektierte Textanalyse (Creta e.V.)</li>
@@ -259,6 +344,57 @@
         
 
         
+    <div class="updated-badge-container">
+        <span title="Updated @ 2023-06-27 18:14:04 CEST" style="cursor:help">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2023-06-27</text><text x="915" y="140" textLength="650" transform="scale(.1)">2023-06-27</text></g></svg>
+        </span></div>
+
+
+
+        
+
+
+        <div class="post-share">
+
+        
+
+        <div class="share-items">
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+        </div>
+
+    </div>
+
+
+
+
+        
+    
+    
+
+
+
+        
+    
+
 
 
         

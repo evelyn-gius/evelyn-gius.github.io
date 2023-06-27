@@ -1,9 +1,7 @@
 ---
 
-date: false
+date: 2023-04-25T10:05:19+02:00
 draft: false
-
 ---
 
-
-{{< talks_option >}}
+{{< de_projekte >}}

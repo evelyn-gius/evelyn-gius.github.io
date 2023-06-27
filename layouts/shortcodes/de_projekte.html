@@ -1,0 +1,34 @@
+<div class="main-inner">
+{{ range $projektgruppe := (readDir "/content/talks2/") }}
+    {{ with $projektgruppe := $projektgruppe }}
+        {{ if eq $projektgruppe.IsDir true }}
+            {{ if eq $projektgruppe.Name "Konferenzbeiträge"}}
+                <h2 id="Konferenzbeitraege"> Konferenzbeitraege</h2>
+                {{ else if eq $projektgruppe.Name "Vorträge"}}
+                <h2 id="vortraege"> Eingeladene Vorträge</h2>
+
+             
+                
+                {{ else }} <h2 id="{{ .Name }}">{{ $projektgruppe.Name }}</h2>{{ end }}
+                
+     
+            {{ range $einzelprojekt := (readDir (print "/content/talks2/" $projektgruppe.Name)) }}
+                {{ with $einzelprojekt := $einzelprojekt }}
+                    {{ if eq $einzelprojekt.IsDir false }}
+                        {{ $content := (readFile (print "/content/talks2/" $projektgruppe.Name "/" $einzelprojekt.Name)) }}
+                        {{ $metadata := index (split $content "---") 1 }}
+                        {{ $title := index (split $metadata "title:") 2 }}
+                        {{ $body := index (split $content "---") 2 }}
+                        <h3>{{ $title }}</h3>
+                        {{ $body | markdownify }}
+
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        
+        {{ end }}
+    {{ end }}
+{{ end }}
+
+
+</div>

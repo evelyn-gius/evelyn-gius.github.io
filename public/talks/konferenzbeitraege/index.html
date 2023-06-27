@@ -141,32 +141,63 @@
         
         
             
-                <li class="menu-item"><a href="/"><span class="menu-item-name">Home</span></a>
+                <li class="menu-item"><a href="/">
+                        <span class="menu-link"><span class="menu-item-name">Home</span>
+                        </span>
+                    </a>
                 </li>
             
         
             
-                <li class="menu-item"><a href="/publikationen/"><span class="menu-item-name">Publikationen</span></a>
+                <li class="menu-item"><a href="/publikationen/">
+                        <span class="menu-link"><span class="menu-item-name">Publikationen</span>
+                        </span>
+                    </a>
                 </li>
             
         
             
-                <li class="menu-item"><a href="/research/"><span class="menu-item-name">Research</span></a>
+                <li class="menu-item"><a href="/research/">
+                        <span class="menu-link"><span class="menu-item-name">Forschung</span>
+                        </span>
+                    </a>
                 </li>
             
         
             
-                <li class="menu-item active"><a href="/talks/"><span class="menu-item-name">Talks</span></a>
+                <li class="menu-item active"><a href="/talks/">
+                        <span class="menu-link"><span class="menu-item-name">Talks</span>
+                        </span>
+                    </a>
                 </li>
             
         
             
-                <li class="menu-item"><a href="/talks2/"><span class="menu-item-name">Talks2</span></a>
+                <li class="menu-item"><a href="/talks2/">
+                        <span class="menu-link"><span class="menu-item-name">Talks2</span>
+                                <span class="drop-icon" for="Talks2">▾</span>
+                                <ul class="sub-menu">
+                                    
+                                        <li class="">
+                                            <a href="#Konferenzbeitr%c3%a4ge">Konferenzbeiträge</a>
+                                        </li>
+                                    
+                                        <li class="">
+                                            <a href="#vortr%c3%a4ge">vorträge</a>
+                                        </li>
+                                    
+                                </ul>
+                            
+                        </span>
+                    </a>
                 </li>
             
         
             
-                <li class="menu-item"><a href=""></a>
+                <li class="menu-item"><a href="">
+                        <span class="menu-link">
+                        </span>
+                    </a>
                 </li>
             
         
@@ -175,28 +206,81 @@
             
         
             
-                <li class="menu-item search-item">
-                        <form id="search" class="search" role="search">
-    <label for="search-input"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon search-icon"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></label>
-    <input type="search" id="search-input" class="search-input">
-</form>
-
-<template id="search-result" hidden>
-    <article class="content post">
-        <h2 class="post-title"><a class="summary-title-link"></a></h2>
-        <summary class="summary"></summary>
-        <div class="read-more-container">
-            <a class="read-more-link">Read More »</a>
-        </div>
-    </article>
-</template>
-
-                    </li>
-                
+                <li class="menu-item"><a href="">
+                        <span class="menu-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon search"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+                        </span>
+                    </a>
+                </li>
             
         
     </ul>
 </nav>
+
+
+<style>
+    .menu-item {
+        position: relative;
+    }
+    
+    .sub-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        z-index: 999;
+        background-color: transparent;
+        padding: 0.5rem 0;
+        white-space: nowrap;
+    }
+  
+
+    
+    .sub-menu li {
+        display: inline-block;
+        margin-right: 0.5rem;
+    }
+    
+    .sub-menu .sub-menu {
+        top: 0;
+        left: 100%;
+    }
+    
+    .menu-item:hover .sub-menu {
+        display: block;
+    }
+</style>
+
+
+<script>
+    const menuItems = document.querySelectorAll('.menu-item');
+
+menuItems.forEach(item => {
+  const dropIcon = item.querySelector('.drop-icon');
+  const subMenu = item.querySelector('.sub-menu');
+
+  if (dropIcon && subMenu) {
+    item.addEventListener('mouseenter', () => {
+      subMenu.style.display = 'block';
+    });
+
+    item.addEventListener('mouseleave', () => {
+      subMenu.style.display = 'none';
+    });
+
+    const submenuLinks = subMenu.querySelectorAll('a');
+    submenuLinks.forEach(link => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        const offset = targetElement.offsetTop - 100; 
+        window.scrollTo({ top: offset, behavior: 'smooth' });
+      });
+    });
+  }
+});
+
+</script>
 
                     
                 </div>
@@ -222,9 +306,10 @@
 
         <article class="content post h-entry" data-align="default" data-type="talks" data-toc-num="true">
 
-        <h1 class="list-title" style="float:left; margin: auto;">Konferenzbeiträge</h1>
-        
-     <br>
+            <h1 class="post-title p-name">Konferenzbeiträge</h1>
+
+            
+
             
                 
             
@@ -320,6 +405,57 @@
         
 
         
+    <div class="updated-badge-container">
+        <span title="Updated @ 2023-05-26 12:40:27 CEST" style="cursor:help">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2023-05-26</text><text x="915" y="140" textLength="650" transform="scale(.1)">2023-05-26</text></g></svg>
+        </span></div>
+
+
+
+        
+
+
+        <div class="post-share">
+
+        
+
+        <div class="share-items">
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+        </div>
+
+    </div>
+
+
+
+
+        
+    
+    
+
+
+
+        
+    
+
 
 
         

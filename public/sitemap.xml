@@ -8,31 +8,31 @@
     <loc>https://example.com/home/</loc>
     <lastmod>2023-06-27T16:25:04+02:00</lastmod>
   </url><url>
+    <loc>https://example.com/talks2/</loc>
+    <lastmod>2023-06-27T18:40:33+02:00</lastmod>
+  </url><url>
     <loc>https://example.com/publikationen/</loc>
-    <lastmod>2023-06-27T16:20:43+02:00</lastmod>
+    <lastmod>2023-06-27T17:39:47+02:00</lastmod>
   </url><url>
     <loc>https://example.com/research/</loc>
-    <lastmod>2023-05-29T23:58:08+02:00</lastmod>
+    <lastmod>2023-06-27T18:14:04+02:00</lastmod>
   </url><url>
     <loc>https://example.com/talks/</loc>
     <lastmod>2023-06-06T19:17:32+02:00</lastmod>
-  </url><url>
-    <loc>https://example.com/talks2/</loc>
-    <lastmod>2023-06-07T14:05:57+02:00</lastmod>
   </url><url>
     <loc>https://example.com/categories/</loc>
   </url><url>
     <loc>https://example.com/talks/vortraege/</loc>
     <lastmod>2023-05-26T12:40:31+02:00</lastmod>
   </url><url>
-    <loc>https://example.com/talks2/vortraege/</loc>
-    <lastmod>2023-06-07T14:04:40+02:00</lastmod>
+    <loc>https://example.com/talks2/vortr%C3%A4ge/vortr%C3%A4ge/</loc>
+    <lastmod>2023-06-27T18:40:41+02:00</lastmod>
   </url><url>
     <loc>https://example.com/talks/konferenzbeitraege/</loc>
     <lastmod>2023-05-26T12:40:27+02:00</lastmod>
   </url><url>
-    <loc>https://example.com/talks2/konferenzbeitraege/</loc>
-    <lastmod>2023-06-07T14:04:40+02:00</lastmod>
+    <loc>https://example.com/talks2/konferenzbeitr%C3%A4ge/konferenz/</loc>
+    <lastmod>2023-06-27T18:25:30+02:00</lastmod>
   </url><url>
     <loc>https://example.com/tags/</loc>
   </url>
