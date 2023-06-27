@@ -2,28 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.com/home/</loc>
-    <lastmod>2023-05-30T11:38:18+02:00</lastmod>
-  </url><url>
     <loc>https://example.com/</loc>
-    <lastmod>2023-05-30T11:54:16+02:00</lastmod>
+    <lastmod>2023-06-07T13:06:45+02:00</lastmod>
+  </url><url>
+    <loc>https://example.com/home/</loc>
+    <lastmod>2023-06-27T16:25:04+02:00</lastmod>
   </url><url>
     <loc>https://example.com/publikationen/</loc>
-    <lastmod>2023-05-29T23:58:58+02:00</lastmod>
+    <lastmod>2023-06-27T16:20:43+02:00</lastmod>
   </url><url>
     <loc>https://example.com/research/</loc>
     <lastmod>2023-05-29T23:58:08+02:00</lastmod>
   </url><url>
     <loc>https://example.com/talks/</loc>
-    <lastmod>2023-05-30T11:57:25+02:00</lastmod>
+    <lastmod>2023-06-06T19:17:32+02:00</lastmod>
+  </url><url>
+    <loc>https://example.com/talks2/</loc>
+    <lastmod>2023-06-07T14:05:57+02:00</lastmod>
   </url><url>
     <loc>https://example.com/categories/</loc>
   </url><url>
     <loc>https://example.com/talks/vortraege/</loc>
     <lastmod>2023-05-26T12:40:31+02:00</lastmod>
   </url><url>
+    <loc>https://example.com/talks2/vortraege/</loc>
+    <lastmod>2023-06-07T14:04:40+02:00</lastmod>
+  </url><url>
     <loc>https://example.com/talks/konferenzbeitraege/</loc>
     <lastmod>2023-05-26T12:40:27+02:00</lastmod>
+  </url><url>
+    <loc>https://example.com/talks2/konferenzbeitraege/</loc>
+    <lastmod>2023-06-07T14:04:40+02:00</lastmod>
   </url><url>
     <loc>https://example.com/tags/</loc>
   </url>

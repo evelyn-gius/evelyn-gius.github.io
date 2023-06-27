@@ -2,7 +2,7 @@
 # Site Settings
 
 baseURL = "https://example.com/"
-title = "Evelyn Gius"
+title = ""
 languageCode = "en"
 hasCJKLanguage = false
 # Copyright information (Markdown supported)
@@ -227,7 +227,7 @@ uglyURLs = false
 #        post = "tags"
     [[menu.main]]
         pageref = "research"
-        name = "Research"
+        name = "Forschung"
         weight = 5
         pre = "internal"
         [[menu.main]]
@@ -271,7 +271,7 @@ uglyURLs = false
 
 #background farbe
     #headerBackground = "linear-gradient(220deg,#f795331a 0, #f370551a 15%, #ef4e7b1a 30%, #a166ab1a 44%, #5073b81a 58%, #1098ad1a 72%, #07b39b1a 86%, #6dba821a 100%)"
-    headerBackground = "linear-gradient(220deg,#f795331a 0,#6dba821a 98%,#1098ad1a 39%)"
+    headerBackground = "linear-gradient(220deg,#f795331a 0,#6dba821a 100%,#1098ad1a 39%)"
     #headerBackground = "linear-gradient(220deg,#f795331a 0, #f370551a 38%,#a166ab1a 44%,#5073b81a 58%)"
 
 
@@ -293,7 +293,7 @@ uglyURLs = false
     # Brand Bar (inside header)
 
     # Use SVG?
-    siteBrandSVG = false
+    siteBrandSVG = true
     # If true, put your SVG in the `SVG.toml`
     # file and configure the following options.
     # Unit: px
@@ -457,7 +457,7 @@ uglyURLs = false
     ######################################
     # List Page
 
-    listWidth = 46
+    listWidth = 50
     # Note: you can leave it empty("") to
     #       fallback to the default value: 42
     #       Unit: em
@@ -812,7 +812,7 @@ uglyURLs = false
     #            supported
 
     # The content width of the post
-    postWidth = 46
+    postWidth = 50
     # Note: you can leave it empty("") to
     #       fallback to the default value: 42
     #       Unit: em
@@ -1060,7 +1060,7 @@ uglyURLs = false
     ######################################
     ## Font Size (unit: px)
 
-    fontSize = 18
+    fontSize = 14
 
     ######################################
     ## Tab Size
