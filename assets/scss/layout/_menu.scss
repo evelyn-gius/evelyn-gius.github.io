@@ -14,16 +14,16 @@
 .menu-item {
     display: inline-block;
     a {
-        color: var(--color-contrast-medium);
+        color: #216b349b;
         &:hover {
-            color: var(--color-primary);
+            color: #808080;
         }
     }
 }
 
 .active {
     a {
-        color: var(--color-primary);
+        color: #808080;
     }
 }
 

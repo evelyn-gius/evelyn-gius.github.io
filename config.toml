@@ -285,7 +285,7 @@ uglyURLs = false
 
 #background farbe
     #headerBackground = "linear-gradient(220deg,#f795331a 0, #f370551a 15%, #ef4e7b1a 30%, #a166ab1a 44%, #5073b81a 58%, #1098ad1a 72%, #07b39b1a 86%, #6dba821a 100%)"
-    headerBackground = "linear-gradient(220deg,#f795331a 0,#6dba821a 100%,#1098ad1a 39%)"
+    headerBackground = "linear-gradient(220deg,#f795331a 0,#4baa651a 100%,#1098ad1a 39%)"
     #headerBackground = "linear-gradient(220deg,#f795331a 0, #f370551a 38%,#a166ab1a 44%,#5073b81a 58%)"
 
 
@@ -1074,7 +1074,7 @@ uglyURLs = false
     ######################################
     ## Font Size (unit: px)
 
-    fontSize = 14
+    fontSize = 13
 
     ######################################
     ## Tab Size
