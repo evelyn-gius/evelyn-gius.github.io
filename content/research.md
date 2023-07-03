@@ -7,7 +7,7 @@ draft: false
 
 ### Laufende Forschungsprojekte
 
-Aktuell leite ich folgende Drittmittel-finanzierten Forschungsprojekte (weitere Informationen zu den Projekten gibt es auf der entsprechenden Seite des fortext lab):
+Aktuell leite ich folgende Drittmittel-finanzierten Forschungsprojekte (weitere Informationen zu den Projekten gibt es auf der entsprechenden Seite des [fortext lab](https://fortext.org/de/projekte/)):
 - „Das forTEXT-Portal – Routinen, Ressourcen und Tools für die Digital Humanities Lehre“, gefördert durch die Stiftung Innovation in der Hochschullehre
 - „Prinzipiengestützte Kategorienentwicklung für die Digital Humanities. Ein Proof of Concept“ (KatKit), gefördert durch das Hessische Ministerium für Wissenschaft und Kunst 
 - „Evaluating Events in Narrative Theory (EvENT)”, gefördert im DFG-Schwerpunktprogramm 2207 (mit Chris Biemann)
