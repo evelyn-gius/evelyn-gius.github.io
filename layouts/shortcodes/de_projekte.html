@@ -2,14 +2,15 @@
 {{ range $projektgruppe := (readDir "/content/talks2/") }}
     {{ with $projektgruppe := $projektgruppe }}
         {{ if eq $projektgruppe.IsDir true }}
-            {{ if eq $projektgruppe.Name "Konferenzbeiträge"}}
-                <h2 id="Konferenzbeitraege"> Konferenzbeitraege</h2>
-                {{ else if eq $projektgruppe.Name "Vorträge"}}
-                <h2 id="vortraege"> Eingeladene Vorträge</h2>
+            {{ if eq $projektgruppe.Name "Evortraege"}}
+            <h3 id="Evortraege"> Eingeladene Vorträge</h3>
+             
+                {{ else if eq $projektgruppe.Name "Konferenzbeitraege"}}
+                <h3 id="Konferenzbeitraege"> Konferenzbeiträge</h3>
 
              
                 
-                {{ else }} <h2 id="{{ .Name }}">{{ $projektgruppe.Name }}</h2>{{ end }}
+                {{ else }} <h2 id="{{ .Name }}">{{ $projektgruppe.Name }}</h3>{{ end }}
                 
      
             {{ range $einzelprojekt := (readDir (print "/content/talks2/" $projektgruppe.Name)) }}

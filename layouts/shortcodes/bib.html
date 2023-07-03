@@ -22,11 +22,9 @@
 
 
 <script>// API-Schlüssel und Bibliotheks-ID einsetzen
-    /**  var apiKey = 'Njmwb0MPtJRSVSgyysrwy9jr';
-      var libraryId = '7427590';
-      var collectionId= '47PCCWNR';
+  
      
-     **/ var url = 'https://api.zotero.org/users/'+libraryId+'/collections/'+collectionId+'/items?format=json&key='+apiKey+ '&limit=100';
+    var url = 'https://api.zotero.org/users/'+libraryId+'/collections/'+collectionId+'/items?format=json&key='+apiKey+ '&limit=100';
  //https://www.zotero.org/momamari/collections/2XU3799V/items?format=json&key=Njmwb0MPtJRSVSgyysrwy9jr
     var apiKey = 'QrDAC57esCVVLi1EaMRg8OJE';
     var libraryId = '538260';
@@ -221,7 +219,7 @@
       //console.log(item.data);
       var rep = item.data.repository;
       var doi = item.data.DOI;
-      entry += rep + '. DOI: <a href="https://doi.org/' + doi + '" target="_blank" >' + doi + '</a>.';
+      entry += rep + '. <a href="' + url + '">' + url + '</a>.';
 
 
     } else if (type==='computerProgram') {
@@ -229,7 +227,7 @@
       var url = item.data.url;
 
       if (company) {
-        entry += company + ".";
+        entry += company + ". ";
       } 
       if (entry) {
         entry += '<a href="' + url + '" target="_blank">' + url + '</a>.';
@@ -262,34 +260,62 @@
   }
 
 
-    /** Gib die Summe der Publikationen aus
+    /* Gib die Summe der Publikationen aus
     var sumHeader = document.createElement('h2');
     sumHeader.innerText = 'Summe der Publikationen: ' + publicationCount;
     sumHeader.style.paddingLeft = '3em';
     document.body.prepend(sumHeader); // Am Anfang des Dokuments einfügen
   
-**/
+*/
 
 var pubTypes = Object.keys(entriesByPub);
-pubTypes.sort();
-
 var sortedEntries = [];
+
+function comparePubTypes(a, b) {
+  var order = {
+    'book': 1,
+    'journalArticle': 2,
+    'conferencePaper': 3,
+    'bookSection': 4,
+    'blogPost': 5,
+    'report': 5,
+    'interview': 5,
+    'document': 6,
+    'dataset': 7,
+    'computerProgram': 8
+    
+  };
+
+  if (order[a] < order[b]) {
+    return -1; // Aufsteigende Reihenfolge
+  }
+  if (order[a] > order[b]) {
+    return 1; // Aufsteigende Reihenfolge
+  }
+  return 0;
+}
+
+pubTypes.sort(comparePubTypes);
 
 pubTypes.forEach(function(pubType) {
   var renamedPubType;
 
-  if ((pubType=='book')||(pubType=='journalArticle')) {
+  if (pubType === 'book') {
     renamedPubType = 'Herausgeberschaften';
-  } else if (pubType === 'computerProgram') {
-    renamedPubType = 'Software';
-  } else if (pubType === 'bookSection') {
-    renamedPubType = 'Beiträge in Sammelbänden';
+  } else if (pubType === 'journalArticle') {
+    renamedPubType = 'Artikel';
   } else if (pubType === 'conferencePaper') {
     renamedPubType = 'Konferenzbeiträge (mit Peer Review)';
-  } else if ((pubType =='dataset')||(pubType =='document')) {
-    renamedPubType = 'Publizierte Daten & Annotationsguidelines';
-  } else if ((pubType == 'blogPost')|| (pubType =='report')||(pubType =='interview')){
+  } else if (pubType === 'bookSection') {
+    renamedPubType = 'Beiträge in Sammelbänden';
+  } else if (pubType === 'blogPost' || pubType === 'report' || pubType === 'interview') {
     renamedPubType = 'Kleinere Beiträge';
+  } else if (pubType === 'document') {
+    renamedPubType = 'Annotationsguidelines';
+  } else if (pubType === 'dataset') {
+    renamedPubType = 'Publizierte Daten';
+  } else if (pubType === 'computerProgram') {
+    renamedPubType = 'Software';
   } else {
     renamedPubType = pubType; // Keine Umbenennung erforderlich
   }
@@ -303,15 +329,7 @@ pubTypes.forEach(function(pubType) {
   });
 });
 
-sortedEntries.sort(function(a, b) {
-  if (a.pubType < b.pubType) {
-    return -1; // Aufsteigende Reihenfolge
-  }
-  if (a.pubType > b.pubType) {
-    return 1; // Aufsteigende Reihenfolge
-  }
-  return 0;
-});
+
 
 var currentPubType = null;
 var currentPubTypeContainer = null;
@@ -331,13 +349,14 @@ sortedEntries.forEach(function(item) {
 
   var entryParagraph = document.createElement('span');
   entryParagraph.style.display = 'block';
-  entryParagraph.style.marginBottom = '1em';
+  entryParagraph.style.marginBottom = '0.8em';
   
   var entryList = document.createElement('ul');
   entryList.style.listStyleType = 'disc';
   
   var listItem = document.createElement('li');
   listItem.style.marginLeft = '-2em'; // Einrückung entfernen
+  listItem.style.marginBottom = '0em';
 
   listItem.innerHTML = item.entry;
   
@@ -375,7 +394,7 @@ function getYearFromDate(dateString) {
 
 
    
-  
+  //Autoren-Namen-Reihenfolge ändern
 
   function formatAuthors(authors) {
     if (authors.length === 1) {
@@ -399,14 +418,14 @@ function getYearFromDate(dateString) {
   fetchData(0);
 
   // Eventlistener für DOI-Links
-  /**
+  /*
   document.addEventListener('click', function(event) {
     if (event.target.classList.contains('doi-link')) {
       event.preventDefault();
       var doi = event.target.innerText;
       window.open('https://doi.org/' + doi, '_blank');
     }
-  });**\
+  });*\
 </script>
 
 

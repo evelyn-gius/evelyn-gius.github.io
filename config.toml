@@ -2,7 +2,7 @@
 # Site Settings
 
 baseURL = "https://example.com/"
-title = ""
+title = "Evelyn Gius"
 languageCode = "en"
 hasCJKLanguage = false
 # Copyright information (Markdown supported)
@@ -244,16 +244,16 @@ uglyURLs = false
 
      [[menu.main]]
     identifier = "Konferenzbeitraege"
-    name = "Konferenzbeitraege"
-    url = "/talks2/Konferenzbeitraege"
-    parent = "talk2"
-    weight = 1
- [[menu.main]]
- identifier="vortraege"
-     name = "vortraege"
-    url = "/talks2/vortraege"
+    pageref = "/talks2/Konferenzbeiträge"
+     name = "Konferenzbeitraege"
     parent = "talk2"
     weight = 2
+ [[menu.main]]
+ identifier="Evortraege"
+    pageref = "/talks2/Evortraege"
+    name = "Eingeladene Vorträge"
+    parent = "talk2"
+    weight = 1
         
     [[menu.main]]
         weight = 8
@@ -446,7 +446,7 @@ uglyURLs = false
     #            `categoryBy` to `sections`
 
     # Display title of posts?
-    displayPosts = true
+    displayPosts = false
 
     # Display count of posts under each
     # category?

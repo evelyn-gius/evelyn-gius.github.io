@@ -7,7 +7,7 @@
 
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title></title>
+        <title>Evelyn Gius</title>
         <link>https://example.com/</link>
         <description>Huhu</description>
         <generator>Hugo 0.111.3 https://gohugo.io/</generator>
@@ -19,7 +19,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Tue, 27 Jun 2023 18:47:15 &#43;0200</lastBuildDate>
+        <lastBuildDate>Mon, 03 Jul 2023 14:29:22 &#43;0200</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://example.com/rss.xml" />
         
@@ -94,8 +94,8 @@
         
             <item>
                 <title>Konferenzbeiträge</title>
-                <link>https://example.com/talks/konferenzbeitraege/</link>
-                <guid isPermaLink="true">https://example.com/talks/konferenzbeitraege/</guid>
+                <link>https://example.com/talks/konferenzbeitr%C3%A4ge/</link>
+                <guid isPermaLink="true">https://example.com/talks/konferenzbeitr%C3%A4ge/</guid>
                 <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
