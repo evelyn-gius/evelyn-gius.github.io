@@ -261,10 +261,7 @@ uglyURLs = false
     [[menu.main]]
         weight = 9
         identifier = "lang-switcher"
-    [[menu.main]]
-        weight = 10
-        identifier = "search"
-        post = "search"
+ 
 
 
 
