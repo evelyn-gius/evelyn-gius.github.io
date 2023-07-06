@@ -341,7 +341,7 @@ sortedEntries.forEach(function(item) {
 
     var yearHeader = document.createElement('h3');
     yearHeader.innerText = currentPubType;
-    yearHeader.style.marginLeft = '-1.2em'; // Anpassen des linken Abstands
+    //yearHeader.style.marginLeft = '-1.2em'; // Anpassen des linken Abstands
 
     currentPubTypeContainer.appendChild(yearHeader);
     document.getElementById('shortcode-content').appendChild(currentPubTypeContainer);
@@ -355,7 +355,7 @@ sortedEntries.forEach(function(item) {
   entryList.style.listStyleType = 'disc';
   
   var listItem = document.createElement('li');
-  listItem.style.marginLeft = '-2em'; // Einrückung entfernen
+  //listItem.style.marginLeft = '-2em'; // Einrückung entfernen
   listItem.style.marginBottom = '0em';
 
   listItem.innerHTML = item.entry;
