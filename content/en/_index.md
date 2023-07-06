@@ -12,13 +12,9 @@ I am professor of Digital Philology and Modern German Literary Studies at the De
 
 I have a special research interesest in manual annotation, narratological analysis, particularly text segmentation, methodological questions of automation, and the automatization of text analysis in literary studies, as well as operationalization in the humanities.
 
+In addition to different project works, my lab and I provide two well-established services in the Digital Humanities: the collaborative annotation software [CATMA](https://catme.de/), developed since 2008, and the [fortext.net](https://fortext.net) portal, which offers a low-threshold introduction to methods and tools of the Digital Humanities.
 
-In addition to different project works, my lab provides two well-established services in the Digital Humanities: the collaborative annotation software CATMA, developed since 2008, and the fortext.net portal, which offers a low-threshold introduction to methods and tools of the Digital Humanities.
 
-
-Mein Forschungsinteresse gilt der manuellen Annotation, der narratologischen Analyse und insbesondere der Segmentierung von Texten, methodologischen Fragen der Automatisierung und der Automatisierbarkeit der literaturwissenschaftlichen Textanalyse sowie der Operationalisierung geisteswissenschaftlicher Zugänge.
-
-Neben der Arbeit an verschiedenen Projekten in diesen Bereichen stelle ich mit meinem Lab zwei in den Digital Humanities bei zahlreichen Nutzer:innen etablierte Services zur Verfügung: die seit 2008 entwickelte kollaborative Annotationssoftware [CATMA](https://catme.de/) und das [fortext.net](https://fortext.net)-Portal, welches niedrigschwellig in Methoden und Tools der Digital Humanities einführt.
 
 ## Career
 
@@ -31,14 +27,6 @@ Neben der Arbeit an verschiedenen Projekten in diesen Bereichen stelle ich mit m
 
 Summer semester 2019: Call to professorship for Digital Philology at the Technical University of Darmstadt.
 
-
-1999–2004 Studium der Germanistik, Informatik und Philosophie an der Universität Hamburg und am Istituto Orientale in Neapel, Abschluss mit einer Arbeit über maschinenlesbare Lexika.
-
-2004–2006 Ausbildung zur Mediatorin und Tätigkeit in einem Mediationsinstitut. Anschließend bis 2011 nebenberuflich Coach und Organisationsberaterin im Non-Profit-Bereich. 
-
-2006–2019 wissenschaftliche Mitarbeiterin am Interdisziplinären Centrum für Narratologie und am Institut für Germanistik an der Universität Hamburg, ab 2017 eigenes Teilprojekt in einem hochschulübergreifenden Forschungsverbund. Außerdem Geburt von zwei Kindern (2009, 2015), Promotion mit einer Arbeit über die narrative Struktur von Konflikterzählungen (2015 [publiziert]( https://doi.org/10.1515/9783110422405) in der Narratologia-Reihe bei De Gruyter) und Vertretung des Lehrstuhls für Computerphilologie an der Universität Würzburg im Sommersemester 2018. 
-
-Zum Sommersemester 2019 Ruf auf die W2tt-Professur für Digital Philology an die Technische Universität Darmstadt.
 
 ## Weitere Infos
 ORCID: [0000-0001-8888-8419](http://orcid.org/0000-0001-8888-8419)
