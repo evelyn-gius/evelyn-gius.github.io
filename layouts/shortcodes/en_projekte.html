@@ -1,22 +1,22 @@
 <div class="main-inner">
-{{ range $projektgruppe := (readDir "/content/de/talks2/") }}
+{{ range $projektgruppe := (readDir "/content/en/talks2/") }}
     {{ with $projektgruppe := $projektgruppe }}
         {{ if eq $projektgruppe.IsDir true }}
             {{ if eq $projektgruppe.Name "Evortraege"}}
-            <h3 id="Evortraege"> Eingeladene Vorträge</h3>
+            <h3 id="Evortraege"> Talks</h3>
              
                 {{ else if eq $projektgruppe.Name "Konferenzbeitraege"}}
-                <h3 id="Konferenzbeitraege"> Konferenzbeiträge</h3>
+                <h3 id="Konferenzbeitraege"> Conference Contributions</h3>
 
              
                 
                 {{ else }} <h2 id="{{ .Name }}">{{ $projektgruppe.Name }}</h3>{{ end }}
                 
      
-            {{ range $einzelprojekt := (readDir (print "/content/de/talks2/" $projektgruppe.Name)) }}
+            {{ range $einzelprojekt := (readDir (print "/content/en/talks2/" $projektgruppe.Name)) }}
                 {{ with $einzelprojekt := $einzelprojekt }}
                     {{ if eq $einzelprojekt.IsDir false }}
-                        {{ $content := (readFile (print "/content/de/talks2/" $projektgruppe.Name "/" $einzelprojekt.Name)) }}
+                        {{ $content := (readFile (print "/content/en/talks2/" $projektgruppe.Name "/" $einzelprojekt.Name)) }}
                         {{ $metadata := index (split $content "---") 1 }}
                         {{ $title := index (split $metadata "title:") 2 }}
                         {{ $body := index (split $content "---") 2 }}

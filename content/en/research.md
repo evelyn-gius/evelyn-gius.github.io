@@ -5,40 +5,29 @@ draft: false
 
 ---
 
-### Laufende Forschungsprojekte
-
-Aktuell leite ich folgende Drittmittel-finanzierten Forschungsprojekte (weitere Informationen zu den Projekten gibt es auf der entsprechenden Seite des [fortext lab](https://fortext.org/de/projekte/)):
-- „Das forTEXT-Portal – Routinen, Ressourcen und Tools für die Digital Humanities Lehre“, gefördert durch die Stiftung Innovation in der Hochschullehre
-- „Prinzipiengestützte Kategorienentwicklung für die Digital Humanities. Ein Proof of Concept“ (KatKit), gefördert durch das Hessische Ministerium für Wissenschaft und Kunst 
-- „Evaluating Events in Narrative Theory (EvENT)”, gefördert im DFG-Schwerpunktprogramm 2207 (mit Chris Biemann)
-- „Unitizing PLot to advance Analysis of Narrative Structure (PLANS)”, gefördert im DFG-Schwerpunktprogramm 2207 (mit Chris Biemann)
-
-### Abgeschlossene Forschungsprojekte
-
-- „forTEXT – Forschungsumgebung zur kollaborativen Texterschließung“, gefördert im DFG-Programm „Wissenschaftliche Literaturversorgungs- und Informationssysteme“
-- „Shared Task Initiative“: Shared Task zur Erstellung von Annotationsrichtlinien für Erzählebenen, teilweise gefördert von der VolkswagenStiftung (mit Nils Reiter und Marcus Willand)
-- „Zur Annotation genderspezifischer Darstellung von Krankheit in literarischen Texten“ (Teilprojekt im Forschungsverbund „Automatisierte Modellierung hermeneutischer Prozesse – Der Einsatz von Annotationen für sozial- und geisteswissenschaftliche Analysen im Gesundheitsbereich“, hermA), gefördert von der Landesforschungsförderung Hamburg
-
-### Aktuelle Funktionen in der DH-Forschungscommunity (Auswahl)
-
-- Erste Vorsitzende des Verbands Digital Humanities im deutschsprachigen Raum (DHd e.V.) 
-- Zweite Vorsitzende des Centrums für Reflektierte Textanalyse (Creta e.V.)
-- Mitglied des wissenschaftlichen Beirats des EU-Horizon2020-Projekts „Computational Literary Studies Infrastructure“ (Infra CLS)
-- Mitglied des wissenschaftlichen Beirats des ERC-Projekts „Graphs and Ontologies for Literary Evolution Models“ (GOLEM)
-- Mitglied des wissenschaftlichen Beirats des Departments „Wissen – Kultur – Transformation“ an der Interdisziplinären Fakultät der Universität Rostock
-- Mitglied des Programmausschusses des DFG-Schwerpunktprogramms „Computational Literary Studies“ (SPP 2207)
-- Mitglied des Scientific Board der Zeitschrift KorDaF – Korpora Deutsch als Fremdsprache
-- Mitglied der Programmkomitees für die Konferenzen DHd2024 und CHR2023
 ### Current research projects
 
-I am currently leading the following externally funded research projects (for more information on the projects, see the corresponding page of the [fortext lab](https://fortext.org/de/projekte/)):
-- "The forTEXT Portal - Routines, Resources and Tools for Digital Humanities Teaching", funded by the Foundation Innovation in Higher Education.
-- "Principle-based Category Development for the Digital Humanities. A Proof of Concept" (KatKit), funded by the Hessian Ministry of Science and Art. 
-- "Evaluating Events in Narrative Theory (EvENT)," funded by DFG Priority Program 2207 (with Chris Biemann)
-- "Unitizing PLot to advance Analysis of Narrative Structure (PLANS)," funded by DFG Priority Program 2207 (with Chris Biemann).
+I am currently leading the following third-party funded research projects (for more information on the projects, see the corresponding page of the [fortext lab](https://fortext.org/de/projekte/)):
+- „Das forTEXT-Portal – Routinen, Ressourcen und Tools für die Digital Humanities Lehre“ - a portal about routines, resources and tools for Digital Huamnities Teaching, funded by <em>Stiftung Innovation in der Hochschullehre</em>	
+- „Prinzipiengestützte Kategorienentwicklung für die Digital Humanities. Ein Proof of Concept“ (KatKit) - Principle-based Category Development for DH, funded by <em>Hessisches Ministerium für Wissenschaft und Kunst</em>
+- „Evaluating Events in Narrative Theory (EvENT)”, funded by DFG-Schwerpunktprogramm 2207 (with Chris Biemann)
+- „Unitizing PLot to advance Analysis of Narrative Structure (PLANS)”, funded by DFG-Schwerpunktprogramm 2207 (with Chris Biemann)
+
 
 ### Completed research projects
 
-- "forTEXT - Research Environment for Collaborative Text Indexing", funded in the DFG program "Scientific Literature Supply and Information Systems".
+- "forTEXT - Research Environment for Collaborative Text Indexing", funded by the DFG program "Scientific Library Services and Information Systems"
 - "Shared Task Initiative": shared task for the creation of annotation guidelines for narrative levels, partially funded by the Volkswagen Foundation (with Nils Reiter and Marcus Willand)
-- "On the Annotation of Gender-Specific Representations of Illness in Literary Texts" (subproject in the research network "Automated Modeling of Hermeneutic Processes - The Use of Annotations for Social Science and Humanities Analyses in the Health Domain", hermA), funded by the
+- „Zur Annotation genderspezifischer Darstellung von Krankheit in literarischen Texten“ - an annoation project about gender-specific representations of illness in liiterary texts (subproject in the research association  "Automated Modeling of Hermeneutic Processes - The Use of Annotation in Social research and Humanities for Analyses of Health", hermA), funded by the Landesforschungsförderung Hamburg
+
+
+### Current roles in the DH research community (selection)
+
+- First Chair of the Association of Digital Humanities in German-speaking Countries (DHd e.V.) 
+- Second Chair of the Centre for Reflected Text Analytics (Creta e.V.)
+- Member of the Scientific Advisory Board of the EU Horizon2020 project "Computational Literary Studies Infrastructure" (Infra CLS)
+- Member of the Scientific Advisory Board of the ERC project "Graphs and Ontologies for Literary Evolution Models" (GOLEM)
+- Member of the Scientific Advisory Board of the Department "Knowledge - Culture - Transformation" at the Interdisciplinary Faculty of the University of Rostock
+- Member of the Programme Panel of the DFG Priority Programme "Computational Literary Studies" (SPP 2207)
+- Member of the Scientific Board of the journal KorDaF - Korpora Deutsch als Fremdsprache
+- Member of the Programme Committees for the conferences DHd2024 and CHR2023

@@ -3,7 +3,7 @@
 
 baseURL = "https://example.com/"
 title = "Evelyn Gius"
-languageCode = "en"
+languageCode = "de"
 hasCJKLanguage = false
 # Copyright information (Markdown supported)
 copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
@@ -15,8 +15,19 @@ theme = "meme"
 newContentEditor = ""
 
 # i18n
-defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = false
+defaultContentLanguage = "de"
+defaultContentLanguageInSubdir = true
+
+[languages.en]
+contentDir = 'content/en'
+languageName = 'en'
+   
+    weight = 10
+    [languages.de]
+    contentDir = 'content/de'
+languageName = 'de'
+
+    weight = 20
 
 # Pluralize titles in lists?
 pluralizeListTitles = false
@@ -39,7 +50,7 @@ enableRobotsTXT = true
 # Number of items per page in paginated
 # lists (valid for the `posts` homepage
 # layout in MemE)
-paginate = 5
+paginate = 10
 
 # URL related
 disablePathToLower = false
@@ -201,9 +212,9 @@ uglyURLs = false
 #               flex: `theme-switcher`,
 #               `lang-switcher`, `search`)
 
-[menu]
+[languages.de.menu]
     ## Menu bar
-     [[menu.main]]
+     [[languages.de.menu.main]]
          pageref = "/"
          name = "Home"
          weight = 1
@@ -214,8 +225,8 @@ uglyURLs = false
        # weight = 2
         #pre = "internal"
         #post = "archive"
-    [[menu.main]]
-        pageref = "publikationen"
+     [[languages.de.menu.main]]
+        pageref = "/publikationen"
         name = "Publikationen"
         weight = 3
         pre = "internal"
@@ -225,8 +236,8 @@ uglyURLs = false
    #     weight = 11
   #      pre = "internal"
 #        post = "tags"
-    [[menu.main]]
-        pageref = "research"
+     [[languages.de.menu.main]]
+        pageref = "/research"
         name = "Forschung"
         weight = 5
         pre = "internal"
@@ -235,33 +246,78 @@ uglyURLs = false
 
 
 
-        [[menu.main]]
+    [[languages.de.menu.main]]
         identifier = "talk2"
-        pageref = "talks2"
+        pageref = "/talks2"
         name = "Talks"
         weight = 6
         pre = "internal"
 
-     [[menu.main]]
+    [[languages.de.menu.main]]
+        identifier = "Konferenzbeitraege"
+        pageref = "/talks2/Konferenzbeiträge"
+        name = "Konferenzbeitraege"
+        parent = "talk2"
+        weight = 2
+    [[languages.de.menu.main]]
+        identifier="Evortraege"
+        pageref = "/talks2/Evortraege"
+        name = "Eingeladene Vorträge"
+        parent = "talk2"
+        weight = 1
+        
+    [[languages.de.menu.main]]
+        weight = 8
+        identifier = "lang-switcher"
+
+
+ [languages.en.menu]
+    ## Menu bar
+     [[languages.en.menu.main]]
+         pageref = "/"
+         name = "Home"
+         weight = 1
+         pre = "internal"
+
+     [[languages.en.menu.main]]
+        pageref = "/publikationen"
+        name = "Publications"
+        weight = 3
+        pre = "internal"
+    
+     [[languages.en.menu.main]]
+        pageref = "/research"
+        name = "Research"
+        weight = 5
+        pre = "internal"
+    
+
+     [[languages.en.menu.main]]
+        identifier = "talk2"
+        pageref = "/talks2"
+        name = "Talks"
+        weight = 6
+        pre = "internal"
+
+     [[languages.en.menu.main]]
     identifier = "Konferenzbeitraege"
     pageref = "/talks2/Konferenzbeiträge"
-     name = "Konferenzbeitraege"
+     name = "Conference Contributions"
     parent = "talk2"
     weight = 2
- [[menu.main]]
+     [[languages.en.menu.main]]
  identifier="Evortraege"
     pageref = "/talks2/Evortraege"
-    name = "Eingeladene Vorträge"
+    name = "Talks"
     parent = "talk2"
     weight = 1
         
-    [[menu.main]]
-        weight = 8
+     [[languages.en.menu.main]]
+        weight = 7
         identifier = "theme-switcher"
-    [[menu.main]]
-        weight = 9
+     [[languages.en.menu.main]]
+        weight = 8
         identifier = "lang-switcher"
- 
 
 
 
@@ -308,8 +364,8 @@ uglyURLs = false
     # If true, put your SVG in the `SVG.toml`
     # file and configure the following options.
     # Unit: px
-    siteBrandSVGWidth = 200
-    siteBrandSVGHeight = 100
+    siteBrandSVGWidth = 140
+    siteBrandSVGHeight = 60
     siteBrandSVGFill = "#fff"
     # If false, your site title will be
     # used as the default and displayed as
@@ -473,7 +529,7 @@ uglyURLs = false
     #       fallback to the default value: 42
     #       Unit: em
 
-    displayListTitle = true
+    displayListTitle = false
 
     listDateFormat = ""
     # ATTENTION: be sure to follow the
@@ -1353,7 +1409,7 @@ uglyURLs = false
     ######################################
     # Multilingual
 
-    enableLangToggle = false
+    enableLangToggle = true
 
     hideLangToggleInHome = false
 
