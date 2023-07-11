@@ -13,6 +13,7 @@
 
 .menu-item {
     display: inline-block;
+    
     a {
         color:#0a7c58d9;
         &:hover {
@@ -24,16 +25,18 @@
 .active {
     a {
         color: #204b27;
+        
     }
 }
 
 @if ($headerLayoutFlex) {
     .nav {
         text-align: right;
-        font-size: 100%;
+        font-size: 115%;
     }
     .menu-item {
-        margin-left: 0.5em;
+        margin-left: 0.8em;
+
         .icon {
             margin: 0 0.3em 0.2em 0;
         }
