@@ -3,7 +3,7 @@
 
 baseURL = "https://example.com/"
 title = "Evelyn Gius"
-languageCode = "de"
+languageCode = "en"
 hasCJKLanguage = false
 # Copyright information (Markdown supported)
 copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
@@ -15,7 +15,7 @@ theme = "meme"
 newContentEditor = ""
 
 # i18n
-defaultContentLanguage = "de"
+defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 
 [languages.en]
@@ -302,13 +302,13 @@ uglyURLs = false
      [[languages.en.menu.main]]
     identifier = "Konferenzbeitraege"
     pageref = "/talks2/Konferenzbeiträge"
-     name = "Conference Contributions"
+     name = "Conference Presentations"
     parent = "talk2"
     weight = 2
      [[languages.en.menu.main]]
  identifier="Evortraege"
     pageref = "/talks2/Evortraege"
-    name = "Talks"
+    name = "Invited Talks"
     parent = "talk2"
     weight = 1
         

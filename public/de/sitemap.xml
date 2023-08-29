@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://example.com/de/</loc>
-    <lastmod>2023-07-03T15:45:18+02:00</lastmod>
+    <lastmod>2023-08-29T12:44:03+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://example.com/de/talks2/</loc>
-    <lastmod>2023-06-27T18:40:33+02:00</lastmod>
+    <lastmod>2023-08-29T12:44:03+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>https://example.com/de/publikationen/</loc>
-    <lastmod>2023-06-27T17:39:47+02:00</lastmod>
+    <lastmod>2023-08-29T12:44:03+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -42,7 +42,7 @@
                 />
   </url><url>
     <loc>https://example.com/de/research/</loc>
-    <lastmod>2023-07-03T15:45:18+02:00</lastmod>
+    <lastmod>2023-08-29T12:44:03+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -55,7 +55,7 @@
                 />
   </url><url>
     <loc>https://example.com/de/talks/</loc>
-    <lastmod>2023-06-06T19:17:32+02:00</lastmod>
+    <lastmod>2023-08-29T12:44:03+02:00</lastmod>
   </url><url>
     <loc>https://example.com/de/categories/</loc>
     <xhtml:link
@@ -70,10 +70,10 @@
                 />
   </url><url>
     <loc>https://example.com/de/talks/vortraege/</loc>
-    <lastmod>2023-05-26T12:40:31+02:00</lastmod>
+    <lastmod>2023-08-29T12:44:03+02:00</lastmod>
   </url><url>
     <loc>https://example.com/de/talks2/evortraege/vortraege/</loc>
-    <lastmod>2023-06-27T18:48:11+02:00</lastmod>
+    <lastmod>2023-08-29T12:44:03+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -86,10 +86,10 @@
                 />
   </url><url>
     <loc>https://example.com/de/talks/konferenzbeitr%C3%A4ge/</loc>
-    <lastmod>2023-07-03T14:27:06+02:00</lastmod>
+    <lastmod>2023-08-29T12:44:03+02:00</lastmod>
   </url><url>
     <loc>https://example.com/de/talks2/konferenzbeitraege/konferenzbeitr%C3%A4ge/</loc>
-    <lastmod>2023-07-03T15:55:02+02:00</lastmod>
+    <lastmod>2023-08-29T12:44:03+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
