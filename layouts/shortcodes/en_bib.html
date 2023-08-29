@@ -72,12 +72,13 @@
     var date = item.data.date;
     if (!date) continue; // Skip entries without a date
     
-   
-
     var year = getYearFromDate(date);
     var pubType = item.data.itemType;
+    if (item.data.extra === 'Monographie'){
+      pubType = 'Monography'; //add pubtype Monography
+    }
     if (!year) continue; // Skip entries with an invalid date
-   
+
     var authors = [];
     var editors = [];
 //    var programmers = [];
@@ -103,6 +104,7 @@
     var seriesnumber = item.data.seriesNumber;
     var url = item.data.url;
     
+
 
     // Erstellen eintrag im Chicago-Stil basierend auf der Eintragsart
     var entry = formatAuthors(authors) + '. ' + year + '. "' + title + '". ';
@@ -273,16 +275,17 @@ var sortedEntries = [];
 
 function comparePubTypes(a, b) {
   var order = {
-    'book': 1,
-    'journalArticle': 2,
-    'conferencePaper': 3,
-    'bookSection': 4,
-    'blogPost': 5,
-    'report': 5,
-    'interview': 5,
-    'document': 6,
-    'dataset': 7,
-    'computerProgram': 8
+    'Monography':1,
+    'book': 2,
+    'journalArticle': 3,
+    'conferencePaper': 4,
+    'bookSection': 5,
+    'blogPost': 6,
+    'report': 6,
+    'interview': 6,
+    'document': 7,
+    'dataset': 8,
+    'computerProgram': 9
     
   };
 
@@ -316,6 +319,8 @@ pubTypes.forEach(function(pubType) {
     renamedPubType = 'Published Data';
   } else if (pubType === 'computerProgram') {
     renamedPubType = 'Software';
+  } else if (pubType === 'Monography'){
+    renamedPubType = 'Monography';
   } else {
     renamedPubType = pubType; // Keine Umbenennung erforderlich
   }
