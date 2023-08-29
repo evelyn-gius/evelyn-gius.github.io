@@ -22,8 +22,12 @@ Neben der Arbeit an verschiedenen Projekten in diesen Bereichen stelle ich mit m
 Zum Sommersemester 2019 Ruf auf die W2tt-Professur für Digital Philology an die Technische Universität Darmstadt.
 
 ## Weitere Infos
+Lab: [fortext lab](https://fortext.org)
+
 ORCID: [0000-0001-8888-8419](http://orcid.org/0000-0001-8888-8419)
 
 Mastodon: [@EvelynGius@fedihum.org](https://fedihum.org/@EvelynGius)
+
+Bluesky: [@EvelynGius](https://bsky.app/profile/evelyngius.bsky.social)
 
 Twitter: [@EvelynGius](https://twitter.com/EvelynGius)
