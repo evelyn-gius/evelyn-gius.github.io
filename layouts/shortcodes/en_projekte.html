@@ -3,10 +3,10 @@
     {{ with $projektgruppe := $projektgruppe }}
         {{ if eq $projektgruppe.IsDir true }}
             {{ if eq $projektgruppe.Name "Evortraege"}}
-            <h3 id="Evortraege"> Talks</h3>
+            <h3 id="Evortraege"> Invited Talks</h3>
              
                 {{ else if eq $projektgruppe.Name "Konferenzbeitraege"}}
-                <h3 id="Konferenzbeitraege"> Conference Contributions</h3>
+                <h3 id="Konferenzbeitraege"> Conference Presentations</h3>
 
              
                 

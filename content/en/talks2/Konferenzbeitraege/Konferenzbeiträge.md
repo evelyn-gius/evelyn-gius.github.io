@@ -1,5 +1,5 @@
 ---
-title: Konferenzbeiträge
+title: Conference Presentations
 date: false
 draft: false
 parent: talks2
