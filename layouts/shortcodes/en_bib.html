@@ -110,10 +110,10 @@
     var entry = formatAuthors(authors) + '. ' + year + '. "' + title + '". ';
     if (type === 'book') {
       if (editors.length === 0){
-        entry = formatAuthors(authors) + '. (Hrsg.). ' + year + '. ' + title + '. ';
+        entry = formatAuthors(authors) + '. (eds.). ' + year + '. ' + title + '. ';
         console.log(item.data);
       } else {
-        entry = formatAuthors(editors)+ '. (Hrsg.). ' + year + '. ' + title + '. ';
+        entry = formatAuthors(editors)+ '. (eds.). ' + year + '. ' + title + '. ';
       }
       if (place){
         entry += place + ': ';
@@ -240,6 +240,11 @@
       var blogTitle = item.data.blogTitle;
       entry += blogTitle + ". " + '<a href="' + url + '" target="_blank" >' + url + '</a>.';
     
+    } else if (type=== 'Monography'){
+      entry += place + ": Vol. "+vol+". "+series+" ."+publisher+"."
+
+
+
     }
     else {
       var url = item.data.url;
