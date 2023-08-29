@@ -110,7 +110,7 @@
     var entry = formatAuthors(authors) + '. ' + year + '. "' + title + '". ';
     if (type === 'book') {
       if (editors.length === 0){
-        entry = formatAuthors(authors) + year + '. ' + title + '. ';
+        entry = formatAuthors(authors) +'. '+ year + '. ' + title + '. ';
         console.log(item.data);
       } else {
         entry = formatAuthors(editors)+ '. (eds.). ' + year + '. ' + title + '. ';
