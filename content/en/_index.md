@@ -19,13 +19,13 @@ In addition to our work in research projects, my lab and I provide two well-esta
 ## Career
 
 
-1999-2004: German Philology, Computer Science, and Philosophy at the University of Hamburg and the Istituto Orientale in Naples, graduation with a thesis on machine-readable lexicons.
+1999-2004: Studies of German Philology, Computer Science, and Philosophy at the University of Hamburg and the Istituto Orientale in Naples, graduation with a thesis on machine-readable lexicons.
 
-2004-2006: Mediator qualification and work at a mediation institute. Subsequently, part-time coach and organizational consultant in the non-profit sector until 2011.
+2004-2006: Mediator training and work at a mediation institute. Subsequently, part-time coach and organizational consultant in the non-profit sector until 2011.
 
-2006-2019: Research assistant at the Interdisciplinary Center for Narratology and at the Institute of German Studies at the University of Hamburg, with an self-supervised subproject in a cross-university research consortium starting in 2017. Additionally, gave birth to two children (2009, 2015), completed a Ph.D. with a dissertation on the narrative structure of conflict narratives (published in 2015 [DOI: 10.1515/9783110422405] in the Narratologia series by De Gruyter), and representative of the academic chair for Digital Philology at the University of Würzburg in the summer semester of 2018.
+2006-2019: Research associate at the Interdisciplinary Center for Narratology and at the Institute of German Studies at the University of Hamburg, project as principle investigator in a cross-university research consortium starting in 2017. Also, birth of my children (2009, 2015), completion of my Ph.D. with a dissertation on the narrative structure of conflict narratives (published in 2015 [DOI: 10.1515/9783110422405] in the Narratologia series by De Gruyter), and guest professership for Digital Philology at the University of Würzburg in the summer term of 2018.
 
-Summer semester 2019: Call to professorship for Digital Philology at the Technical University of Darmstadt.
+Since ummer term 2019 professorship for Digital Philology at the Technical University of Darmstadt.
 
 
 ## Further Information 
