@@ -10,9 +10,9 @@ I am professor of Digital Philology and Modern German Literary Studies at the De
 
 ## Research Interests
 
-I have a special research interesest in manual annotation, narratological analysis, particularly text segmentation, methodological questions of automation, and the automatization of text analysis in literary studies, as well as operationalization in the humanities.
+My research interest lies in manual annotation, narratological analysis, and particularly in the segmentation of texts, methodological questions of automation and the automatability of literary text analysis, as well as the operationalization of approaches from the humanities.
 
-In addition to different project works, my lab and I provide two well-established services in the Digital Humanities: the collaborative annotation software [CATMA](https://catme.de/), developed since 2008, and the [fortext.net](https://fortext.net) portal, which offers a low-threshold introduction to methods and tools of the Digital Humanities.
+In addition to our work in research projects, my lab and I provide two well-established services in the Digital Humanities: the collaborative annotation software [CATMA](https://catme.de/), developed since 2008, and the [fortext.net](https://fortext.net) portal, which offers a low-threshold introduction to methods and tools of the Digital Humanities.
 
 
 
@@ -28,9 +28,15 @@ In addition to different project works, my lab and I provide two well-establishe
 Summer semester 2019: Call to professorship for Digital Philology at the Technical University of Darmstadt.
 
 
-## Weitere Infos
+## Further Information 
+Lab: [fortext lab](https://fortext.org)
+
 ORCID: [0000-0001-8888-8419](http://orcid.org/0000-0001-8888-8419)
 
 Mastodon: [@EvelynGius@fedihum.org](https://fedihum.org/@EvelynGius)
 
+Bluesky: [@EvelynGius](https://bsky.app/profile/evelyngius.bsky.social)
+
 Twitter: [@EvelynGius](https://twitter.com/EvelynGius)
+
+
