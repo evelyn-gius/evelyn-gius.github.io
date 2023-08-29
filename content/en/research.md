@@ -7,7 +7,7 @@ draft: false
 
 ### Current research projects
 
-I am currently leading the following third-party funded research projects (for more information on the projects, see the corresponding page of the [fortext lab](https://fortext.org/de/projekte/)):
+I am currently leading the following third-party funded research projects (for more information on the projects, see the corresponding page of the [fortext lab](https://fortext.org/en/projekte/)):
 - „Das forTEXT-Portal – Routinen, Ressourcen und Tools für die Digital Humanities Lehre“ - a portal about routines, resources and tools for Digital Huamnities Teaching, funded by <em>Stiftung Innovation in der Hochschullehre</em>	
 - „Prinzipiengestützte Kategorienentwicklung für die Digital Humanities. Ein Proof of Concept“ (KatKit) - Principle-based Category Development for DH, funded by <em>Hessisches Ministerium für Wissenschaft und Kunst</em>
 - „Evaluating Events in Narrative Theory (EvENT)”, funded by DFG-Schwerpunktprogramm 2207 (with Chris Biemann)
