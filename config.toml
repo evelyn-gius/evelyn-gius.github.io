@@ -22,9 +22,9 @@ defaultContentLanguageInSubdir = true
 contentDir = 'content/en'
 languageName = 'en'
    
-    weight = 10
-    [languages.de]
-    contentDir = 'content/de'
+weight = 10
+[languages.de]
+contentDir = 'content/de'
 languageName = 'de'
 
     weight = 20

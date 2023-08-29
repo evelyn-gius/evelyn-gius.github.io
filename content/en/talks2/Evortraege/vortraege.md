@@ -1,5 +1,5 @@
 ---
-title: Eingeladene Vorträge 
+title: Invited Talks 
 date: false
 draft: false
 
