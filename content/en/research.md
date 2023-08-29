@@ -29,5 +29,5 @@ I am currently leading the following third-party funded research projects (for m
 - Member of the Scientific Advisory Board of the ERC project "Graphs and Ontologies for Literary Evolution Models" (GOLEM)
 - Member of the Scientific Advisory Board of the Department "Knowledge - Culture - Transformation" at the Interdisciplinary Faculty of the University of Rostock
 - Member of the Programme Panel of the DFG Priority Programme "Computational Literary Studies" (SPP 2207)
-- Member of the Scientific Board of the journal KorDaF - Korpora Deutsch als Fremdsprache
+- Member of the Scientific Board of the Journal KorDaF - Korpora Deutsch als Fremdsprache
 - Member of the Programme Committees for the conferences DHd2024 and CHR2023
