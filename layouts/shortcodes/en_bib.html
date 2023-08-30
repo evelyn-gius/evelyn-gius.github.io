@@ -291,9 +291,9 @@ function compareAuthors(a, b) {
     var yearA = a.year;
     var yearB = b.year;
 
-    if (yearA < yearB) {
+    if (yearA > yearB) {
       return -1;
-    } else if (yearA > yearB) {
+    } else if (yearA < yearB) {
       return 1;
     } else {
       return 0;
@@ -303,7 +303,7 @@ function compareAuthors(a, b) {
 
 function comparePubTypes(a, b) {
   var order = {
-    'Monographie':1,
+    'Monography':1,
     'book': 2,
     'journalArticle': 3,
     'conferencePaper': 4,
@@ -333,23 +333,23 @@ pubTypes.forEach(function(pubType) {
 
 
   if (pubType === 'book') {
-    renamedPubType = 'Herausgeberschaften';
+    renamedPubType = 'Edited Publications';
   } else if (pubType === 'journalArticle') {
-    renamedPubType = 'Artikel';
+    renamedPubType = 'Journal Articles';
   } else if (pubType === 'conferencePaper') {
-    renamedPubType = 'Konferenzbeiträge (mit Peer Review)';
+    renamedPubType = 'Conference Papers (Peer Reviewed)';
   } else if (pubType === 'bookSection') {
-    renamedPubType = 'Beiträge in Sammelbänden';
+    renamedPubType = 'Book Chapters';
   } else if (pubType === 'blogPost' || pubType === 'report' || pubType === 'interview') {
-    renamedPubType = 'Kleinere Beiträge';
+    renamedPubType = 'Small Publications';
   } else if (pubType === 'document') {
-    renamedPubType = 'Annotationsguidelines';
+    renamedPubType = 'Annotation Guidelines';
   } else if (pubType === 'dataset') {
-    renamedPubType = 'Publizierte Daten';
+    renamedPubType = 'Published Data';
   } else if (pubType === 'computerProgram') {
     renamedPubType = 'Software';
-  } else if (pubType === 'Monographie'){
-    renamedPubType = 'Monographie';
+  } else if (pubType === 'Monography'){
+    renamedPubType = 'Monography';
   } else {
     renamedPubType = pubType; // Keine Umbenennung erforderlich
   }
@@ -364,8 +364,6 @@ pubTypes.forEach(function(pubType) {
         });
       });
     });
-
-
 
 
 var currentPubType = null;
