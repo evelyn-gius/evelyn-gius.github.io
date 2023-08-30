@@ -276,29 +276,6 @@
 var pubTypes = Object.keys(entriesByPub);
 var sortedEntries = [];
 
-function compareAuthors(a, b) {
-  var lastNameA = a.authors[0].split(',')[0].trim();
-  var lastNameB = b.authors[0].split(',')[0].trim();
-
-  if (lastNameA < lastNameB) {
-    return -1;
-  } else if (lastNameA > lastNameB) {
-    return 1;
-  } else {
-    // Wenn die Nachnamen gleich sind, nach Jahr sortieren
-    var yearA = a.year;
-    var yearB = b.year;
-
-    if (yearA < yearB) {
-      return -1;
-    } else if (yearA > yearB) {
-      return 1;
-    } else {
-      return 0;
-    }
-  }
-}
-
 function comparePubTypes(a, b) {
   var order = {
     'Monographie':1,
@@ -353,16 +330,13 @@ pubTypes.forEach(function(pubType) {
   }
 
   var entries = entriesByPub[pubType];
-  entries.sort(); // Sortieren der Einträge innerhalb des Publikationstyps
-
-      entries.forEach(function(entry) {
-        sortedEntries.push({
-          pubType: renamedPubType,
-          entry: entry
-        });
-      });
+  entries.forEach(function(entry) {
+    sortedEntries.push({
+      pubType: renamedPubType,
+      entry: entry
     });
-
+  });
+});
 
 
 var currentPubType = null;
