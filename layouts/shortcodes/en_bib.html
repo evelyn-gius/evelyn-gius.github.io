@@ -278,9 +278,32 @@
 var pubTypes = Object.keys(entriesByPub);
 var sortedEntries = [];
 
+function compareAuthors(a, b) {
+  var lastNameA = a.authors[0].split(',')[0].trim();
+  var lastNameB = b.authors[0].split(',')[0].trim();
+
+  if (lastNameA < lastNameB) {
+    return -1;
+  } else if (lastNameA > lastNameB) {
+    return 1;
+  } else {
+    // Wenn die Nachnamen gleich sind, nach Jahr sortieren
+    var yearA = a.year;
+    var yearB = b.year;
+
+    if (yearA < yearB) {
+      return -1;
+    } else if (yearA > yearB) {
+      return 1;
+    } else {
+      return 0;
+    }
+  }
+}
+
 function comparePubTypes(a, b) {
   var order = {
-    'Monography':1,
+    'Monographie':1,
     'book': 2,
     'journalArticle': 3,
     'conferencePaper': 4,
@@ -308,36 +331,40 @@ pubTypes.sort(comparePubTypes);
 pubTypes.forEach(function(pubType) {
   var renamedPubType;
 
+
   if (pubType === 'book') {
-    renamedPubType = 'Edited Publications';
+    renamedPubType = 'Herausgeberschaften';
   } else if (pubType === 'journalArticle') {
-    renamedPubType = 'Journal Articles';
+    renamedPubType = 'Artikel';
   } else if (pubType === 'conferencePaper') {
-    renamedPubType = 'Conference Papers (Peer Reviewed)';
+    renamedPubType = 'Konferenzbeiträge (mit Peer Review)';
   } else if (pubType === 'bookSection') {
-    renamedPubType = 'Book Chapters';
+    renamedPubType = 'Beiträge in Sammelbänden';
   } else if (pubType === 'blogPost' || pubType === 'report' || pubType === 'interview') {
-    renamedPubType = 'Small Publications';
+    renamedPubType = 'Kleinere Beiträge';
   } else if (pubType === 'document') {
-    renamedPubType = 'Annotation Guidelines';
+    renamedPubType = 'Annotationsguidelines';
   } else if (pubType === 'dataset') {
-    renamedPubType = 'Published Data';
+    renamedPubType = 'Publizierte Daten';
   } else if (pubType === 'computerProgram') {
     renamedPubType = 'Software';
-  } else if (pubType === 'Monography'){
-    renamedPubType = 'Monography';
+  } else if (pubType === 'Monographie'){
+    renamedPubType = 'Monographie';
   } else {
     renamedPubType = pubType; // Keine Umbenennung erforderlich
   }
 
   var entries = entriesByPub[pubType];
-  entries.forEach(function(entry) {
-    sortedEntries.push({
-      pubType: renamedPubType,
-      entry: entry
+  entries.sort(); // Sortieren der Einträge innerhalb des Publikationstyps
+
+      entries.forEach(function(entry) {
+        sortedEntries.push({
+          pubType: renamedPubType,
+          entry: entry
+        });
+      });
     });
-  });
-});
+
 
 
 
