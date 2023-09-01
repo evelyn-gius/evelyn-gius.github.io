@@ -34,28 +34,53 @@
     var baseUrl = 'https://api.zotero.org/groups/' + groupID + '/collections/' + collectionId + '/items';
     var allData = []; // Array zur Speicherung aller Einträge
 
-    function fetchData(page) {
-    var url = baseUrl + '?format=json&key=' + apiKey + '&limit=100&start=' + (page * 100);
+  //   function fetchData(page) {
+  //   var url = baseUrl + '?format=json&key=' + apiKey + '&limit=100&start=' + (page * 100);
 
-    // Datenabruf
-    fetch(url)
-      .then(response => response.json())
-      .then(data => {
-        // Füge die aktuellen Einträge dem allData-Array hinzu
-        allData = allData.concat(data);
+  //   // Datenabruf
+  //   fetch(url)
+  //     .then(response => response.json())
+  //     .then(data => {
+  //       // Füge die aktuellen Einträge dem allData-Array hinzu
+  //       allData = allData.concat(data);
 
-        // Überprüfe, ob weitere Seiten vorhanden sind
-        if (data.length === 100) {
-          // Rufe nächste Seite ab
-          fetchData(page + 1);
-        } else {
-          // Keine weiteren Seiten vorhanden, verarbeite die gesammelten Daten
-          processData(allData);
-        }
-      })
-      .catch(error => console.error(error));
-  }
-  
+  //       // Überprüfe, ob weitere Seiten vorhanden sind
+  //       if (data.length === 100) {
+  //         // Rufe nächste Seite ab
+  //         fetchData(page + 1);
+  //       } else {
+  //         // Keine weiteren Seiten vorhanden, verarbeite die gesammelten Daten
+  //         processData(allData);
+  //       }
+  //     })
+  //     .catch(error => console.error(error));
+  // }
+  var itemsPerPage = 20; // Anzahl der Einträge pro Seite
+
+function fetchData(page) {
+  var startIndex = page * itemsPerPage;
+  var endIndex = startIndex + itemsPerPage;
+
+  var url = baseUrl + '?format=json&key=' + apiKey + '&limit=' + itemsPerPage + '&start=' + startIndex;
+
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      // Füge die aktuellen Einträge dem allData-Array hinzu
+      allData = allData.concat(data);
+
+      // Überprüfe, ob weitere Seiten vorhanden sind
+      if (data.length === itemsPerPage) {
+        // Rufe nächste Seite ab
+        fetchData(page + 1);
+      } else {
+        // Keine weiteren Seiten vorhanden, verarbeite die gesammelten Daten
+        processData(allData);
+      }
+    })
+    .catch(error => console.error(error));
+}
+ 
   // Funktion zum Verarbeiten der gesammelten Daten
   function processData(data) {
     var entriesByYear = {};
@@ -451,8 +476,18 @@ function getYearFromDate(dateString) {
     return '';
   }
   
-  fetchData(0);
 
+// Initialer Aufruf zum Laden der ersten Seite
+var pageNumber = 0; // Starte mit Seite 0
+fetchData(pageNumber);
+
+// Eventlistener für das Scrollen der Seite
+window.addEventListener('scroll', function () {
+  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+    // Der Benutzer hat den unteren Rand der Seite erreicht, lade weitere Einträge
+    fetchData(pageNumber); // Ändere "pageNumber" entsprechend
+  }
+});
   // Eventlistener für DOI-Links
   /*
   document.addEventListener('click', function(event) {
