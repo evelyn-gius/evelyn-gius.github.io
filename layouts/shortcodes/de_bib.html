@@ -34,10 +34,10 @@
     var baseUrl = 'https://api.zotero.org/groups/' + groupID + '/collections/' + collectionId + '/items';
     var allData = []; // Array zur Speicherung aller Einträge
 
-  //   function fetchData(page) {
-  //   var url = baseUrl + '?format=json&key=' + apiKey + '&limit=100&start=' + (page * 100);
+    // function fetchData(page) {
+    // var url = baseUrl + '?format=json&key=' + apiKey + '&limit=100&start=' + (page * 100);
 
-  //   // Datenabruf
+    // Datenabruf
   //   fetch(url)
   //     .then(response => response.json())
   //     .then(data => {
@@ -55,32 +55,31 @@
   //     })
   //     .catch(error => console.error(error));
   // }
-  var itemsPerPage = 20; // Anzahl der Einträge pro Seite
 
-function fetchData(page) {
-  var startIndex = page * itemsPerPage;
-  var endIndex = startIndex + itemsPerPage;
+  function fetchData(page) {
+  var entriesPerPage = 20; // Anzahl der Einträge pro Abschnitt
+  var startIndex = page * entriesPerPage;
+  var endIndex = startIndex + entriesPerPage;
 
-  var url = baseUrl + '?format=json&key=' + apiKey + '&limit=' + itemsPerPage + '&start=' + startIndex;
+  var url = baseUrl + '?format=json&key=' + apiKey + '&limit=' + entriesPerPage + '&start=' + startIndex;
 
+  // Datenabruf
   fetch(url)
     .then(response => response.json())
     .then(data => {
-      // Füge die aktuellen Einträge dem allData-Array hinzu
-      allData = allData.concat(data);
-
       // Überprüfe, ob weitere Seiten vorhanden sind
-      if (data.length === itemsPerPage) {
-        // Rufe nächste Seite ab
+      if (data.length > 0) {
+        // Rufe die processData-Funktion auf, um die aktuellen Einträge zu verarbeiten
+        processData(data);
+
+        // Rufe die nächste Seite ab
         fetchData(page + 1);
-      } else {
-        // Keine weiteren Seiten vorhanden, verarbeite die gesammelten Daten
-        processData(allData);
       }
     })
     .catch(error => console.error(error));
 }
- 
+
+  
   // Funktion zum Verarbeiten der gesammelten Daten
   function processData(data) {
     var entriesByYear = {};
@@ -291,6 +290,8 @@ function fetchData(page) {
     } else {
       entriesByPub[pubType].push(entry);
     }
+    appendEntriesToPage(entriesByPub);
+
   }
 
     /* Gib die Summe der Publikationen aus
@@ -476,18 +477,32 @@ function getYearFromDate(dateString) {
     return '';
   }
   
+ // fetchData(0);
 
-// Initialer Aufruf zum Laden der ersten Seite
-var pageNumber = 0; // Starte mit Seite 0
-fetchData(pageNumber);
+ function fetchData(page) {
+  var entriesPerPage = 20; // Anzahl der Einträge pro Abschnitt
+  var startIndex = page * entriesPerPage;
+  var endIndex = startIndex + entriesPerPage;
 
-// Eventlistener für das Scrollen der Seite
-window.addEventListener('scroll', function () {
-  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-    // Der Benutzer hat den unteren Rand der Seite erreicht, lade weitere Einträge
-    fetchData(pageNumber); // Ändere "pageNumber" entsprechend
-  }
-});
+  var url = baseUrl + '?format=json&key=' + apiKey + '&limit=' + entriesPerPage + '&start=' + startIndex;
+
+  // Datenabruf
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      // Überprüfe, ob weitere Seiten vorhanden sind
+      if (data.length > 0) {
+        // Rufe die processData-Funktion auf, um die aktuellen Einträge zu verarbeiten
+        processData(data);
+
+        // Rufe die nächste Seite ab
+        fetchData(page + 1);
+      }
+    })
+    .catch(error => console.error(error));
+}
+
+
   // Eventlistener für DOI-Links
   /*
   document.addEventListener('click', function(event) {
