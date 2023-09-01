@@ -5,13 +5,11 @@
     .italic {
       font-style: italic;
     }
-   style>
-  .doi-link {
-    color: blue;
-    text-decoration: underline;
-    cursor: pointer;
-  }
-
+    .doi-link {
+      color: blue;
+      text-decoration: underline;
+      cursor: pointer;
+    }
   </style>
 </head>
 <main class="inner-main">
@@ -19,7 +17,6 @@
   <div class = "main-inner">
     <div id="shortcode-content"> </div> 
   </div>
-
 
 <script>// API-Schlüssel und Bibliotheks-ID einsetzen
   
@@ -65,8 +62,6 @@
     var entriesByPub = {};
     var publicationCount = data.length; // Anzahl der Publikationen
 
-    // Restlicher Code zur Gruppierung der Daten nach Jahr und Anzeige
-
   for (var i = 0; i < data.length; i++) {
     var item = data[i];
     var date = item.data.date;
@@ -79,18 +74,19 @@
     }
     if (!year) continue; // Skip entries with an invalid date
    
-    var authors = [];
-    var editors = [];
+    var authors = []; // array für autoren
+    var editors = []; //array für editoren
 //    var programmers = [];
     for (var j = 0; j < item.data.creators.length; j++) {
       var creator = item.data.creators[j];
+      //different lists depending on status author/editor
       if ((creator.creatorType === 'author')||(creator.creatorType === 'programmer')||(creator.creatorType === 'interviewee')) {
         authors.push(creator.lastName + ', ' + creator.firstName);
       } else if (creator.creatorType === 'editor') {
         editors.push(creator.lastName + ', ' + creator.firstName);
       } 
     }
-
+    //define vars used for chicago citations
     var title = item.data.title;
     var publisher = item.data.publisher;
     var place = item.data.place;
@@ -105,16 +101,15 @@
     var url = item.data.url;
 
     
-
     // Erstellen eintrag im Chicago-Stil basierend auf der Eintragsart
     var entry = formatAuthors(authors) + '. ' + year + '. "' + title + '". ';
     //console.log(item.data)
     if ((type === 'book')) {
       if (editors.length === 0){
-        entry = formatAuthors(authors) +'. '+ year + '. <span class="italic">' + title + '</span>. ';
+        entry = formatAuthors(authors) +' (Hrsg.). '+ year + '. <span class="italic">' + title + '</span>. ';
         //console.log("authors empty:",editors,title);
       } if (authors.length === 0){
-        entry = formatAuthors(editors) +'. (Hrsg.). '+ year + '. <span class="italic">' + title + '</span>. ';
+        entry = formatAuthors(editors) +' (Hrsg.). '+ year + '. <span class="italic">' + title + '</span>. ';
         //console.log("editors empty:",authors,title);
     //   } if ((authors.length !== 0) && (editors.length !== 0)){
     //     console.log("else if statement",editors)
@@ -133,7 +128,7 @@
         }
         entry += series + ". ";
       }
-      if (publisher) {
+      if (publisher){
         entry += publisher + '. ';
       }
       if (url){
@@ -146,9 +141,7 @@
       var volume = item.data.volume;
       var doi = item.data.DOI;
       var pages = item.data.pages;
-
       var edition = item.data.collectionNumber;
-
       var pagesExist = pages in data;
       var editionExists = edition in data;
       var doiExists = item.data.DOI !== undefined;
@@ -168,38 +161,33 @@
       if (pages){
         entry += pages + '. ';
       }
-      if (doi.length) {
-        
+      if (doi.length) {  
         entry += 'DOI: <a href="https://doi.org/' + doi + '" target="_blank" >' + doi + '</a>.';
-
       } else if (url) {
         entry += '<a href="' + url + '">' + url + '</a>.';
       }
-      console.log("JournalArticle mit Editoren: ",entry)
+     // console.log("JournalArticle mit Editoren: ",entry)
     } else if (type === 'conferencePaper') {
 
       var proceedings = item.data.proceedingsTitle;
       var url = item.data.url;
       var doi = item.data.DOI;
       var event = item.data.event;
-
       var pagesExist = pages in data;
       var doiExists = item.data.DOI !== undefined;
       var proceedingsExist = proceedings in data;
-
 
       //  console.log("entry try ",entry);
     
       if ((proceedings) && (editors.length !== 0) && (editors.sort() !== authors.sort())){
         entry += 'In <span class="italic">' + proceedings +'</span>, herausgegeben von '+formatAuthors (editors)+", ";
-    
-      } else if ((proceedings) && (editors.length === 0)){
+      } 
+      else if ((proceedings) && (editors.length === 0)){
         entry += 'In <span class="italic">' + proceedings +'</span>. ';
       }
       if (pages){
         entry += pages+'. ';
       }
-   
       if (place) {
         entry += place + '. ';
       }
@@ -208,7 +196,7 @@
       } else if (url) {
         entry += '<a href="' + url + '" target="_blank" >' + url + '</a>.';
       }
-      console.log("confP mit Editoren: ",entry)
+   //   console.log("confP mit Editoren: ",entry)
 
     } else if (type === 'bookSection'){
       var booktitle = item.data.bookTitle;
@@ -218,12 +206,9 @@
       } else if (editors.length === 0){
         entry += 'In <span class="italic">' + booktitle +'</span>. ';
       }
-
-      //entry += 'In <span class="italic">' + booktitle +"</span>, ";
       if (pages){
         entry += pages + ". ";
       }
-
       if ((place) && (publisher)){
         entry += place + ': ' + publisher + '. ';
       } 
@@ -233,7 +218,7 @@
       if (url) {
         entry += '<a href="' + url + '" target="_blank" >' + url + '</a>.';
       }
-      console.log("Booksection mit Editoren: ",entry)
+      //console.log("Booksection mit Editoren: ",entry)
 
      // console.log(item.data);
     } else if  (type === 'document'){
@@ -248,12 +233,9 @@
       var rep = item.data.repository;
       var doi = item.data.DOI;
       entry += rep + '. <a href="' + url + '">' + url + '</a>.';
-
-
     } else if (type==='computerProgram') {
       var company = item.data.company;
       var url = item.data.url;
-
       if (company) {
         entry += company + ". ";
       } 
@@ -261,11 +243,9 @@
         entry += '<a href="' + url + '" target="_blank">' + url + '</a>.';
       }
 //      console.log(item.data);
-
     } else if (type === 'blogPost'){
       var blogTitle = item.data.blogTitle;
       entry += blogTitle + ". " + '<a href="' + url + '" target="_blank" >' + url + '</a>.';
-    
     }
     else {
       var url = item.data.url;
@@ -276,9 +256,7 @@
 
     }
 
-
-    // Dictionary Jahr: Eintrag
-   
+    // Dictionary mit Einträgen
     if (!(pubType in entriesByPub)) {
       entriesByPub[pubType] = [entry];
     } else {
@@ -286,15 +264,13 @@
     }
   }
 
-
     /* Gib die Summe der Publikationen aus
     var sumHeader = document.createElement('h2');
     sumHeader.innerText = 'Summe der Publikationen: ' + publicationCount;
     sumHeader.style.paddingLeft = '3em';
-    document.body.prepend(sumHeader); // Am Anfang des Dokuments einfügen
-  
-*/
+    document.body.prepend(sumHeader); // Am Anfang des Dokuments einfügen*/
 
+    //Sortierteil für Darstellung auf der Webseite
 var pubTypes = Object.keys(entriesByPub);
 var sortedEntries = [];
 
@@ -306,7 +282,7 @@ function compareAuthors(a, b) {
     return -1;
   } else if (lastNameA > lastNameB) {
     return 1;
-  } else {
+  } 
     // Wenn die Nachnamen gleich sind, nach Jahr sortieren
     var yearA = a.year;
     var yearB = b.year;
@@ -318,9 +294,10 @@ function compareAuthors(a, b) {
     } else {
       return 0;
     }
-  }
+  
 }
 
+//Sortierung auf der WEbseite nach Publikationstypen
 function comparePubTypes(a, b) {
   var order = {
     'Monographie':1,
@@ -334,7 +311,6 @@ function comparePubTypes(a, b) {
     'document': 7,
     'dataset': 8,
     'computerProgram': 9
-    
   };
 
   if (order[a] < order[b]) {
@@ -350,7 +326,7 @@ pubTypes.sort(comparePubTypes);
 
 pubTypes.forEach(function(pubType) {
   var renamedPubType;
-
+  //Rename Überschriften
 
   if (pubType === 'book') {
     renamedPubType = 'Herausgeberschaften';
@@ -384,7 +360,6 @@ pubTypes.forEach(function(pubType) {
         });
       });
     });
-
 
 
 var currentPubType = null;

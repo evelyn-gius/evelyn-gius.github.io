@@ -111,10 +111,10 @@
     //console.log(item.data)
     if ((type === 'book')) {
       if (editors.length === 0){
-        entry = formatAuthors(authors) +'. '+ year + '. <span class="italic">' + title + '</span>. ';
+        entry = formatAuthors(authors) +' (eds.). '+ year + '. <span class="italic">' + title + '</span>. ';
         //console.log("authors empty:",editors,title);
       } if (authors.length === 0){
-        entry = formatAuthors(editors) +'. (eds.). '+ year + '. <span class="italic">' + title + '</span>. ';
+        entry = formatAuthors(editors) +' (eds.). '+ year + '. <span class="italic">' + title + '</span>. ';
         //console.log("editors empty:",authors,title);
     //   } if ((authors.length !== 0) && (editors.length !== 0)){
     //     console.log("else if statement",editors)
@@ -283,6 +283,7 @@
       entriesByPub[pubType].push(entry);
     }
   }
+  console.log(publicationCount)
 
 
     /* Gib die Summe der Publikationen aus
