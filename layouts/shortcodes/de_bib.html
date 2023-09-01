@@ -30,6 +30,8 @@
         width: 50px;
         height: 50px;
         animation: spin 2s linear infinite;
+        margin-top: 30%;
+        margin-left: 50%;
       }
 
       @keyframes spin {
@@ -91,9 +93,13 @@
         } else {
           // Keine weiteren Seiten vorhanden, verarbeite die gesammelten Daten
           processData(allData);
+          hideLoadingIndicator()
         }
       })
-      .catch(error => console.error(error));
+      .catch(error => {
+        console.error(error);
+        hideLoadingIndicator();
+      });
   }
   
   // Funktion zum Verarbeiten der gesammelten Daten
