@@ -1,26 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
-<style>
-    .italic {
-      font-style: italic;
-    }
-    .doi-link {
-      color: blue;
-      text-decoration: underline;
-      cursor: pointer;
-    }
-  </style>
+    <style>
+      .italic {
+        font-style: italic;
+      }
+      .doi-link {
+        color: blue;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .loader {
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #3498db;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        animation: spin 2s linear infinite;
+      }
+
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
 </head>
 <main class="inner-main">
 <body>
   <div class = "main-inner">
     <div id="shortcode-content"> </div> 
+    <div id="loading-indicator" style="display: none;">
+      <div class="loader"></div>
+    </div>
+    
   </div>
 
 <script>// API-Schlüssel und Bibliotheks-ID einsetzen
   
-     
+  function showLoadingIndicator() {
+  var loadingIndicator = document.getElementById('loading-indicator');
+  loadingIndicator.style.display = 'block';
+}
+
+function hideLoadingIndicator() {
+  var loadingIndicator = document.getElementById('loading-indicator');
+  loadingIndicator.style.display = 'none';
+}     
     var url = 'https://api.zotero.org/users/'+libraryId+'/collections/'+collectionId+'/items?format=json&key='+apiKey+ '&limit=100';
  //https://www.zotero.org/momamari/collections/2XU3799V/items?format=json&key=Njmwb0MPtJRSVSgyysrwy9jr
     var apiKey = 'QrDAC57esCVVLi1EaMRg8OJE';
@@ -34,51 +59,30 @@
     var baseUrl = 'https://api.zotero.org/groups/' + groupID + '/collections/' + collectionId + '/items';
     var allData = []; // Array zur Speicherung aller Einträge
 
-    // function fetchData(page) {
-    // var url = baseUrl + '?format=json&key=' + apiKey + '&limit=100&start=' + (page * 100);
+  function fetchData(page) {
+    showLoadingIndicator(); // Zeige den Ladezirkel an
+
+    var url = baseUrl + '?format=json&key=' + apiKey + '&limit=100&start=' + (page * 100);
 
     // Datenabruf
-  //   fetch(url)
-  //     .then(response => response.json())
-  //     .then(data => {
-  //       // Füge die aktuellen Einträge dem allData-Array hinzu
-  //       allData = allData.concat(data);
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        // Füge die aktuellen Einträge dem allData-Array hinzu
+        allData = allData.concat(data);
 
-  //       // Überprüfe, ob weitere Seiten vorhanden sind
-  //       if (data.length === 100) {
-  //         // Rufe nächste Seite ab
-  //         fetchData(page + 1);
-  //       } else {
-  //         // Keine weiteren Seiten vorhanden, verarbeite die gesammelten Daten
-  //         processData(allData);
-  //       }
-  //     })
-  //     .catch(error => console.error(error));
-  // }
-
-  function fetchData(page) {
-  var entriesPerPage = 20; // Anzahl der Einträge pro Abschnitt
-  var startIndex = page * entriesPerPage;
-  var endIndex = startIndex + entriesPerPage;
-
-  var url = baseUrl + '?format=json&key=' + apiKey + '&limit=' + entriesPerPage + '&start=' + startIndex;
-
-  // Datenabruf
-  fetch(url)
-    .then(response => response.json())
-    .then(data => {
-      // Überprüfe, ob weitere Seiten vorhanden sind
-      if (data.length > 0) {
-        // Rufe die processData-Funktion auf, um die aktuellen Einträge zu verarbeiten
-        processData(data);
-
-        // Rufe die nächste Seite ab
-        fetchData(page + 1);
-      }
-    })
-    .catch(error => console.error(error));
-}
-
+        // Überprüfe, ob weitere Seiten vorhanden sind
+        if (data.length === 100) {
+          // Rufe nächste Seite ab
+          fetchData(page + 1);
+        } else {
+          // Keine weiteren Seiten vorhanden, verarbeite die gesammelten Daten
+          processData(allData);
+          hideLoadingIndicator(); // Blende den Ladezirkel aus
+        }
+      })
+      .catch(error => console.error(error)); hideLoadingIndicator();
+  }
   
   // Funktion zum Verarbeiten der gesammelten Daten
   function processData(data) {
@@ -290,8 +294,6 @@
     } else {
       entriesByPub[pubType].push(entry);
     }
-    appendEntriesToPage(entriesByPub);
-
   }
 
     /* Gib die Summe der Publikationen aus
@@ -477,31 +479,7 @@ function getYearFromDate(dateString) {
     return '';
   }
   
- // fetchData(0);
-
- function fetchData(page) {
-  var entriesPerPage = 20; // Anzahl der Einträge pro Abschnitt
-  var startIndex = page * entriesPerPage;
-  var endIndex = startIndex + entriesPerPage;
-
-  var url = baseUrl + '?format=json&key=' + apiKey + '&limit=' + entriesPerPage + '&start=' + startIndex;
-
-  // Datenabruf
-  fetch(url)
-    .then(response => response.json())
-    .then(data => {
-      // Überprüfe, ob weitere Seiten vorhanden sind
-      if (data.length > 0) {
-        // Rufe die processData-Funktion auf, um die aktuellen Einträge zu verarbeiten
-        processData(data);
-
-        // Rufe die nächste Seite ab
-        fetchData(page + 1);
-      }
-    })
-    .catch(error => console.error(error));
-}
-
+  fetchData(0);
 
   // Eventlistener für DOI-Links
   /*
