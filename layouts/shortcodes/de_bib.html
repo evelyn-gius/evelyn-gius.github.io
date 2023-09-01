@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      .italic {
-        font-style: italic;
+<style>
+    .italic {
+      font-style: italic;
+    }
+    .doi-link {
+      color: blue;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    #loading-indicator {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.7); /* Hintergrund mit Transparenz, um den Inhalt zu überdecken */
+        display: flex;
+        justify-content: center; /* Horizontal zentriert */
+        align-items: center; /* Vertikal zentriert */
+        z-index: 9999; /* Stellen Sie sicher, dass der Ladeindikator über anderen Inhalten liegt */
       }
-      .doi-link {
-        color: blue;
-        text-decoration: underline;
-        cursor: pointer;
-      }
+
       .loader {
         border: 4px solid #f3f3f3;
-        border-top: 4px solid #3498db;
+        border-top: 4px solid #1c9c38;
         border-radius: 50%;
-        width: 20px;
-        height: 20px;
+        width: 50px;
+        height: 50px;
         animation: spin 2s linear infinite;
       }
 
@@ -23,7 +36,7 @@
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
       }
-    </style>
+  </style>
 </head>
 <main class="inner-main">
 <body>
@@ -37,15 +50,7 @@
 
 <script>// API-Schlüssel und Bibliotheks-ID einsetzen
   
-  function showLoadingIndicator() {
-  var loadingIndicator = document.getElementById('loading-indicator');
-  loadingIndicator.style.display = 'block';
-}
-
-function hideLoadingIndicator() {
-  var loadingIndicator = document.getElementById('loading-indicator');
-  loadingIndicator.style.display = 'none';
-}     
+     
     var url = 'https://api.zotero.org/users/'+libraryId+'/collections/'+collectionId+'/items?format=json&key='+apiKey+ '&limit=100';
  //https://www.zotero.org/momamari/collections/2XU3799V/items?format=json&key=Njmwb0MPtJRSVSgyysrwy9jr
     var apiKey = 'QrDAC57esCVVLi1EaMRg8OJE';
@@ -58,10 +63,18 @@ function hideLoadingIndicator() {
 
     var baseUrl = 'https://api.zotero.org/groups/' + groupID + '/collections/' + collectionId + '/items';
     var allData = []; // Array zur Speicherung aller Einträge
+    function showLoadingIndicator() {
+      var loadingIndicator = document.getElementById('loading-indicator');
+      loadingIndicator.style.display = 'block';
+    }
+
+    function hideLoadingIndicator() {
+      var loadingIndicator = document.getElementById('loading-indicator');
+      loadingIndicator.style.display = 'none';
+    }
 
   function fetchData(page) {
     showLoadingIndicator(); // Zeige den Ladezirkel an
-
     var url = baseUrl + '?format=json&key=' + apiKey + '&limit=100&start=' + (page * 100);
 
     // Datenabruf
@@ -78,10 +91,9 @@ function hideLoadingIndicator() {
         } else {
           // Keine weiteren Seiten vorhanden, verarbeite die gesammelten Daten
           processData(allData);
-          hideLoadingIndicator(); // Blende den Ladezirkel aus
         }
       })
-      .catch(error => console.error(error)); hideLoadingIndicator();
+      .catch(error => console.error(error));
   }
   
   // Funktion zum Verarbeiten der gesammelten Daten
