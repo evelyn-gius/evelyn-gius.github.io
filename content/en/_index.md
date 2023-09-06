@@ -12,7 +12,7 @@ I am professor of Digital Philology and Modern German Literary Studies at the De
 
 My research interest lies in manual annotation, narratological analysis, and particularly in the segmentation of texts, methodological questions of automation and the automatability of literary text analysis, as well as the operationalization of approaches from the humanities.
 
-In addition to our work in research projects, my lab and I provide two well-established services in the Digital Humanities: the collaborative annotation software [CATMA](https://catme.de/), developed since 2008, and the [fortext.net](https://fortext.net) portal, which offers a low-threshold introduction to methods and tools of the Digital Humanities.
+In addition to our work in research projects, I provide two established services to numerous users in the Digital Humanities with my lab: the collaborative annotation software [CATMA](https://catme.de/), developed since 2008, and the [fortext.net](https://fortext.net) portal, which offers a low-threshold introduction to methods and tools of the Digital Humanities.
 
 
 
