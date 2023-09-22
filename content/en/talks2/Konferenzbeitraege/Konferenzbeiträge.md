@@ -7,9 +7,16 @@ parent: talks2
 ---
 
 
+- „From Narrativity to Relevance - A Computational Approach Based on Events“ (with Haimo Stiemer, Hans Ole Hatzel, and Chris Biemann). Conference Presentation at the IGEL 2023, Monopoli, Italy, 30.09.2023.
+- „Explicit Operationalization“ (with Dominik Gerstorfer, and Haimo Stiemer. Presentation at the workshop „Measuring Meaning, Computing Concepts“, Köln, September 25, 2023.
+- „Workshop CATMA Featuring GitMA and Vis-A-Vis.“ (with Dominik Gerstorfer, Malte Meister, Ophir Münz-Manor, and Mareike Schumacher). Workshop presented at the DH2023, Graz, Austria, 14.07.2023.
+- „Towards a Conflict Heuristic: Detecting Conflict in Literary Texts By Adapting Word Embedding Based Sentiment Analysis“ (with Julian Häußler). Conference Presentation presented at the DH2023, Graz, Austria, 14.07 2023.
+- „Uncovering Principles of Sustainability in Literature“ (with Mareike Schumacher). Conference Presentation presented at the DH2023, Graz, Austria, 14.07 2023.
+- „The Journal of Computational Literary Studies (JCLS). Community, Review, and Editorial Workflow in an Open Access Journal“ (with Peer Trilcke, Christof Schöch, Dominik Gerstorfer, Svenja Guhr, Elodie Ripoll, and Henny Sluyter-Gäthje). Poster Presentation presented at the DH2023, Graz, Austria, 14.07 2023.
 - „Narrativität und Handlung“ (mit Hans Ole Hatzel, Haimo Stiemer und Chris Biemann), Konferenz DHd2023, Trier/Luxemburg, 13.–17.03.2023.
 - „Konflikte als Theorie, Modell und Text – Ein kategorientheoretischer Zugang zur Operationalisierung von Konflikten“ (mit Dominik Gerstorfer), Konferenz DHd2023, Trier/Luxemburg, 13.–17.03.2023.
 - „Opening a Journal. Erfahrungen bei der Gründung des Journal of Computational Literary Studies“ (mit Peer Trilcke, Christof Schöch, Dominik Gerstorfer, Svenja Guhr, Elodie Ripoll und Henny Sluyter-Gäthje), Konferenz DHd2023, Trier/Luxemburg, 13.–17.03.2023.
+- - „Stories of Sustainability“ (with Itay Marienberg-Milikowsky and Mareike Schumacher). Conference Presentation presented at the DHNB 2023, Stavanger, Bergen, Oslo and Online, 10.03 2023.
 - „Korpushermeneutik aus Sicht der digitalen Literaturwissenschaft: Zugänge zwischen Textoberfläche und Tiefenstruktur“, Panel Germanistische Korpus-Hermeneutik – digitale Methodik und Mehrdeutigkeiten, Germanistentag 2022, Universität Paderborn, 27.09.2022.
 - „Salience in Literary Texts. A combined Approach to the Relevance of Passages” (mit Frederik Arnold, Benjamin Fiechter, Robert Jäschke, Steffen Martus und Michael Vauth). Konferenz Digital Humanities 2022, Tokio (online), 25.-29.07.2022.
 - „Shared Tasks in Computational Literary Studies: Guideline Creation, Annotation and Text Generation for the Analysis of Narrative Levels” (mit Svenja Guhr, Nils Reiter und Sina Zarrieß), Konferenz Digital Humanities 2022, Tokio (online), 25.-29.07.2022.
