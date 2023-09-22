@@ -5,6 +5,11 @@ draft: false
 
 ---
 
+- „Time, Space, and Text: Perspectives from a Computational Narratology.“ Keynote at the ENN7 Rhythm, Speed, Path: Spatiotemporal Experiences in Narrative, Poetry, and Drama, Monopoli, Italy, 28.09.2023.
+- „ChatGPT Als Sparringstool in Der Lehre.“ ChatGPT & Co. – KI in der Hochschullehre, Fachbereich 2, TU Darmstadt, 29.06.2023.
+- „Events as Minimal Units in Prose – A Narrative Theory-Driven Approach to Event Classification and Narrativity.“ Workshop „Narratology, Literature & Large Language Models,“ École Normale Supérieure, Paris, 28.06.2023.
+- „Annotating Texts and Processing Annotated Texts with CATMA and GitMA.“ Summer School Digital Methods in the Humanities, UNIL, Lausanne, 13.06.2023.
+- „Operationalizing Gender in Computational Literary Studies.“ Invited talk presented at the lecture series Women and Gender in Literature, Koç University/online, Istanbul, 31.05.2023.
 - „Approaching the History of Literature as a (Digital) History of Conflict”, Information Studies Colloquium, UCLA, Los Angeles/online, 04.05.2023. 
 - „ChatGPT in der Lehre. Wie KI und (geisteswissenschaftliche) Fachexpertise verbinden?“, Workshop Intelligente Lernprozesse mit künstlicher Intelligenz: Hochschullehre im Veränderungsprozess, Hochschuldidaktische Arbeitsstelle, TU Darmstadt/online, 17.04.2023.
 - „Computational Literary Studies as an Emerging Field”, Veranstaltung Redefining Reading? Computational Literary Studies in Israel: Scholarship, Communities, Beit HaSofrim, Beer Sheva, 08.02.2023.
