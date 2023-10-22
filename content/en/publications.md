@@ -6,10 +6,10 @@ draft: false
 ---
 
 ### Editorial activity
-- Co-editor of the international open access journal <em>Journal of Computational Literary Studies</em>
-- Co-editor of the series <em>Digitale Literaturwissenschaft</em> (J.B. Metzler/Springer Nature)
+- Co-editor of the international open access journal [*Journal of Computational Literary Studies*](https://jcls.io) 
+- Co-editor of the series *Digitale Literaturwissenschaft*](https://www.springer.com/series/16777)  (J.B. Metzler/Springer Nature)
 - Co-editor of <em> forTEXT Hefte </em> (expected to appear from the end of 2023)
-- Co-editor of the open access series <em>Working Papers in Digital Philology</em> and <em>Evolving Scholarship in Digital Philology</em> at the Technical University of Darmstadt
+- Co-editor of the open access series [Working Papers in Digital Philology](https://www.ulb.tu-darmstadt.de/tujournals/0003.en.jsp) and [Evolving Scholarship in Digital Philology](https://www.ulb.tu-darmstadt.de/tujournals/0002.en.jsp) at the Technical University of Darmstadt
 
 ## Publications
 {{< en_bib >}}
