@@ -4,13 +4,13 @@ date: false
 draft: false
 
 ---
-- „Towards validity in cultural analytics. Defining and analyzing conflict in prose." LitLab, Stanford University, 13.11.2023.
-- „Time, Space, and Text: Perspectives from a Computational Narratology.“ Keynote at the ENN7 Rhythm, Speed, Path: Spatiotemporal Experiences in Narrative, Poetry, and Drama, Monopoli, Italy, 28.09 2023.
+- „Towards validity in cultural analytics. Defining and analyzing conflict in prose." LitLab, Stanford University, November 13, 2023.
+- „Time, Space, and Text: Perspectives from a Computational Narratology.“ Keynote at the ENN7 Rhythm, Speed, Path: Spatiotemporal Experiences in Narrative, Poetry, and Drama, Monopoli, Italy, September 28, 2023.
 - „ChatGPT Als Sparringstool in Der Lehre.“ Presented at the ChatGPT & Co. – KI in der Hochschullehre, Fachbereich 2, TU Darmstadt, June 29, 2023.
 - „Events as Minimal Units in Prose – A Narrative Theory-Driven Approach to Event Classification and Narrativity.“ Invited talk presented at the workshop „Narratology, Literature & Large Language Models,“ École normale supérieure, Paris, France, June 28, 2023.
 - „Annotating Texts and Processing Annotated Texts with CATMA and GitMA.“ Invited workshop presented at the Summer School Digital Methods in the Humanities, UNIL, Lausanne, Switzerland, June 13, 2023.
 - „Operationalizing Gender in Computational Literary Studies.“ Invited talk presented at the lecture series Women and Gender in Literature, Koç University/online, Istanbul, Turkey, May 31, 2023.
-„Approaching the History of Literature as a (Digital) History of Conflict”, Information Studies Colloquium, UCLA, Los Angeles/online, 04.05.2023. 
+„Approaching the History of Literature as a (Digital) History of Conflict”, Information Studies Colloquium, UCLA, Los Angeles/online, Mai 4, 2023. 
 - „ChatGPT in der Lehre. Wie KI und (geisteswissenschaftliche) Fachexpertise verbinden?“, Workshop Intelligente Lernprozesse mit künstlicher Intelligenz: Hochschullehre im Veränderungsprozess, Hochschuldidaktische Arbeitsstelle, TU Darmstadt/online, 17.04.2023.
 - „Computational Literary Studies as an Emerging Field”, Veranstaltung Redefining Reading? Computational Literary Studies in Israel: Scholarship, Communities, Beit HaSofrim, Beer Sheva, 08.02.2023.
 - „Operationalization with Applied Category Theory and Levels of (Dis)Agreement” (mit Dominik Gerstorfer), Workshop Mind the Gap: (Dis)agreement Evaluation in Computational Literary Studies, LitLab, Ben Gurion-Universität, Beer Sheva, 06.02.2023.
