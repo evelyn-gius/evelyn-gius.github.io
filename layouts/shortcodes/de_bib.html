@@ -334,7 +334,6 @@ function compareAuthors(a, b) {
   } else if (lastNameA > lastNameB) {
     return 1;
   } else {
-    // was
     // Wenn die Nachnamen gleich sind, nach Jahr sortieren
     var yearA = a.year;
     var yearB = b.year;
@@ -405,6 +404,7 @@ pubTypes.forEach(function(pubType) {
 
   var entries = entriesByPub[pubType];
   entries.sort(); // Sortieren der Einträge innerhalb des Publikationstyps
+  entries.sort(compareAuthors);
 
       entries.forEach(function(entry) {
         sortedEntries.push({
