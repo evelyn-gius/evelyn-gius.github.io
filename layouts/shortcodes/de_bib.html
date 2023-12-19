@@ -335,8 +335,8 @@ function compareAuthors(a, b) {
     return 1;
   } else {
     // Wenn die Nachnamen gleich sind, nach Jahr sortieren
-    var yearA = a.year;
-    var yearB = b.year;
+    var yearA = parseInt(a.year);
+    var yearB = parseInt(b.year);
 
     if (yearA < yearB) {
       return -1;
