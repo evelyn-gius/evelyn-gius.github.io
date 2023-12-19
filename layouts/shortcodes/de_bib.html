@@ -338,9 +338,9 @@ function compareAuthors(a, b) {
     var yearA = a.year;
     var yearB = b.year;
 
-    if (yearA > yearB) {
+    if (yearA < yearB) {
       return -1;
-    } else if (yearA < yearB) {
+    } else if (yearA > yearB) {
       return 1;
     } else {
       return 0;
