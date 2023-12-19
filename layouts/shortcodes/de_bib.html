@@ -417,8 +417,7 @@ pubTypes.forEach(function(pubType) {
 
   var entries = entriesByPub[pubType];
   entries.sort(); // Sortieren der Einträge innerhalb des Publikationstyps
-  entries.sort(compareYears);
-  console.log('Sorted entries:', entries);
+  
       entries.forEach(function(entry) {
         sortedEntries.push({
           pubType: renamedPubType,
