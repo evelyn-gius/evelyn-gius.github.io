@@ -403,7 +403,7 @@ pubTypes.forEach(function(pubType) {
   }
 
   var entries = entriesByPub[pubType];
-  //entries.sort(); // Sortieren der Einträge innerhalb des Publikationstyps
+  entries.sort(); // Sortieren der Einträge innerhalb des Publikationstyps
   entries.sort(compareAuthors);
       entries.forEach(function(entry) {
         sortedEntries.push({
