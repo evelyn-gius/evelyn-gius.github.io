@@ -7,7 +7,7 @@ draft: false
 - „Complexity“ Panelist at the workshop Mathematics of Small Data, Berlin Mathematics Research Center MATH+, Berlin, January 18, 2024.
 - „From Theory to Text in Computational Literary Studies Modeling a Bridge between the Gap“. Cultural Analytics Group, UC Berkeley, USA, November 18, 2023.
 - „Introduction to CATMA 7“ (with Svenja Guhr). CESTA, Stanford University, USA, November 16, 2023.
-- „Towards validity in cultural analytics. Defining and analyzing conflict in prose." LitLab, Stanford University, November 13, 2023.
+- „Towards validity in cultural analytics. Defining and analyzing conflict in prose." Literary Lab, Stanford University, USA, November 13, 2023.
 - „Time, Space, and Text: Perspectives from a Computational Narratology.“ Keynote at the ENN7 Rhythm, Speed, Path: Spatiotemporal Experiences in Narrative, Poetry, and Drama, Monopoli, Italy, September 28, 2023.
 - „Künstliche Intelligenz und literaturwissenschaftliche Expertise“ (with Dominik Gerstorfer and Haimo Stiemer). Conference „KI – Text und Geltung. Wie verändern KI-Textgeneratoren wissenschaftliche Diskurse?“, Darmstadt, August 26,2023.
 - „ChatGPT Als Sparringstool in Der Lehre.“ Presented at the ChatGPT & Co. – KI in der Hochschullehre, Fachbereich 2, TU Darmstadt, June 29, 2023.
