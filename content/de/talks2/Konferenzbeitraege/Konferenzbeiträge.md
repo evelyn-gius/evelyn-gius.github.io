@@ -5,14 +5,14 @@ draft: false
 parent: talks2
 
 ---
-
-
-- „From Narrativity to Relevance – A Computational Approach Based on Events“ (mit Haimo Stiemer, Hans Ole Hatzel und Chris Biemann). Vortrag IGEL 2023, Monopoli, Italy, 30.09 2023.
-- „Explicit Operationalization“ (mit Dominik Gerstorfer und Haimo Stiemer). Vortrag im Workshop „Measuring Meaning, Computing Concepts“, Köln, September 25, 2023.
-„Workshop CATMA Featuring GitMA and Vis-A-Vis.“ (mit Dominik Gerstorfer, Malte Meister, Ophir Münz-Manor und Mareike Schumacher). Workshop DH2023, Graz, 10.-14.07 2023.
-- „Towards a Conflict Heuristic: Detecting Conflict in Literary Texts By Adapting Word Embedding Based Sentiment Analysis“ (mit Julian Häußler). Vortrag DH2023, Graz, 10.-14.07 2023.
-- „Uncovering Principles of Sustainability in Literature“ (mit Mareike Schumacher). Vortrag DH2023, Graz, 10.-14.07 2023.
-- „The Journal of Computational Literary Studies (JCLS). Community, Review, and Editorial Workflow in an Open Access Journal“ (mit Peer Trilcke, Christof Schöch, Dominik Gerstorfer, Svenja Guhr, Elodie Ripoll und Henny Sluyter-Gäthje). Poster DH2023, Graz, 10.-14.07 2023.
+- „Operationalizing and Measuring Conflict in German Novels“ (mit Julian Häußler). CHR2023, Paris, 07.12.2023
+- „From Narrativity to Relevance – A Computational Approach Based on Events“ (mit Haimo Stiemer, Hans Ole Hatzel und Chris Biemann). Vortrag IGEL 2023, Monopoli, Italy, 30.09.2023.
+- „Explicit Operationalization“ (mit Dominik Gerstorfer und Haimo Stiemer). Vortrag im Workshop „Measuring Meaning, Computing Concepts“, Köln, 25.09.2023.
+- „Künstliche Intelligenz und literaturwissenschaftliche Expertise“ (mit Dominik Gerstorfer und Haimo Stiemer). Vortrag auf der Tagung „KI – Text und Geltung. Wie verändern KI-Textgeneratoren wissenschaftliche Diskurse?“, Darmstadt, 26.08.2023.
+- „Workshop CATMA Featuring GitMA and Vis-A-Vis.“ (mit Dominik Gerstorfer, Malte Meister, Ophir Münz-Manor und Mareike Schumacher). Workshop DH2023, Graz, 10.-14.07.2023.
+- „Towards a Conflict Heuristic: Detecting Conflict in Literary Texts By Adapting Word Embedding Based Sentiment Analysis“ (mit Julian Häußler). Vortrag DH2023, Graz, 10.-14.07.2023.
+- „Uncovering Principles of Sustainability in Literature“ (mit Mareike Schumacher). Vortrag DH2023, Graz, 10.-14.07.2023.
+- „The Journal of Computational Literary Studies (JCLS). Community, Review, and Editorial Workflow in an Open Access Journal“ (mit Peer Trilcke, Christof Schöch, Dominik Gerstorfer, Svenja Guhr, Elodie Ripoll und Henny Sluyter-Gäthje). Poster DH2023, Graz, 10.-14.07.2023.
 - „Narrativität und Handlung“ (mit Hans Ole Hatzel, Haimo Stiemer und Chris Biemann), Konferenz DHd2023, Trier/Luxemburg, 13.–17.03.2023.
 - „Konflikte als Theorie, Modell und Text – Ein kategorientheoretischer Zugang zur Operationalisierung von Konflikten“ (mit Dominik Gerstorfer), Konferenz DHd2023, Trier/Luxemburg, 13.–17.03.2023.
 - „Opening a Journal. Erfahrungen bei der Gründung des Journal of Computational Literary Studies“ (mit Peer Trilcke, Christof Schöch, Dominik Gerstorfer, Svenja Guhr, Elodie Ripoll und Henny Sluyter-Gäthje), Konferenz DHd2023, Trier/Luxemburg, 13.–17.03.2023.
