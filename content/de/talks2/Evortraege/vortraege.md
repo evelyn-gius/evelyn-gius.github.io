@@ -5,7 +5,10 @@ draft: false
 
 ---
 
-- „Towards validity in cultural analytics. Defining and analyzing conflict in prose." LitLab, Stanford University, 13.11.2023.
+- „Complexity“ Panelist at the workshop Mathematics of Small Data, Berlin Mathematics Research Center MATH+, Berlin, 18.01.2024.
+- „From Theory to Text in Computational Literary Studies Modeling a Bridge between the Gap“. Cultural Analytics Group, UC Berkeley, USA, 18.11.2023
+- „Introduction to CATMA 7“ (mit Svenja Guhr). CESTA, Stanford University, USA, 16.11.2023
+- „Towards validity in cultural analytics. Defining and analyzing conflict in prose." LitLab, Stanford University, 13.11.2023.- „Towards validity in cultural analytics. Defining and analyzing conflict in prose." LitLab, Stanford University, 13.11.2023.
 - „Time, Space, and Text: Perspectives from a Computational Narratology.“ Keynote at the ENN7 Rhythm, Speed, Path: Spatiotemporal Experiences in Narrative, Poetry, and Drama, Monopoli, Italy, 28.09.2023.
 - „ChatGPT Als Sparringstool in Der Lehre.“ ChatGPT & Co. – KI in der Hochschullehre, Fachbereich 2, TU Darmstadt, 29.06.2023.
 - „Events as Minimal Units in Prose – A Narrative Theory-Driven Approach to Event Classification and Narrativity.“ Workshop „Narratology, Literature & Large Language Models,“ École Normale Supérieure, Paris, 28.06.2023.
