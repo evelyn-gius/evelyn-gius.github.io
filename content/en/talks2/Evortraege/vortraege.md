@@ -9,6 +9,7 @@ draft: false
 - „Introduction to CATMA 7“ (with Svenja Guhr). CESTA, Stanford University, USA, November 16, 2023.
 - „Towards validity in cultural analytics. Defining and analyzing conflict in prose." LitLab, Stanford University, November 13, 2023.
 - „Time, Space, and Text: Perspectives from a Computational Narratology.“ Keynote at the ENN7 Rhythm, Speed, Path: Spatiotemporal Experiences in Narrative, Poetry, and Drama, Monopoli, Italy, September 28, 2023.
+- „Künstliche Intelligenz und literaturwissenschaftliche Expertise“ (with Dominik Gerstorfer and Haimo Stiemer). Conference „KI – Text und Geltung. Wie verändern KI-Textgeneratoren wissenschaftliche Diskurse?“, Darmstadt, August 26,2023.
 - „ChatGPT Als Sparringstool in Der Lehre.“ Presented at the ChatGPT & Co. – KI in der Hochschullehre, Fachbereich 2, TU Darmstadt, June 29, 2023.
 - „Events as Minimal Units in Prose – A Narrative Theory-Driven Approach to Event Classification and Narrativity.“ Invited talk presented at the workshop „Narratology, Literature & Large Language Models,“ École normale supérieure, Paris, France, June 28, 2023.
 - „Annotating Texts and Processing Annotated Texts with CATMA and GitMA.“ Invited workshop presented at the Summer School Digital Methods in the Humanities, UNIL, Lausanne, Switzerland, June 13, 2023.
