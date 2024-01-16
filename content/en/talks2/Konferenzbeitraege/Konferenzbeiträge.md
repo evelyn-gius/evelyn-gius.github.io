@@ -6,9 +6,10 @@ parent: talks2
 
 ---
 
-
+- „Operationalizing and Measuring Conflict in German Novels“ (with Julian Häußler). CHR2023, Paris, 07.12.2023
 - „From Narrativity to Relevance - A Computational Approach Based on Events“ (with Haimo Stiemer, Hans Ole Hatzel, and Chris Biemann). Conference Presentation at the IGEL 2023, Monopoli, Italy, 30.09.2023.
 - „Explicit Operationalization“ (with Dominik Gerstorfer, and Haimo Stiemer. Presentation at the workshop „Measuring Meaning, Computing Concepts“, Köln, September 25, 2023.
+- „Künstliche Intelligenz und literaturwissenschaftliche Expertise“ (with Dominik Gerstorfer and Haimo Stiemer). Conference „KI – Text und Geltung. Wie verändern KI-Textgeneratoren wissenschaftliche Diskurse?“, Darmstadt, August 26,2023.
 - „Workshop CATMA Featuring GitMA and Vis-A-Vis.“ (with Dominik Gerstorfer, Malte Meister, Ophir Münz-Manor, and Mareike Schumacher). Workshop presented at the DH2023, Graz, Austria, 14.07.2023.
 - „Towards a Conflict Heuristic: Detecting Conflict in Literary Texts By Adapting Word Embedding Based Sentiment Analysis“ (with Julian Häußler). Conference Presentation presented at the DH2023, Graz, Austria, 14.07 2023.
 - „Uncovering Principles of Sustainability in Literature“ (with Mareike Schumacher). Conference Presentation presented at the DH2023, Graz, Austria, 14.07 2023.
