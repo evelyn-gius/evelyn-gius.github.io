@@ -4,7 +4,7 @@ date: false
 draft: false
 
 ---
-- „Complexity“ Panelist at the workshop Mathematics of Small Data, Berlin Mathematics Research Center MATH+, Berlin, January 18, 2024.
+- „Addressing Complexity in Computational Literary Studies“, workshop „Mathematics of Small Data“, Berlin Mathematics Research Center MATH+, Berlin, January 18, 2024.
 - „From Theory to Text in Computational Literary Studies Modeling a Bridge between the Gap“. Cultural Analytics Group, UC Berkeley, USA, November 18, 2023.
 - „Introduction to CATMA 7“ (with Svenja Guhr). CESTA, Stanford University, USA, November 16, 2023.
 - „Towards validity in cultural analytics. Defining and analyzing conflict in prose." Literary Lab, Stanford University, USA, November 13, 2023.
