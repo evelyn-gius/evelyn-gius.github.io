@@ -12,4 +12,4 @@ draft: false
 - Mitherausgeberin der Open Access Reihen [Working Papers in Digital Philology](https://www.ulb.tu-darmstadt.de/tujournals/0003.en.jsp) und [Evolving Scholarship in Digital Philology](https://www.ulb.tu-darmstadt.de/tujournals/0002.en.jsp) an der Technischen Universität Darmstadt (mit Sabine Bartsch, Marcus Müller, Andrea Rapp und Thomas Weitin)
 
 ## Publikationen
-{{< de_bib >}}
+{{< de_publications_static >}}
