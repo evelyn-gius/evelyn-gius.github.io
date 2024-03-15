@@ -33,13 +33,13 @@
                             <span class="drop-icon" for="{{ .Name }}">▾</span>
                             <ul class="sub-menu">
                                 {{- $parentIdentifier := .Identifier -}}
-                                <!-- {{- range .Children }}
+                                {{- range .Children }}
                                     {{- if eq .Parent $parentIdentifier }}
                                         <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
                                             <a href="#{{ .Identifier }}">{{ .Name }}</a>
                                         </li>
                                     {{- end }}
-                                {{- end }} -->
+                                {{- end }}
                             </ul>
                         {{ end }}
                     </span>
