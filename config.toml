@@ -248,7 +248,6 @@ uglyURLs = false
         name = "Vorträge"
         weight = 6
         pre = "internal"
-   
 
     [[languages.de.menu.main]]
         identifier = "Konferenzbeitraege"
