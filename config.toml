@@ -255,18 +255,18 @@ uglyURLs = false
         weight = 6
         pre = "internal"
 
-#    [[languages.de.menu.main]]
-#        identifier = "Konferenzbeitraege"
-#        pageref = "/talks2/Konferenzbeiträge"
-#        name = "Konferenzbeitraege"
-#        parent = "talk2"
-#        weight = 2
-#    [[languages.de.menu.main]]
-#        identifier="Evortraege"
-#        pageref = "/talks2/Evortraege"
-#        name = "Eingeladene Vorträge"
-#        parent = "talk2"
-#        weight = 1
+    [[languages.de.menu.main]]
+        identifier = "Konferenzbeitraege"
+        pageref = "/talks_static/Konferenzbeiträge"
+        name = "Konferenzbeitraege"
+        parent = "talks"
+        weight = 2
+    [[languages.de.menu.main]]
+        identifier="Evortraege"
+        pageref = "/talks_static/Evortraege"
+        name = "Eingeladene Vorträge"
+        parent = "talks"
+        weight = 1
         
     [[languages.de.menu.main]]
         weight = 8

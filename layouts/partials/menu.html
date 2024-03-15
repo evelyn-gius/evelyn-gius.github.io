@@ -20,7 +20,7 @@
                     {{ end }}
                 {{ end }}
             {{ else }}
-            <!-- <li class="menu-item{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
+            <li class="menu-item{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
                 {{- $linkType := (string .Pre) -}}
                 <a href="{{ .URL }}"{{ if eq $linkType "external" }} target="_blank" rel="external noopener"{{ end }}>
                     <span class="menu-link{{ if eq $linkType "external" }} external{{ end }}">
@@ -44,7 +44,7 @@
                         {{ end }}
                     </span>
                 </a>
-            </li> -->
+            </li>
             
             {{ end }}
         {{ end }}
