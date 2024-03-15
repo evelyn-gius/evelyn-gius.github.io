@@ -21,29 +21,23 @@
                 {{ end }}
             {{ else }}
             <li class="menu-item{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
-                {{- $linkType := (string .Pre) -}}
-                <a href="{{ .URL }}"{{ if eq $linkType "external" }} target="_blank" rel="external noopener"{{ end }}>
-                    <span class="menu-link{{ if eq $linkType "external" }} external{{ end }}">
-                        {{- $iconName := (string .Post) -}}
-                        {{- partial "utils/icon.html" (dict "$" $ "name" $iconName "class" .Identifier) -}}
-                        {{- with .Name -}}
-                            <span class="menu-item-name">{{ . }}</span>
-                        {{- end -}}
-                        {{ if .HasChildren }}
-                            <span class="drop-icon" for="{{ .Name }}">▾</span>
-                            <ul class="sub-menu">
-                                {{- $parentIdentifier := .Identifier -}}
-                                {{- range .Children }}
-                                    {{- if eq .Parent $parentIdentifier }}
-                                        <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
-                                            <a href="#{{ .Identifier }}">{{ .Name }}</a>
-                                        </li>
-                                    {{- end }}
-                                {{- end }}
-                            </ul>
-                        {{ end }}
+                <a href="{{ .URL }}">
+                    <span class="menu-link">
+                        {{ .Name }}
                     </span>
                 </a>
+                {{ if .HasChildren }}
+                    <span class="drop-icon" for="{{ .Name }}">▾</span>
+                    <ul class="sub-menu">
+                        {{- $pageContent := .Content -}}
+                        {{- $headings := findHeadings $pageContent -}}
+                        {{- range $headings }}
+                            <li>
+                                <a href="#{{ .Identifier }}">{{ .Text }}</a>
+                            </li>
+                        {{- end }}
+                    </ul>
+                {{ end }}
             </li>
             
             {{ end }}
