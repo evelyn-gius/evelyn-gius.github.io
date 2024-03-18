@@ -243,31 +243,13 @@ uglyURLs = false
         weight = 3
         pre = "internal"
 
-    [[languages.de.menu.main]]
-        identifier = "talk2"
-       pageref = "/talks2"
-        name = "Vorträge"
-        weight = 6
-        pre = "internal"
      [[languages.de.menu.main]]
         identifier = "talks"
         pageref = "/talks_static"
         name = "Vorträge"
         weight = 6
         pre = "internal"
-
-    [[languages.de.menu.main]]
-        identifier = "Konferenzbeitraege"
-        pageref = "/talks2/Konferenzbeiträge"
-        name = "Konferenzbeitraege"
-        parent = "talk2"
-        weight = 2
-    [[languages.de.menu.main]]
-        identifier="Evortraege"
-        pageref = "/talks2/Evortraege"
-        name = "Eingeladene Vorträge"
-        parent = "talk2"
-        weight = 1
+  
         
     [[languages.de.menu.main]]
         weight = 8
