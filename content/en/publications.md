@@ -11,5 +11,5 @@ draft: false
 - Co-editor of <em> forTEXT Hefte </em> (expected to appear from the end of 2023)
 - Co-editor of the open access series [Working Papers in Digital Philology](https://www.ulb.tu-darmstadt.de/tujournals/0003.en.jsp) and [Evolving Scholarship in Digital Philology](https://www.ulb.tu-darmstadt.de/tujournals/0002.en.jsp) at the Technical University of Darmstadt
 
-## Publications
+### Publications
 {{< en_publications_static >}}

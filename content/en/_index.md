@@ -4,11 +4,11 @@ date: 2023-04-25T10:05:19+02:00
 draft: false
 ---
 
-## About Me
+### About Me
 
 I am professor of Digital Philology and Modern German Literary Studies at the Department of Linguistics and Literary Studies at the Technical University of Darmstadt. I run the [fortext lab](https://fortext.org), which conducts research in the field of Digital Humanities with a special interest in Computational Literary Studies and Computational Narratology. Moreover, I am the chair of the *Association for Digital Humanities in the German-Speaking Area* ([DHd](https://dig-hum.de)) and a co-editor of the open-access journal [*Journal of Computational Literary Studies*](https://jcls.io) (JCLS) as well as the German and English book series [*Digitale Literaturwissenschaft*](https://www.springer.com/series/16777) (Metzler). 
 
-## Research Interests
+### Research Interests
 
 My research interest lies in manual annotation, narratological analysis, and particularly in the segmentation of texts, methodological questions of automation and the automatability of literary text analysis, as well as the operationalization of approaches from the humanities.
 
@@ -16,7 +16,7 @@ In addition to our work in research projects, I provide two established services
 
 
 
-## Career
+### Career
 
 
 1999-2004: Studies of German Philology, Computer Science, and Philosophy at the University of Hamburg and the Istituto Orientale in Naples, graduation with a thesis on machine-readable lexicons.
@@ -28,7 +28,7 @@ In addition to our work in research projects, I provide two established services
 Since summer term 2019 professorship for Digital Philology at the Technical University of Darmstadt.
 
 
-## Further Information 
+### Further Information 
 Lab: [fortext lab](https://fortext.org)
 
 ORCID: [0000-0001-8888-8419](http://orcid.org/0000-0001-8888-8419)

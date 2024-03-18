@@ -36,7 +36,7 @@
                                 {{- range .Children }}
                                     {{- if eq .Parent $parentIdentifier }}
                                         <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
-                                            <a href="#{{ .Identifier }}">{{ .Name }}</a>
+                                            <a href="{{ .URL }}">{{ .Name }}</a>
                                         </li>
                                     {{- end }}
                                 {{- end }}
@@ -51,68 +51,43 @@
     </ul>
 </nav>
 
-
 <style>
-    .menu-item {
-        position: relative;
-    }
-    
     .sub-menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
         display: none;
-        z-index: 999;
-        background-color: transparent;
-        padding: 0.5rem 0;
-        white-space: nowrap;
     }
-  
 
-    
-    .sub-menu li {
-        display: inline-block;
-        margin-right: 0.5rem;
-    }
-    
-    .sub-menu .sub-menu {
-        top: 0;
-        left: 100%;
-    }
-    
-    .menu-item:hover .sub-menu {
+    .sub-menu.show {
         display: block;
     }
 </style>
 
 
+
 <script>
     const menuItems = document.querySelectorAll('.menu-item');
 
-menuItems.forEach(item => {
-  const dropIcon = item.querySelector('.drop-icon');
-  const subMenu = item.querySelector('.sub-menu');
+    menuItems.forEach(item => {
+        const dropIcon = item.querySelector('.drop-icon');
+        const subMenu = item.querySelector('.sub-menu');
 
-  if (dropIcon && subMenu) {
-    item.addEventListener('mouseenter', () => {
-      subMenu.style.display = 'block';
+        if (dropIcon && subMenu) {
+            dropIcon.addEventListener('click', () => {
+                subMenu.classList.toggle('show');
+            });
+
+            const submenuLinks = subMenu.querySelectorAll('a');
+            submenuLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    // Prüfen, ob es sich um eine interne Seite handelt
+                    if (link.href.startsWith(window.location.origin)) {
+                        event.preventDefault();
+                        const targetId = link.getAttribute('href').substring(1);
+                        const targetElement = document.getElementById(targetId);
+                        const offset = targetElement.offsetTop - 100;
+                        window.scrollTo({ top: offset, behavior: 'smooth' });
+                    }
+                });
+            });
+        }
     });
-
-    item.addEventListener('mouseleave', () => {
-      subMenu.style.display = 'none';
-    });
-
-    const submenuLinks = subMenu.querySelectorAll('a');
-    submenuLinks.forEach(link => {
-      link.addEventListener('click', (event) => {
-        event.preventDefault();
-        const targetId = link.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-        const offset = targetElement.offsetTop - 100; // Hier wird der Offset von 20 Pixeln berücksichtigt
-        window.scrollTo({ top: offset, behavior: 'smooth' });
-      });
-    });
-  }
-});
-
 </script>
