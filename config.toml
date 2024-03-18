@@ -239,19 +239,19 @@ uglyURLs = false
 
     [[languages.de.menu.main]]
         identifier = "talks"
-       pageref = "/talks"
+       pageref = "/talks2"
         name = "Vorträge"
         weight = 6
         pre = "internal"
     [[languages.de.menu.main]]
         identifier = "Konferenzbeitraege"
-        #pageref = "/talks/Konferenzbeiträge"
+        #pageref = "/talks2/Konferenzbeiträge"
         name = "Konferenzbeitraege"
         parent = "talks"
         weight = 2
     [[languages.de.menu.main]]
         identifier="Evortraege"
-        #pageref = "/talks/Evortraege"
+        #pageref = "/talks2/Evortraege"
         name = "Eingeladene Vorträge"
         parent = "talks"
         weight = 1
