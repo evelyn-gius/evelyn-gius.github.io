@@ -36,7 +36,7 @@
                                 {{- range .Children }}
                                     {{- if eq .Parent $parentIdentifier }}
                                         <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
-                                            <a href="{{ .URL }}">{{ .Name }}</a>
+                                            <a href="#{{ .Identifier }}">{{ .Name }}</a>
                                         </li>
                                     {{- end }}
                                 {{- end }}
@@ -89,28 +89,30 @@
 <script>
     const menuItems = document.querySelectorAll('.menu-item');
 
-    menuItems.forEach(item => {
-        const dropIcon = item.querySelector('.drop-icon');
-        const subMenu = item.querySelector('.sub-menu');
+menuItems.forEach(item => {
+  const dropIcon = item.querySelector('.drop-icon');
+  const subMenu = item.querySelector('.sub-menu');
 
-        if (dropIcon && subMenu) {
-            dropIcon.addEventListener('click', () => {
-                subMenu.classList.toggle('show');
-            });
-
-            const submenuLinks = subMenu.querySelectorAll('a');
-            submenuLinks.forEach(link => {
-                link.addEventListener('click', (event) => {
-                    // Prüfen, ob es sich um eine interne Seite handelt
-                    if (link.href.startsWith(window.location.origin)) {
-                        event.preventDefault();
-                        const targetId = link.getAttribute('href').substring(1);
-                        const targetElement = document.getElementById(targetId);
-                        const offset = targetElement.offsetTop - 100;
-                        window.scrollTo({ top: offset, behavior: 'smooth' });
-                    }
-                });
-            });
-        }
+  if (dropIcon && subMenu) {
+    item.addEventListener('mouseenter', () => {
+      subMenu.style.display = 'block';
     });
+
+    item.addEventListener('mouseleave', () => {
+      subMenu.style.display = 'none';
+    });
+
+    const submenuLinks = subMenu.querySelectorAll('a');
+    submenuLinks.forEach(link => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        const offset = targetElement.offsetTop - 100; // Hier wird der Offset von 20 Pixeln berücksichtigt
+        window.scrollTo({ top: offset, behavior: 'smooth' });
+      });
+    });
+  }
+});
+
 </script>
