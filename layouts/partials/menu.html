@@ -51,16 +51,39 @@
     </ul>
 </nav>
 
-<style>
-    .sub-menu {
-        display: none;
-    }
 
-    .sub-menu.show {
+<style>
+    .menu-item {
+        position: relative;
+    }
+    
+    .sub-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        z-index: 999;
+        background-color: transparent;
+        padding: 0.5rem 0;
+        white-space: nowrap;
+    }
+  
+
+    
+    .sub-menu li {
+        display: inline-block;
+        margin-right: 0.5rem;
+    }
+    
+    .sub-menu .sub-menu {
+        top: 0;
+        left: 100%;
+    }
+    
+    .menu-item:hover .sub-menu {
         display: block;
     }
 </style>
-
 
 
 <script>
