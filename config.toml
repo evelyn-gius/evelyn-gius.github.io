@@ -238,22 +238,22 @@ uglyURLs = false
         pre = "internal"
 
     [[languages.de.menu.main]]
-        identifier = "talk2"
-       pageref = "/talks2"
+        identifier = "talks"
+       pageref = "/talks"
         name = "Vorträge"
         weight = 6
         pre = "internal"
     [[languages.de.menu.main]]
         identifier = "Konferenzbeitraege"
-        pageref = "/talks2/Konferenzbeiträge"
+        #pageref = "/talks/Konferenzbeiträge"
         name = "Konferenzbeitraege"
-        parent = "talk2"
+        parent = "talks"
         weight = 2
     [[languages.de.menu.main]]
         identifier="Evortraege"
-        pageref = "/talks2/Evortraege"
+        #pageref = "/talks/Evortraege"
         name = "Eingeladene Vorträge"
-        parent = "talk2"
+        parent = "talks"
         weight = 1
         
     [[languages.de.menu.main]]
