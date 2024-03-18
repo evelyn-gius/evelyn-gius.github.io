@@ -20,36 +20,36 @@
                     {{ end }}
                 {{ end }}
             {{ else }}
-            <li class="menu-item{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
-                {{- $linkType := (string .Pre) -}}
-                <a href="{{ .URL }}"{{ if eq $linkType "external" }} target="_blank" rel="external noopener"{{ end }}>
-                    <span class="menu-link{{ if eq $linkType "external" }} external{{ end }}">
-                        {{- $iconName := (string .Post) -}}
-                        {{- partial "utils/icon.html" (dict "$" $ "name" $iconName "class" .Identifier) -}}
-                        {{- with .Name -}}
-                            <span class="menu-item-name">{{ . }}</span>
-                        {{- end -}}
-                        {{ if .HasChildren }}
-                            <span class="drop-icon" for="{{ .Name }}">▾</span>
-                            <ul class="sub-menu">
-                                {{- $parentIdentifier := .Identifier -}}
-                                {{- range .Children }}
-                                    {{- if eq .Parent $parentIdentifier }}
-                                        <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
-                                            <a href="#{{ .Identifier }}">{{ .Name }}</a>
-                                        </li>
-                                    {{- end }}
+                <li class="menu-item{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
+                    {{- $linkType := (string .Pre) -}}
+                    <a href="{{ .URL }}"{{ if eq $linkType "external" }} target="_blank" rel="external noopener"{{ end }}>
+                        <span class="menu-link{{ if eq $linkType "external" }} external{{ end }}">
+                            {{- $iconName := (string .Post) -}}
+                            {{- partial "utils/icon.html" (dict "$" $ "name" $iconName "class" .Identifier) -}}
+                            {{- with .Name -}}
+                                <span class="menu-item-name">{{ . }}</span>
+                            {{- end -}}
+                        </span>
+                    </a>
+                    {{ if .HasChildren }}
+                        <span class="drop-icon" for="{{ .Name }}">▾</span>
+                        <ul class="sub-menu">
+                            {{- $parentIdentifier := .Identifier -}}
+                            {{- range .Children }}
+                                {{- if eq .Parent $parentIdentifier }}
+                                    <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+                                        <a href="#{{ .Identifier }}">{{ .Name }}</a>
+                                    </li>
                                 {{- end }}
-                            </ul>
-                        {{ end }}
-                    </span>
-                </a>
-            </li>
-            
+                            {{- end }}
+                        </ul>
+                    {{ end }}
+                </li>
             {{ end }}
         {{ end }}
     </ul>
 </nav>
+
 
 
 <style>
@@ -87,32 +87,46 @@
 
 
 <script>
-    const menuItems = document.querySelectorAll('.menu-item');
+document.addEventListener("DOMContentLoaded", function() {
+    var headings = document.querySelectorAll("h3");
+    var dropdownMenu = document.getElementById("h2Dropdown");
+
+    headings.forEach(function(heading) {
+        var link = document.createElement("a");
+        link.textContent = heading.textContent;
+        link.setAttribute("href", "#" + heading.id);
+        link.classList.add("dropdown-item");
+        dropdownMenu.appendChild(link);
+    });
+});
+
+const menuItems = document.querySelectorAll('.menu-item');
 
 menuItems.forEach(item => {
-  const dropIcon = item.querySelector('.drop-icon');
-  const subMenu = item.querySelector('.sub-menu');
+    const dropIcon = item.querySelector('.drop-icon');
+    const subMenu = item.querySelector('.sub-menu');
 
-  if (dropIcon && subMenu) {
-    item.addEventListener('mouseenter', () => {
-      subMenu.style.display = 'block';
-    });
+    if (dropIcon && subMenu) {
+        item.addEventListener('mouseenter', () => {
+            subMenu.style.display = 'block';
+        });
 
-    item.addEventListener('mouseleave', () => {
-      subMenu.style.display = 'none';
-    });
+        item.addEventListener('mouseleave', () => {
+            subMenu.style.display = 'none';
+        });
 
-    const submenuLinks = subMenu.querySelectorAll('a');
-    submenuLinks.forEach(link => {
-      link.addEventListener('click', (event) => {
-        event.preventDefault();
-        const targetId = link.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-        const offset = targetElement.offsetTop - 100; // Hier wird der Offset von 20 Pixeln berücksichtigt
-        window.scrollTo({ top: offset, behavior: 'smooth' });
-      });
-    });
-  }
+        const submenuLinks = subMenu.querySelectorAll('a');
+        submenuLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                const targetId = link.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                const offset = targetElement.offsetTop - 100; // Hier wird der Offset von 20 Pixeln berücksichtigt
+                window.scrollTo({ top: offset, behavior: 'smooth' });
+            });
+        });
+    }
 });
+
 
 </script>
