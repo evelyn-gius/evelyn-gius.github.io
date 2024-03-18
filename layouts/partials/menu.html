@@ -14,8 +14,8 @@
             {{ if eq .Identifier "talks" }}
                 <!-- Füge einen Dropdown-Menüeintrag für "talks" hinzu -->
                 <li class="menu-item{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
-                    <a href="{{ .URL }}"{{ if eq $linkType "external" }} target="_blank" rel="external noopener"{{ end }}>
-                        <span class="menu-link{{ if eq $linkType "external" }} external{{ end }}">
+                    <a href="{{ .URL }}"{{ if eq (string .Pre) "external" }} target="_blank" rel="external noopener"{{ end }}>
+                        <span class="menu-link{{ if eq (string .Pre) "external" }} external{{ end }}">
                             {{- $iconName := (string .Post) -}}
                             {{- partial "utils/icon.html" (dict "$" $ "name" $iconName "class" .Identifier) -}}
                             {{- with .Name -}}
@@ -26,23 +26,28 @@
                     <!-- Generiere das Dropdown-Menü für "talks" -->
                     <span class="drop-icon" for="{{ .Name }}">▾</span>
                     <ul class="sub-menu">
-                        <!-- Füge hier die Überschriften aus "talks.md" als Dropdown-Elemente hinzu -->
-                        {{ .Content | readfile | findRE `<div id="([^"]+)"[^>]*><h3>([^<]+)</h3>` -}}
-                            {{ range .Match.Groups -}}
+                        <!-- Lese den Inhalt aller Markdown-Dateien im "talks"-Verzeichnis -->
+                        {{ $talksDir := "content/de/talks/" }}
+                        {{ $talksFiles := readDir $talksDir }}
+                        {{ range $talksFiles }}
+                            <!-- Extrahiere die Überschriften aus jeder Markdown-Datei -->
+                            {{ $content := .Content | readFile }}
+                            {{ $headings := findRE $content `<div id="([^"]+)"[^>]*><h3>([^<]+)</h3>` }}
+                            {{ range $headings }}
                                 {{ $id := index . 1 }}
                                 {{ $title := index . 2 }}
                                 <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
                                     <a href="#{{ $id }}">{{ $title }}</a>
                                 </li>
                             {{ end }}
-                        {{- end -}}
+                        {{ end }}
                     </ul>
                 </li>
             {{ else }}
                 <!-- Füge normale Menüeinträge hinzu -->
                 <li class="menu-item{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
-                    <a href="{{ .URL }}"{{ if eq $linkType "external" }} target="_blank" rel="external noopener"{{ end }}>
-                        <span class="menu-link{{ if eq $linkType "external" }} external{{ end }}">
+                    <a href="{{ .URL }}"{{ if eq (string .Pre) "external" }} target="_blank" rel="external noopener"{{ end }}>
+                        <span class="menu-link{{ if eq (string .Pre) "external" }} external{{ end }}">
                             {{- $iconName := (string .Post) -}}
                             {{- partial "utils/icon.html" (dict "$" $ "name" $iconName "class" .Identifier) -}}
                             {{- with .Name -}}
@@ -55,6 +60,7 @@
         {{ end }}
     </ul>
 </nav>
+
 
 
 <style>
