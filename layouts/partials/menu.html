@@ -66,13 +66,14 @@
         background-color: transparent;
         padding: 0.5rem 0;
         white-space: nowrap;
+        width: max-content;
     }
   
 
-    
     .sub-menu li {
-        display: inline-block;
-        margin-right: 0.5rem;
+        display: block; /* Ändern Sie "inline-block" auf "block", um die Untermenüpunkte vertikal anzuordnen */
+        margin-right: 0; /* Kein Abstand zwischen den Untermenüpunkten */
+        margin-bottom: 0.5rem; /* Fügen Sie etwas Abstand zwischen den Untermenüpunkten hinzu */
     }
     
     .sub-menu .sub-menu {
