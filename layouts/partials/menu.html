@@ -63,18 +63,24 @@
         left: 0;
         display: none;
         z-index: 999;
-        background-color: rgb(228, 235, 195);
+        background-color: transparent;
         padding: 0.5rem 0;
         white-space: nowrap;
-        width: max-content;
+     /*width: max-content;*/
     }
   
 
-    .sub-menu li {
+    /* .sub-menu li {
         display: block; /* Ändern Sie "inline-block" auf "block", um die Untermenüpunkte vertikal anzuordnen */
-        margin-right: 0; /* Kein Abstand zwischen den Untermenüpunkten */
-        margin-bottom: 0.5rem; /* Fügen Sie etwas Abstand zwischen den Untermenüpunkten hinzu */
+     /*   margin-right: 0; /* Kein Abstand zwischen den Untermenüpunkten */
+     /*   margin-bottom: 0.5rem; /* Fügen Sie etwas Abstand zwischen den Untermenüpunkten hinzu */
+   /* } */
+
+    .sub-menu li {
+        display: inline-block;
+        margin-right: 0.5rem;
     }
+    
     
     .sub-menu .sub-menu {
         top: 0;

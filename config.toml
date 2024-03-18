@@ -275,7 +275,7 @@ uglyURLs = false
         pre = "internal"
     [[languages.de.menu.main]]
         identifier = "Konferenzbeitraege"
-        #pageref = "/talks2/Konferenzbeiträge"
+        #pageref = "/talks2/Konferenzbeitraege"
         name = "Konferenzbeiträge"
         parent = "talks"
         weight = 2
