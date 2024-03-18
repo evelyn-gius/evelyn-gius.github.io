@@ -291,13 +291,13 @@ uglyURLs = false
 
      [[languages.en.menu.main]]
     identifier = "Konferenzbeitraege"
-    pageref = "/talks2/Konferenzbeiträge"
+    #pageref = "/talks2/Konferenzbeiträge"
      name = "Conference Presentations"
     parent = "talk2"
     weight = 2
      [[languages.en.menu.main]]
  identifier="Evortraege"
-    pageref = "/talks2/Evortraege"
+    #pageref = "/talks2/Evortraege"
     name = "Invited Talks"
     parent = "talk2"
     weight = 1
