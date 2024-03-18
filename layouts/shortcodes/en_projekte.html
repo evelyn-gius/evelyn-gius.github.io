@@ -2,7 +2,7 @@
 {{ range $projektgruppe := (readDir "/content/en/talks2/") }}
     {{ with $projektgruppe := $projektgruppe }}
         {{ if eq $projektgruppe.IsDir true }}
-            {{ if eq $projektgruppe.Name "Evortraege"}}
+            <!-- {{ if eq $projektgruppe.Name "Evortraege"}}
             <h3 id="Evortraege"> Invited Talks</h3>
              
                 {{ else if eq $projektgruppe.Name "Konferenzbeitraege"}}
@@ -10,7 +10,7 @@
 
              
                 
-                {{ else }} <h2 id="{{ .Name }}">{{ $projektgruppe.Name }}</h3>{{ end }}
+                {{ else }} <h2 id="{{ .Name }}">{{ $projektgruppe.Name }}</h3>{{ end }} -->
                 
      
             {{ range $einzelprojekt := (readDir (print "/content/en/talks2/" $projektgruppe.Name)) }}
@@ -20,7 +20,7 @@
                         {{ $metadata := index (split $content "---") 1 }}
                         {{ $title := index (split $metadata "title:") 2 }}
                         {{ $body := index (split $content "---") 2 }}
-                        <h3>{{ $title }}</h3>
+                        <!--h3>{{ $title }}</h3-->
                         {{ $body | markdownify }}
 
                     {{ end }}

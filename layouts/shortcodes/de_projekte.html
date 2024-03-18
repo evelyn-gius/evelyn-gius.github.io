@@ -20,6 +20,7 @@
                         {{ $metadata := index (split $content "---") 1 }}
                         {{ $title := index (split $metadata "title:") 2 }}
                         {{ $body := index (split $content "---") 2 }}
+                        <!--h3>{{ $title }}</h3-->
                         {{ $body | markdownify }}
 
                     {{ end }}
