@@ -1,5 +1,4 @@
 ---
-title: Eingeladene Vorträge 
 date: false
 draft: false
 
