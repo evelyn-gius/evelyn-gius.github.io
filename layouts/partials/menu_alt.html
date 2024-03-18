@@ -1,0 +1,118 @@
+<nav class="nav">
+    <ul class="menu" id="menu">
+        {{ if .Site.Params.activeInSection }}
+            {{ .Scratch.Set "currentPage" (.Site.GetPage (printf `/%s` .Section)) }}
+        {{ else }}
+            {{ .Scratch.Set "currentPage" . }}
+        {{ end }}
+        {{ $currentPage := .Scratch.Get "currentPage" }}
+        {{ $ctx := . }}
+        {{ range .Site.Menus.main }}
+            {{ if eq .Identifier "lang-switcher" }}
+                {{ if and $.Site.IsMultiLingual $.Site.Params.enableLangToggle }}
+                    {{ if eq $.Site.Params.headerLayout "flex" }}
+                        {{ $switcher := partial "components/multilingual.html" $ctx }}
+                        {{ with $switcher }}
+                            <li class="menu-item">
+                                {{ . }}
+                            </li>
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+            {{ else }}
+            <li class="menu-item{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
+                {{- $linkType := (string .Pre) -}}
+                <a href="{{ .URL }}"{{ if eq $linkType "external" }} target="_blank" rel="external noopener"{{ end }}>
+                    <span class="menu-link{{ if eq $linkType "external" }} external{{ end }}">
+                        {{- $iconName := (string .Post) -}}
+                        {{- partial "utils/icon.html" (dict "$" $ "name" $iconName "class" .Identifier) -}}
+                        {{- with .Name -}}
+                            <span class="menu-item-name">{{ . }}</span>
+                        {{- end -}}
+                        {{ if .HasChildren }}
+                            <span class="drop-icon" for="{{ .Name }}">▾</span>
+                            <ul class="sub-menu">
+                                {{- $parentIdentifier := .Identifier -}}
+                                {{- range .Children }}
+                                    {{- if eq .Parent $parentIdentifier }}
+                                        <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+                                            <a href="#{{ .Identifier }}">{{ .Name }}</a>
+                                        </li>
+                                    {{- end }}
+                                {{- end }}
+                            </ul>
+                        {{ end }}
+                    </span>
+                </a>
+            </li>
+            
+            {{ end }}
+        {{ end }}
+    </ul>
+</nav>
+
+
+<style>
+    .menu-item {
+        position: relative;
+    }
+    
+    .sub-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        z-index: 999;
+        background-color: transparent;
+        padding: 0.5rem 0;
+        white-space: nowrap;
+    }
+  
+
+    
+    .sub-menu li {
+        display: inline-block;
+        margin-right: 0.5rem;
+    }
+    
+    .sub-menu .sub-menu {
+        top: 0;
+        left: 100%;
+    }
+    
+    .menu-item:hover .sub-menu {
+        display: block;
+    }
+</style>
+
+
+<script>
+    const menuItems = document.querySelectorAll('.menu-item');
+
+menuItems.forEach(item => {
+  const dropIcon = item.querySelector('.drop-icon');
+  const subMenu = item.querySelector('.sub-menu');
+
+  if (dropIcon && subMenu) {
+    item.addEventListener('mouseenter', () => {
+      subMenu.style.display = 'block';
+    });
+
+    item.addEventListener('mouseleave', () => {
+      subMenu.style.display = 'none';
+    });
+
+    const submenuLinks = subMenu.querySelectorAll('a');
+    submenuLinks.forEach(link => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        const offset = targetElement.offsetTop - 100; // Hier wird der Offset von 20 Pixeln berücksichtigt
+        window.scrollTo({ top: offset, behavior: 'smooth' });
+      });
+    });
+  }
+});
+
+</script>
