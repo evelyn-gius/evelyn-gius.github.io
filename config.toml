@@ -227,46 +227,22 @@ uglyURLs = false
         #pre = "internal"
         #post = "archive"
      [[languages.de.menu.main]]
+        pageref = "/research"
+        name = "Forschung"
+        weight = 3
+        pre = "internal"    
+     [[languages.de.menu.main]]
         pageref = "/publications"
         name = "Publikationen"
         weight = 5
         pre = "internal"
-    #[[menu.main]]
-     #   pageref = "/tags/"
-    #    name = "Tags"
-   #     weight = 11
-  #      pre = "internal"
-#        post = "tags"
-     [[languages.de.menu.main]]
-        pageref = "/research"
-        name = "Forschung"
-        weight = 3
-        pre = "internal"
 
-#     [[languages.de.menu.main]]
- #       identifier = "talks"
- #       pageref = "/talks_static"
- #       name = "Vorträge"
- #       weight = 6
-#        pre = "internal"
-    [[languages.de.menu.main]]
-        identifier = "talk2"
-       pageref = "/talks2"
-        name = "Vorträge"
+     [[languages.de.menu.main]]
+       identifier = "talks"
+       pageref = "/talks_static"
+       name = "Vorträge"
         weight = 6
         pre = "internal"
-    [[languages.de.menu.main]]
-        identifier = "Konferenzbeitraege"
-        pageref = "/talks2/Konferenzbeiträge"
-        name = "Konferenzbeitraege"
-        parent = "talk2"
-        weight = 2
-    [[languages.de.menu.main]]
-        identifier="Evortraege"
-        pageref = "/talks2/Evortraege"
-        name = "Eingeladene Vorträge"
-        parent = "talk2"
-        weight = 1
         
     [[languages.de.menu.main]]
         weight = 8
