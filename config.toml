@@ -237,12 +237,6 @@ uglyURLs = false
         weight = 5
         pre = "internal"
 
-     [[languages.de.menu.main]]
-       identifier = "talks"
-       pageref = "/talks_static/"
-       name = "Talks"
-        weight = 6
-        pre = "internal"
     [[languages.de.menu.main]]
         identifier = "talk2"
        pageref = "/talks2"
