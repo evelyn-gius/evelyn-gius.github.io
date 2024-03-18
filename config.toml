@@ -244,8 +244,8 @@ uglyURLs = false
         pre = "internal"
         parent = "publikationen"
      [[languages.de.menu.main]]
-        name = "Konferenzbeiträge"
-        identifier = "Konferenzbeiträge"
+        name = "Konferenzbeitraege"
+        identifier = "Konferenzbeitraege"
         weight = 2
         pre = "internal"
         parent = "publikationen"
@@ -255,7 +255,18 @@ uglyURLs = false
         weight = 3
         pre = "internal"
         parent = "publikationen"
-
+     [[languages.de.menu.main]]
+        name = "Beiträge in Sammelbänden"
+        identifier = "beitrag"
+        weight = 4
+        pre = "internal"
+        parent = "publikationen"
+    [[languages.de.menu.main]]
+        name = "Daten/Software"
+        identifier = "data"
+        weight = 5
+        pre = "internal"
+        parent = "publikationen"
     [[languages.de.menu.main]]
         identifier = "talks"
        pageref = "/talks2"
