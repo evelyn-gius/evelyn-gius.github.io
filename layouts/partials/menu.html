@@ -29,8 +29,7 @@
                             {{- with .Name -}}
                                 <span class="menu-item-name">{{ . }}</span>
                             {{- end -}}
-                        </span>
-                    </a>
+                        
                     {{ if .HasChildren }}
                         <span class="drop-icon" for="{{ .Name }}">▾</span>
                         <ul class="sub-menu">
@@ -44,6 +43,8 @@
                             {{- end }}
                         </ul>
                     {{ end }}
+                </span>
+            </a>
                 </li>
             {{ end }}
         {{ end }}
@@ -66,8 +67,6 @@
         padding: 0.5rem 0;
         white-space: nowrap;
     }
-  
-
     
     .sub-menu li {
         display: inline-block;
