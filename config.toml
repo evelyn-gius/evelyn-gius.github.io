@@ -239,8 +239,8 @@ uglyURLs = false
 
      [[languages.de.menu.main]]
        identifier = "talks"
-       pageref = "/talks_static"
-       name = "Vorträge"
+       pageref = "/talks_static/"
+       name = "Talks"
         weight = 6
         pre = "internal"
         
