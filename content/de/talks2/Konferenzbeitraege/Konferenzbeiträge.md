@@ -5,4 +5,3 @@ parent: talks2
 
 ---
 
-{{< de_konferenzbeiträge >}}
