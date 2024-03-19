@@ -7,7 +7,7 @@ draft: false
 ### Über mich
 Ich bin Professorin für Digital Philology und Neuere deutsche Literaturwissenschaft am Institut für Sprach- und Literaturwissenschaft der Technischen Universität Darmstadt. Dort leite ich das [fortext lab](https://fortext.org), welches in den Digital Humanities mit einem speziellen Fokus auf Computational Literary Studies und Computational Narratology forscht. Außerdem bin ich Vorsitzende des Verbands *Digital Humanities im deutschsprachigen Raum* ([DHd](https://dig-hum.de)) und Mitherausgeberin der Open Access-Zeitschrift [*Journal of Computational Literary Studies*](https://jcls.io) (JCLS) sowie der deutsch- und englischsprachigen Reihe [*Digitale Literaturwissenschaft*](https://www.springer.com/series/16777) (Metzler). 
 
-![Evelyn Gius](/images/evelyngius.png)
+![Evelyn Gius](/images/evelyngius.png#floatright)
 
 
 ### Interessen
