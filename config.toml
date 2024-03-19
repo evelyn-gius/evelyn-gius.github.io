@@ -314,20 +314,20 @@ uglyURLs = false
 
      [[languages.en.menu.main]]
         identifier = "talk2"
-        pageref = "/talks2"
+        pageref = "/talks"
         name = "Talks"
         weight = 6
         pre = "internal"
 
      [[languages.en.menu.main]]
     identifier = "Konferenzbeitraege"
-    pageref = "/talks2/"
+    pageref = "/talks/"
      name = "Conference Presentations"
     parent = "talk2"
     weight = 2
      [[languages.en.menu.main]]
  identifier="Evortraege"
-    pageref = "/talks2/"
+    pageref = "/talks/"
     name = "Invited Talks"
     parent = "talk2"
     weight = 1

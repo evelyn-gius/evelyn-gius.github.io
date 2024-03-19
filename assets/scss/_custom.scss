@@ -11,7 +11,7 @@
     padding-left: 2.5em;
 }
 
-img[src$='#floatright']
+.post img[src$='#floatright']
 {
 	float:right;
     max-width: 40%;
@@ -19,6 +19,7 @@ img[src$='#floatright']
     margin-bottom: 0.4em;
     padding-bottom: 1.7em;
     padding-top: 0.6em;
+    border-radius: 50%;
 
       
 }
