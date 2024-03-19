@@ -1494,7 +1494,7 @@ uglyURLs = false
     ######################################
     # Medium Zoom
 
-    enableMediumZoom = true
+    enableMediumZoom = false
     # Note: https://github.com/francoischalifour/medium-zoom
 
 
