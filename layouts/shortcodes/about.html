@@ -1,0 +1,50 @@
+{{ $imagePath := .Get "ImagePath" }}
+{{ $title := .Get "Title" }}
+{{ $description := .Get "Description" }}
+{{ $projectAreasTitle := .Get "ProjectAreasTitle" }}
+{{ $projectAreasImage := .Get "ProjectAreasImage" }}
+
+<style>
+  .flex-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .img {
+    margin-left: 2.5em;
+  }
+
+  img {
+    width: 30%;
+  }
+
+
+
+  /* Media query for narrow screens (max-width: 768px) */
+  @media (max-width: 768px) {
+    .flex-container {
+      flex-direction: column; /* Stack the elements vertically */
+    }
+
+    .img {
+      margin-left: 0; /* Remove the left margin */
+      margin-top: 1em; /* Adjust the top margin */
+    }
+
+    img {
+      width: 100%; /* Make the image take full width */
+    }
+  }
+</style>
+
+<div class="flex-container">
+  <div style="flex: 1;">
+    <p>{{ $description | markdownify }} <!-- Render the Description HTML as safe HTML -->
+    </p>
+  </div>
+  <div class="img" style="border-radius: 20%;">
+    <img src="{{ $imagePath }}" alt="{{ $title }}">
+  </div>
+</div>
+
