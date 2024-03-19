@@ -11,12 +11,8 @@
     justify-content: center;
   }
 
-  .img {
-    margin-left: 2.5em;
-  }
-
   img {
-    width: 30%;
+    max-width: 30%;
   }
 
 
@@ -43,8 +39,6 @@
     <p>{{ $description | markdownify }} <!-- Render the Description HTML as safe HTML -->
     </p>
   </div>
-  <div class="img" style="border-radius: 20%;">
-    <img src="{{ $imagePath }}" alt="{{ $title }}">
-  </div>
+    <img src="{{ $imagePath }}" alt="{{ $title }}" style="border-radius: 20%; max-width: 30%">
 </div>
 
