@@ -9,12 +9,8 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    margin-bottom: -3.5em;
   }
-
-  img {
-    max-width: 30%;
-  }
-
 
 
   /* Media query for narrow screens (max-width: 768px) */
@@ -35,10 +31,10 @@
 </style>
 
 <div class="flex-container">
-  <div style="flex: 1;">
+  <div style="flex: 1; margin-right:2.5em;">
     <p>{{ $description | markdownify }} <!-- Render the Description HTML as safe HTML -->
     </p>
   </div>
-    <img src="{{ $imagePath }}" alt="{{ $title }}" style="border-radius: 20%; max-width: 30%">
+    <img src="{{ $imagePath }}" alt="{{ $title }}" style="border-radius: 4%; max-width: 30%; margin-top: -1.5em">
 </div>
 
