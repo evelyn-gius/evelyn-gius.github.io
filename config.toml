@@ -305,31 +305,31 @@ uglyURLs = false
         name = "Publications"
         weight = 5
         pre = "internal"
-         [[languages.de.menu.main]]
+         [[languages.en.menu.main]]
         name = "Edited Publications"
         identifier = "ed_pubs"
         weight = 1
         pre = "internal"
         parent = "publications"
-     [[languages.de.menu.main]]
+     [[languages.en.menu.main]]
         name = "Conference Papers"
         identifier = "en_conf"
         weight = 2
         pre = "internal"
         parent = "publications"
-     [[languages.de.menu.main]]
+     [[languages.en.menu.main]]
         name = "Journal Articles"
         identifier = "journal"
         weight = 3
         pre = "internal"
         parent = "publications"
-     [[languages.de.menu.main]]
+     [[languages.en.menu.main]]
         name = "Book Chapters"
         identifier = "book_chap"
         weight = 4
         pre = "internal"
         parent = "publications"
-    [[languages.de.menu.main]]
+    [[languages.en.menu.main]]
         name = "Data/Software"
         identifier = "en_data"
         weight = 5
