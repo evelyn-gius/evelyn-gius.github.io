@@ -60,13 +60,14 @@
     .sub-menu {
         position: absolute;
         top: 100%;
-        /*left: 0;*/
+        left: 50%;
+        transform: translateX(-50%);
         display: none;
         z-index: 999;
         background-color: transparent;
         padding: 0.5rem 0;
         white-space: nowrap;
-     /*width: max-content;*/
+        width: max-content; /*passt breite des drodpowns an inhalt an */
     }
   
 
@@ -81,10 +82,15 @@
         margin-right: 0.5rem;
     }
     
+    .sub-menu li::after {
+        content: '\00B7'; /* Fügt einen Punkt als Trennzeichen hinzu */
+        margin-left: 0.5rem; /* Fügt einen Abstand zwischen dem Punkt und dem Text hinzu */
+        color: #000; /* Ändert die Farbe des Punkts (falls gewünscht) */
+    }    
     
     .sub-menu .sub-menu {
         top: 0;
-        /*left: 100%;*/
+        left: 100%;
     }
     
     .menu-item:hover .sub-menu {
