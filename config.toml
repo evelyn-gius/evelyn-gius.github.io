@@ -1437,9 +1437,7 @@ uglyURLs = false
     displaySiteCopyright = true
 
     # Custom Footer (Markdown supported)
-    customFooter = "Verantwortliche:\ Prof.Dr. Evelyn Gius\ Technische Universität Darmstadt\ Institut für Sprach- und Literaturwissenschaft\
-    Residenzschloss 1\ 64283 Darmstadt\ Mail: evelyn-gius@tu-darmstadt.de\\ Webentwicklung: Mari Akazawa
-    "
+    customFooter = ""
 
     displayBusuanziSiteUVAndPV = false
     busuanziSiteUVText = "Site UV"
