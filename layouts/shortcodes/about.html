@@ -12,6 +12,10 @@
     margin-bottom: -3.5em;
   }
 
+  .img {
+    border-radius: 4%; max-width: 30%; margin-top: -1.5em; margin-right: 1.2em;
+  }
+
 
   /* Media query for narrow screens (max-width: 768px) */
   @media (max-width: 768px) {
@@ -40,6 +44,6 @@
     <p>{{ $description | markdownify }} <!-- Render the Description HTML as safe HTML -->
     </p>
   </div>
-    <img src="{{ $imagePath }}" alt="{{ $title }}" style="border-radius: 4%; max-width: 30%; margin-top: -1.5em; margin-right: 1-2em;">
+    <img src="{{ $imagePath }}" alt="{{ $title }}">
 </div>
 
