@@ -1420,7 +1420,7 @@ uglyURLs = false
     displayFooterInHome = true
 
     displayCopyleftSymbol = false
-    displayCopyrightSymbol = true
+    displayCopyrightSymbol = false
 
     displaySiteCreatedYear = false
 
@@ -1429,7 +1429,7 @@ uglyURLs = false
     iconBetweenYearAndAuthor = ""
     iconColor = "#f06292"
     # Enable heartbeat animation?
-    iconAnimation = true
+    iconAnimation = false
 
     # Display links to Hugo and MemE?
     displayPoweredBy = true
@@ -1437,7 +1437,9 @@ uglyURLs = false
     displaySiteCopyright = true
 
     # Custom Footer (Markdown supported)
-    customFooter = ""
+    customFooter = "Verantwortliche:\ Prof.Dr. Evelyn Gius\ Technische Universität Darmstadt\ Institut für Sprach- und Literaturwissenschaft\
+    Residenzschloss 1\ 64283 Darmstadt\ Mail: evelyn-gius@tu-darmstadt.de\\ Webentwicklung: Mari Akazawa
+    "
 
     displayBusuanziSiteUVAndPV = false
     busuanziSiteUVText = "Site UV"
