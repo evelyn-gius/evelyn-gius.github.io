@@ -32,5 +32,5 @@ I am currently leading the following third-party funded research projects (for m
 - Member of the Programme Panel of the DFG Priority Programme "Computational Literary Studies" (SPP 2207)
 - Member of the Scientific Board of the Journal KorDaF - Korpora Deutsch als Fremdsprache
 - Member of the Programme Committees for the conferences DHd2025 and CHR2024
-- Editor of the open access journal [forTEXT Hefte] (https://fortext.tujournals.ulb.tu-darmstadt.de/)
+- Editor of the open access journal [forTEXT Hefte](https://fortext.tujournals.ulb.tu-darmstadt.de/)
 - Co-editor of the open access [Journal of Computational Literary Studies](https://jcls.io)
