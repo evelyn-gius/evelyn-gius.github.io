@@ -26,7 +26,7 @@ In addition to our work in research projects, I provide two established services
 
 2004-2006: Mediator training and work at a mediation institute. Subsequently, part-time coach and organizational consultant in the non-profit sector until 2011.
 
-2006-2019: Research associate at the Interdisciplinary Center for Narratology and at the Institute of German Studies at the University of Hamburg, project as principle investigator in a cross-university research consortium starting in 2017. Also, birth of my children (2009, 2015), completion of my Ph.D. with a dissertation on the narrative structure of conflict narratives ([published]( https://doi.org/10.1515/9783110422405) in 2015 in the Narratologia series by De Gruyter), and guest professership for Digital Philology at the University of Würzburg in the summer term of 2018.
+2006-2019: Research associate at the Interdisciplinary Center for Narratology and at the Institute of German Studies at the University of Hamburg, project as principle investigator in a cross-university research consortium starting in 2017. Also, birth of my children (2009, 2015), completion of my Ph.D. with a dissertation on the narrative structure of conflict narratives ([published]( https://doi.org/10.1515/9783110422405) in 2015 in the Narratologia series by De Gruyter), and guest professership for Computational Philology at the University of Würzburg in the summer term of 2018.
 
 Since summer term 2019 professorship for Digital Philology at the Technical University of Darmstadt.
 
