@@ -19,7 +19,7 @@
                         {{ end }}
                     {{ end }}
                 {{ end }}
-            {{ else }}
+            <!--{{ else }}-->
             <li class="menu-item{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
                 {{- $linkType := (string .Pre) -}}
                 <a href="{{ .URL }}"{{ if eq $linkType "external" }} target="_blank" rel="external noopener"{{ end }}>
