@@ -274,7 +274,7 @@ uglyURLs = false
         pre = "internal"
         weight = 2
     [[languages.de.menu.main]]
-        identifier="eingeladene vorträge"
+        identifier="eingeladen"
         name = "Eingeladene Vorträge"
         parent = "talks"
         pre = "internal"
