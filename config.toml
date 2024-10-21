@@ -275,15 +275,15 @@ uglyURLs = false
         pre = "internal"
     [[languages.de.menu.main]]
         identifier = "conf_talks_de"
-        #pageref = "/talks/Konferenzbeitraege"
         name = "Konferenzbeiträge"
         parent = "talks"
+        pre = "internal"
         weight = 2
     [[languages.de.menu.main]]
         identifier="eingeladen"
-        #pageref = "/talks/Evortraege"
         name = "Eingeladene Vorträge"
         parent = "talks"
+        pre = "internal"
         weight = 1
         
     [[languages.de.menu.main]]
@@ -353,11 +353,13 @@ uglyURLs = false
      name = "Conference Presentations"
     parent = "talk2"
     weight = 2
+    pre = "internal"
      [[languages.en.menu.main]]
     identifier="Evortraege"
     name = "Invited Talks"
     parent = "talk2"
     weight = 1
+    pre = "internal"
         
      [[languages.en.menu.main]]
         weight = 7
