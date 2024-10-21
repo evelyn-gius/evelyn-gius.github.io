@@ -10,7 +10,7 @@
         {{ range .Site.Menus.main }}
             {{ if eq .Identifier "lang-switcher" }}
                 {{ if and $.Site.IsMultiLingual $.Site.Params.enableLangToggle }}
-                  <!-- {{ if eq $.Site.Params.headerLayout "flex" }} -->
+                   {{ if eq $.Site.Params.headerLayout "flex" }}
                         {{ $switcher := partial "components/multilingual.html" $ctx }}
                         {{ with $switcher }}
                             <li class="menu-item">
@@ -19,7 +19,7 @@
                         {{ end }}
                     {{ end }}
                 {{ end }}
-            <!--{{ else }}-->
+            {{ else }}
             <li class="menu-item{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
                 {{- $linkType := (string .Pre) -}}
                 <a href="{{ .URL }}"{{ if eq $linkType "external" }} target="_blank" rel="external noopener"{{ end }}>
