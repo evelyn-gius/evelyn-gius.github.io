@@ -343,13 +343,13 @@ uglyURLs = false
         pre = "internal"
 
      [[languages.en.menu.main]]
-        identifier = "conf_talks"
+        identifier = "Conference Presentations"
         name = "Conference Presentations"
         parent = "talks"
         weight = 2
         pre = "internal"
      [[languages.en.menu.main]]
-        identifier="Evortraege"
+        identifier="Invited Talks"
         name = "Invited Talks"
         parent = "talks"
         weight = 1
