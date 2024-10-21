@@ -349,17 +349,17 @@ uglyURLs = false
         pre = "internal"
 
      [[languages.en.menu.main]]
-    identifier = "conf_talks"
-     name = "Conference Presentations"
-    parent = "talk2"
-    weight = 2
-    pre = "internal"
+        identifier = "conf_talks"
+        name = "Conference Presentations"
+        parent = "talk2"
+        weight = 2
+        pre = "internal"
      [[languages.en.menu.main]]
-    identifier="Evortraege"
-    name = "Invited Talks"
-    parent = "talk2"
-    weight = 1
-    pre = "internal"
+        identifier="Evortraege"
+        name = "Invited Talks"
+        parent = "talk2"
+        weight = 1
+        pre = "internal"
         
      [[languages.en.menu.main]]
         weight = 7
