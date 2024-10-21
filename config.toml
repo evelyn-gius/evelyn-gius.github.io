@@ -355,9 +355,9 @@ uglyURLs = false
         weight = 1
         pre = "internal"
         
-     [[languages.en.menu.main]]
-        weight = 7
-        identifier = "theme-switcher"
+    # [[languages.en.menu.main]]
+     #   weight = 7
+     #   identifier = "theme-switcher"
      [[languages.en.menu.main]]
         weight = 8
         identifier = "lang-switcher"
