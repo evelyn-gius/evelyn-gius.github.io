@@ -350,13 +350,11 @@ uglyURLs = false
 
      [[languages.en.menu.main]]
     identifier = "conf_talks"
-    pageref = "/talks/"
      name = "Conference Presentations"
     parent = "talk2"
     weight = 2
      [[languages.en.menu.main]]
  identifier="Evortraege"
-    pageref = "/talks/"
     name = "Invited Talks"
     parent = "talk2"
     weight = 1
