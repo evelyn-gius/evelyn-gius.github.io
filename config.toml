@@ -1456,7 +1456,7 @@ uglyURLs = false
 
     hideLangToggleInHome = false
 
-    autoHideLangToggle = true
+    autoHideLangToggle = false
     # Note: in other words, the toggle is
     #       displayed only when the post
     #       has a translated version
