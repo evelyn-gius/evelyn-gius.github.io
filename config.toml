@@ -294,12 +294,12 @@ uglyURLs = false
          pre = "internal"
 
      [[languages.en.menu.main]]
-     identifier = "publications"
+        identifier = "publications"
         pageref = "/publications"
         name = "Publications"
         weight = 5
         pre = "internal"
-         [[languages.en.menu.main]]
+    [[languages.en.menu.main]]
         name = "Edited Publications"
         identifier = "ed_pubs"
         weight = 1
@@ -336,8 +336,8 @@ uglyURLs = false
         pre = "internal"
 
      [[languages.en.menu.main]]
-        identifier = "talk2"
-        pageref = "/talks"
+        identifier = "talks"
+        pageref = "/talks_en"
         name = "Talks"
         weight = 6
         pre = "internal"
@@ -345,13 +345,13 @@ uglyURLs = false
      [[languages.en.menu.main]]
         identifier = "conf_talks"
         name = "Conference Presentations"
-        parent = "talk2"
+        parent = "talks"
         weight = 2
         pre = "internal"
      [[languages.en.menu.main]]
         identifier="Evortraege"
         name = "Invited Talks"
-        parent = "talk2"
+        parent = "talks"
         weight = 1
         pre = "internal"
         
