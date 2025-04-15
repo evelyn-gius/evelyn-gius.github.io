@@ -17,7 +17,7 @@ Mein Forschungsinteresse gilt der manuellen Annotation, der narratologischen Ana
 Neben der Arbeit an verschiedenen Projekten in diesen Bereichen stelle ich mit meinem Lab zwei in den Digital Humanities bei zahlreichen Nutzer:innen etablierte Services zur Verfügung: die seit 2008 entwickelte kollaborative Annotationssoftware [CATMA](https://catme.de/) und das [fortext.net](https://fortext.net)-Portal, welches niedrigschwellig in Methoden und Tools der Digital Humanities einführt.
 
 ### Werdegang
-Seit dem Sommersemester 2019 W2tt-Professur für Digital Philology an der Technische Universität Darmstadt.
+Seit dem Sommersemester 2019 Professur für Digital Philology an der Technische Universität Darmstadt.
 
 2006–2019 wissenschaftliche Mitarbeiterin am Interdisziplinären Centrum für Narratologie und am Institut für Germanistik an der Universität Hamburg, ab 2017 eigenes Teilprojekt in einem hochschulübergreifenden Forschungsverbund. Außerdem Geburt von zwei Kindern (2009, 2015), Promotion mit einer Arbeit über die narrative Struktur von Konflikterzählungen (2015 [publiziert]( https://doi.org/10.1515/9783110422405) in der Narratologia-Reihe bei De Gruyter) und Vertretung des Lehrstuhls für Computerphilologie an der Universität Würzburg im Sommersemester 2018. 
 
