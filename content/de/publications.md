@@ -5,7 +5,6 @@ draft: false
 
 ---
 
-
 ### Herausgeberinnentätigkeit
 - Mitherausgeberin der internationalen Open Access Zeitschrift [*Journal of Computational Literary Studies*](https://jcls.io) (JCLS) (mit Peer Trilcke und Christof Schöch)
 - Mitherausgeberin der deutsch- und englischsprachigen Reihe [*Digitale Literaturwissenschaft*](https://www.springer.com/series/16777) (J.B. Metzler/Springer Nature) (mit Thomas Weitin)
