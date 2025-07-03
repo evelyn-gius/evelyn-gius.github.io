@@ -5,9 +5,6 @@ draft: false
 
 ---
 
-\
-\
-\
 
 ### Herausgeberinnentätigkeit
 - Mitherausgeberin der internationalen Open Access Zeitschrift [*Journal of Computational Literary Studies*](https://jcls.io) (JCLS) (mit Peer Trilcke und Christof Schöch)
