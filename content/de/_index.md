@@ -9,7 +9,7 @@ draft: false
 
 {{< about
     ImagePath="../images/evelyngius.png"
-    Description="Ich bin Professorin für Digital Philology und Neuere deutsche Literaturwissenschaft am Institut für Sprach- und Literaturwissenschaft der Technischen Universität Darmstadt. Dort leite ich das [fortext lab](https://fortext.org), welches in den Digital Humanities mit einem speziellen Fokus auf Computational Literary Studies und Computational Narratology forscht. Außerdem bin ich Vorsitzende des Verbands *Digital Humanities im deutschsprachigen Raum* ([DHd](https://dig-hum.de)) und Mitherausgeberin der Diamond Open Access-Zeitschrift [*Journal of Computational Literary Studies*](https://jcls.io) (JCLS) und der deutsch- und englischsprachigen Reihe [*Digitale Literaturwissenschaft*](https://www.springer.com/series/16777) (Metzler) sowie Herausgeberin der deutschsprachigen Diamond Open Access-Zeitschrift [*forTEXT Hefte*](https://www.fortext-hefte.de/)." >}}
+    Description="Ich bin Professorin für Digital Philology und Neuere deutsche Literaturwissenschaft am Institut für Sprach- und Literaturwissenschaft der Technischen Universität Darmstadt. Dort leite ich das [fortext lab](https://fortext.org), welches in den Digital Humanities mit einem speziellen Fokus auf Computational Literary Studies und Computational Narratology forscht. Außerdem bin ich Vorsitzende des Verbands *Digital Humanities im deutschsprachigen Raum* ([DHd](https://dig-hum.de)) und Mitherausgeberin der Diamond Open Access-Zeitschrift [*Journal of Computational Literary Studies*](https://jcls.io) (JCLS) und der deutsch- und englischsprachigen Reihe [*Digitale Literaturwissenschaft*](https://www.springer.com/series/16777) (Metzler) sowie Herausgeberin der deutschsprachigen Diamond Open Access-Zeitschrift [*forTEXT*](https://journal.fortext.org/)." >}}
 
 ### Interessen
 Mein Forschungsinteresse gilt der manuellen Annotation, der narratologischen Analyse und insbesondere der Segmentierung von Texten, methodologischen Fragen der Automatisierung und der Automatisierbarkeit der literaturwissenschaftlichen Textanalyse sowie der Operationalisierung geisteswissenschaftlicher Zugänge.
@@ -27,7 +27,7 @@ Seit dem Sommersemester 2019 Professur für Digital Philology an der Technische 
 
 
 ### Weitere Informationen
-Lab: [fortext lab](https://fortext.org)
+Lab: [fortext lab](https://lab.fortext.org/)
 
 ORCID: [0000-0001-8888-8419](http://orcid.org/0000-0001-8888-8419)
 
