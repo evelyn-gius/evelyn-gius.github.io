@@ -9,7 +9,7 @@ draft: false
 ### About Me
 {{< about
     ImagePath="../images/evelyngius.png"
-    Description="I am professor of Digital Philology and Modern German Literary Studies at the Department of Linguistics and Literary Studies at the Technical University of Darmstadt. I run the [fortext lab](https://fortext.org), which conducts research in the field of Digital Humanities with a special interest in Computational Literary Studies and Computational Narratology. Moreover, I am the chair of the *Association for Digital Humanities in the German-Speaking Area* ([DHd](https://dig-hum.de)), a co-editor of the diamond open-access journal [*Journal of Computational Literary Studies*](https://jcls.io) (JCLS) as well as the German and English book series [*Digitale Literaturwissenschaft*](https://www.springer.com/series/16777) (Metzler) and the editor of the German diamond open-access journal [*forTEXT Hefte*](https://www.fortext-hefte.de/)." >}}
+    Description="I am professor of Digital Philology and Modern German Literary Studies at the Department of Linguistics and Literary Studies at the Technical University of Darmstadt. I run the [fortext lab](https://fortext.org), which conducts research in the field of Digital Humanities with a special interest in Computational Literary Studies and Computational Narratology. Moreover, I am the chair of the *Association for Digital Humanities in the German-Speaking Area* ([DHd](https://dig-hum.de)), a co-editor of the diamond open-access journal [*Journal of Computational Literary Studies*](https://jcls.io) (JCLS) as well as the German and English book series [*Digitale Literaturwissenschaft*](https://www.springer.com/series/16777) (Metzler) and the editor of the German diamond open-access journal [*forTEXT*](https://journal.fortext.org/)." >}}
 
 ### Research Interests
 
@@ -32,7 +32,7 @@ Since summer term 2019 professorship for Digital Philology at the Technical Univ
 
 
 ### Further Information 
-Lab: [fortext lab](https://fortext.org)
+Lab: [fortext lab](https://lab.fortext.org/)
 
 ORCID: [0000-0001-8888-8419](http://orcid.org/0000-0001-8888-8419)
 
