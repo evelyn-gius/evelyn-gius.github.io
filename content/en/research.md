@@ -7,7 +7,7 @@ draft: false
 
 ### Current research projects
 
-I am currently leading the following third-party funded research projects (for more information on the projects, see the corresponding page of the [fortext lab](https://fortext.org/en/projekte/)):
+I am currently leading the following third-party funded research projects (for more information on the projects, see the corresponding page of the [fortext lab](https://lab.fortext.org/en/projekte/)):
 - „CATMA moves FORWARD (Foundational Overhaul for Research Workflows for Annotations by Requirements-based Design)“, funded by DFG
 - „Unitizing PLot to advance Analysis of Narrative Structure (PLANS)”, funded by DFG-Schwerpunktprogramm 2207 (with Chris Biemann)
 
