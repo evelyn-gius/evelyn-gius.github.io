@@ -7,7 +7,7 @@ draft: false
 
 ### Laufende Forschungsprojekte
 
-Aktuell leite ich folgende Drittmittel-finanzierten Forschungsprojekte (weitere Informationen zu den Projekten gibt es auf der entsprechenden Seite des [fortext lab](https://fortext.org/de/projekte/)):
+Aktuell leite ich folgende Drittmittel-finanzierten Forschungsprojekte (weitere Informationen zu den Projekten gibt es auf der entsprechenden Seite des [fortext lab](https://lab.fortext.org/de/projekte/)):
 - „Unitizing PLot to advance Analysis of Narrative Structure (PLANS)”, gefördert im DFG-Schwerpunktprogramm 2207 (mit Chris Biemann)
 - „CATMA moves FORWARD (Foundational Overhaul for Research Workflows for Annotations by Requirements-based Design)“, gefördert durch die DFG
 
