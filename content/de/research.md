@@ -28,7 +28,7 @@ Aktuell leite ich folgende Drittmittel-finanzierten Forschungsprojekte (weitere 
 - Mitglied des wissenschaftlichen Beirats des Departments „Wissen – Kultur – Transformation“ an der Interdisziplinären Fakultät der Universität Rostock
 - Mitglied des Programmausschusses des DFG-Schwerpunktprogramms „Computational Literary Studies“ (SPP 2207)
 - Mitglied des Scientific Board der Zeitschrift KorDaF – Korpora Deutsch als Fremdsprache
-- Mitglied der Programmkomitees für die Konferenzen DHd2025 und CHR2024
+- Programme Chair für die CHR2027
 - Mitherausgeberin des [forTEXT Journal](https://journal.fortext.org/)
 - Mitherausgeberin des [Journal of Computational Literary Studies](https://jcls.io)
 
