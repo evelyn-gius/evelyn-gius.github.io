@@ -1,17 +1,32 @@
+
 .toc {
-  display: flex;                /* nebeneinander */
-  justify-content: center;      /* zentriert */
-  gap: 40px;                    /* Abstand zwischen den Links */
-  margin-bottom: 25px;          /* Abstand zum Inhalt */
-  font-weight: bold;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
 }
 
 .toc a {
+  display: block;
+  padding: 0.9rem 1rem;
+  border: 1px solid #d6d9df;
+  border-radius: 0.75rem;
   text-decoration: none;
-  color: rgb(49, 106, 65);
-  font-size: 1.1em;
+  transition: background-color 0.2s ease,
+              border-color 0.2s ease;
 }
 
 .toc a:hover {
-  color: hsl(61, 31%, 72%);
+  background-color: #f3f4f6;
+  border-color: #8b95a5;
+}
+
+.toc a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .toc {
+    grid-template-columns: 1fr;
+  }
 }
