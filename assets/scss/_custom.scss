@@ -1,3 +1,21 @@
+.toc {
+  display: flex;                /* nebeneinander */
+  justify-content: left;      /* zentriert */
+  gap: 80px;                    /* Abstand zwischen den Links */
+  margin-bottom: 25px;          /* Abstand zum Inhalt */
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.toc a {
+  text-decoration: none;
+  color: hsl(61, 31%, 72%);
+  font-size: 1.1em;
+}
+
+.toc a:hover {
+  color: rgb(49, 106, 65);
+}
 
 
 .main {

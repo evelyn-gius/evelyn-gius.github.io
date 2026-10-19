@@ -5,6 +5,15 @@ draft: false
 
 ---
 
+<div class="toc">
+  <a href="#Invited_Talks">⇒Herausgeberschaften</a>
+  <a href="#Conference_Presentations">⇒Konferenzbeiträge</a>
+ <a href="#Conference_Presentations">⇒Artikel</a>
+ <a href="#Conference_Presentations">⇒Beiträge in Sammelbänden</a>
+ <a href="#Conference_Presentations">⇒Daten/Software</a>
+</div>
+
+
 ### Herausgeberinnentätigkeit
 - Mitherausgeberin der internationalen Open Access Zeitschrift [*Journal of Computational Literary Studies*](https://jcls.io) (JCLS) (mit Peer Trilcke und Christof Schöch)
 - Mitherausgeberin der deutsch- und englischsprachigen Reihe [*Digitale Literaturwissenschaft*](https://www.springer.com/series/16777) (J.B. Metzler/Springer Nature) (mit Thomas Weitin)

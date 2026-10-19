@@ -5,6 +5,12 @@ draft: false
 
 ---
 
+<!--div class="toc">
+  <a href="#Invited_Talks">Invited talks</a>
+  <a href="#Conference_Presentations">Conference Presentations</a>
+</div-->
+
+
 ### Editorial activity
 - Co-editor of the international open access journal [Journal of Computational Literary Studies](https://jcls.io) 
 - Co-editor of the series [Digitale Literaturwissenschaft](https://www.springer.com/series/16777)  (J.B. Metzler/Springer Nature)
