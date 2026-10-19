@@ -1,10 +1,14 @@
 
+
 .toc {
-  display: flex;                /* nebeneinander */
-  justify-content: center;      /* zentriert */
-  gap: 40px;                    /* Abstand zwischen den Links */
-  margin-bottom: 25px;          /* Abstand zum Inhalt */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  margin: 0 auto 25px;
   font-weight: bold;
+  box-sizing: border-box;
 }
 
 .toc a {
