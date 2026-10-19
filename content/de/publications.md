@@ -5,13 +5,13 @@ draft: false
 
 ---
 
-<div class="toc">
-  <a href="#Invited_Talks">⇒Herausgeberschaften</a>
-  <a href="#Conference_Presentations">⇒Konferenzbeiträge</a>
- <a href="#Conference_Presentations">⇒Artikel</a>
- <a href="#Conference_Presentations">⇒Beiträge in Sammelbänden</a>
- <a href="#Conference_Presentations">⇒Daten/Software</a>
-</div>
+<!--div class="toc">
+  <a href="#Herausgeberschaften">⇒Herausgeberschaften</a>
+  <a href="#de_conf">⇒Konferenzbeiträge</a>
+ <a href="#Artikel">⇒Artikel</a>
+ <a href="#beitrag">⇒Beiträge in Sammelbänden</a>
+ <a href="#data">⇒Daten/Software</a>
+</div-->
 
 
 ### Herausgeberinnentätigkeit

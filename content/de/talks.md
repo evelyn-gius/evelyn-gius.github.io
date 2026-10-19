@@ -7,10 +7,9 @@ IsMultiLingual: True
 ---
 
 <!--div class="toc">
-  <a href="#eingeladen">Eingeladene Vorträge</a>
-  <a href="#conf_talks_de">Konferenzvorträge</a>
+  <a href="#eingeladen">⇒Eingeladene Vorträge</a>
+  <a href="#conf_talks_de">⇒Konferenzvorträge</a>
 </div-->
 
- 
 
 {{< de_talks >}}

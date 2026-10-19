@@ -6,8 +6,11 @@ draft: false
 ---
 
 <!--div class="toc">
-  <a href="#Invited_Talks">Invited talks</a>
-  <a href="#Conference_Presentations">Conference Presentations</a>
+  <a href="#ed_pubs">⇒Edited Publications</a>
+  <a href="#en_conf">⇒Conference Papers</a>
+ <a href="#journal">⇒Journal Articles</a>
+ <a href="#book_chap">⇒Book Chapters</a>
+ <a href="#en_data">⇒Data/Software</a>
 </div-->
 
 
