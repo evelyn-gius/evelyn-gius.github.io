@@ -264,7 +264,7 @@ uglyURLs = false
 
      [[languages.en.menu.main]]
         identifier = "talks"
-        pageref = "/talks_en"
+        pageref = "/talks"
         name = "Talks"
         weight = 6
         pre = "internal"
