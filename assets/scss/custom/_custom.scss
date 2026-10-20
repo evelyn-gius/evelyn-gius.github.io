@@ -34,10 +34,30 @@
   outline-offset: 3px;
 }
 
+
+/* Einheitliche Höhe des Headers */
+.header-wrapper {
+    box-sizing: border-box;
+    min-height: 86px;
+    display: flex;
+    align-items: center;
+}
+
 .header-inner {
-    flex-wrap: nowrap;
+    width: calc(100% - 2em);
+    min-height: 60px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+/* Navigation auf einer Zeile halten */
+.nav {
+    flex-shrink: 0;
 }
 
 .menu {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
     white-space: nowrap;
 }
