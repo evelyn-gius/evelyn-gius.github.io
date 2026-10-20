@@ -29,7 +29,7 @@
                         {{- with .Name -}}
                             <span class="menu-item-name">{{ . }}</span>
                         {{- end -}}
-                        {{ if .HasChildren }}
+                        <!--{{ if .HasChildren }}
                             <span class="drop-icon" for="{{ .Name }}">▾</span>
                             <ul class="sub-menu">
                                 {{- $parentIdentifier := .Identifier -}}
@@ -41,7 +41,7 @@
                                     {{- end }}
                                 {{- end }}
                             </ul>
-                        {{ end }}
+                        {{ end }}-->
                     </span>
                 </a>
             </li>
@@ -52,11 +52,8 @@
 </nav>
 
 
-<style>
-    /* .menu-item {
-        position: relative;
-    } */
-    
+<!--style>
+
     .sub-menu {
         position: absolute;
         top: 100%;
@@ -71,11 +68,6 @@
     }
   
 
-    /* .sub-menu li {
-        display: block; /* Ändern Sie "inline-block" auf "block", um die Untermenüpunkte vertikal anzuordnen */
-     /*   margin-right: 0; /* Kein Abstand zwischen den Untermenüpunkten */
-     /*   margin-bottom: 0.5rem; /* Fügen Sie etwas Abstand zwischen den Untermenüpunkten hinzu */
-   /* } */
 
     .sub-menu li {
         display: inline-block;
@@ -96,7 +88,7 @@
     .menu-item:hover .sub-menu {
         display: block;
     }
-</style>
+</style-->
 
 
 <script>
