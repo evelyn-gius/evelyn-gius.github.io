@@ -231,55 +231,12 @@ uglyURLs = false
         name = "Publikationen"
         weight = 5
         pre = "internal"
-     [[languages.de.menu.main]]
-        name = "Herausgeberschaften"
-        identifier = "Herausgeberschaften"
-        weight = 1
-        pre = "internal"
-        parent = "publikationen"
-     [[languages.de.menu.main]]
-        name = "Konferenzbeiträge"
-        identifier = "de_conf"
-        weight = 2
-        pre = "internal"
-        parent = "publikationen"
-     [[languages.de.menu.main]]
-        name = "Artikel"
-        identifier = "Artikel"
-        weight = 3
-        pre = "internal"
-        parent = "publikationen"
-     [[languages.de.menu.main]]
-        name = "Beiträge in Sammelbänden"
-        identifier = "beitrag"
-        weight = 4
-        pre = "internal"
-        parent = "publikationen"
-    [[languages.de.menu.main]]
-        name = "Daten/Software"
-        identifier = "data"
-        weight = 5
-        pre = "internal"
-        parent = "publikationen"
     [[languages.de.menu.main]]
         identifier = "talks"
         pageref = "/talks"
         name = "Vorträge"
         weight = 6
-        pre = "internal"
-    [[languages.de.menu.main]]
-        identifier = "conf_talks_de"
-        name = "Konferenzbeiträge"
-        parent = "talks"
-        pre = "internal"
-        weight = 2
-    [[languages.de.menu.main]]
-        identifier="eingeladen"
-        name = "Eingeladene Vorträge"
-        parent = "talks"
-        pre = "internal"
-        weight = 1
-        
+        pre = "internal"        
     [[languages.de.menu.main]]
         weight = 8
         identifier = "lang-switcher"

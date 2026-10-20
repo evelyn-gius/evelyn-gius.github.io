@@ -6,11 +6,11 @@ draft: false
 ---
 
 <div class="toc">
-  <a href="#Herausgeberschaften">⇒Herausgeberschaften</a>
-  <a href="#de_conf">⇒Konferenzbeiträge</a>
- <a href="#Artikel">⇒Artikel</a>
- <a href="#beitrag">⇒Beiträge in Sammelbänden</a>
- <a href="#data">⇒Daten/Software</a>
+  <a href="#Herausgeberschaften">Herausgeberschaften</a>
+  <a href="#de_conf">Konferenzbeiträge</a>
+ <a href="#Artikel">Artikel</a>
+ <a href="#beitrag">Beiträge in Sammelbänden</a>
+ <a href="#data">Daten/Software</a>
 </div>
 
 
