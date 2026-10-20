@@ -19,8 +19,7 @@ draft: false
 - Co-editor of the series [Digitale Literaturwissenschaft](https://www.springer.com/series/16777)  (J.B. Metzler/Springer Nature)
 - Editor of open access journal [forTEXT](https://journal.fortext.org/)
 - Co-editor of the open access series [Working Papers in Digital Philology](https://www.ulb.tu-darmstadt.de/tujournals/0003.en.jsp) and [Evolving Scholarship in Digital Philology](https://www.ulb.tu-darmstadt.de/tujournals/0002.en.jsp) at the Technical University of Darmstadt
-<hr>
-
+<br>
 
 ### Publications
 {{< en_publications_static >}}
