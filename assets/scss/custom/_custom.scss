@@ -1,0 +1,33 @@
+/* Container des Inhaltsverzeichnisses */
+.toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+/* Die einzelnen Links */
+.toc a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 1rem;
+  border: 1px solid #d5d9e0;
+  border-radius: 999px;
+  text-decoration: none;
+  line-height: 1.5;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+/* Hover */
+.toc a:hover {
+  background-color: #f1f3f5;
+  border-color: #aab2bf;
+}
+
+/* Tastaturfokus */
+.toc a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
