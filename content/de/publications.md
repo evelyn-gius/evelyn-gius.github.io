@@ -5,14 +5,6 @@ draft: false
 
 ---
 
-<div class="toc">
-  <a href="#Herausgeberschaften">Herausgeberschaften</a>
-  <a href="#de_conf">Konferenzbeiträge</a>
-  <a href="#Artikel">Artikel</a>
-  <a href="#beitrag">Beiträge in Sammelbänden</a>
-  <a href="#data">Daten/Software</a>
-</div>
-
 
 ## Herausgeberinnentätigkeit
 - Mitherausgeberin der internationalen Open Access Zeitschrift [*Journal of Computational Literary Studies*](https://jcls.io) (JCLS) (mit Peer Trilcke und Christof Schöch)
@@ -22,4 +14,14 @@ draft: false
 
 
 ## Publikationen
+
+<div class="toc">
+  <a href="#Herausgeberschaften">Herausgeberschaften</a>
+  <a href="#de_conf">Konferenzbeiträge</a>
+  <a href="#Artikel">Artikel</a>
+  <a href="#beitrag">Beiträge in Sammelbänden</a>
+  <a href="#data">Daten/Software</a>
+</div>
+
+
 {{< de_publications_static >}}

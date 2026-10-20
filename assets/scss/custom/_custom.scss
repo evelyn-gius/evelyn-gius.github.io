@@ -33,33 +33,3 @@
   outline: 2px solid currentColor;
   outline-offset: 3px;
 }
-
-
-/* Einheitliche Höhe des Headers */
-.header-inner {
-    display: flex;
-    align-items: center;
-}
-
-.header-inner .nav {
-    display: flex;
-    align-items: center;
-}
-
-.header-inner .menu {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    line-height: 1.5;
-}
-
-.header-inner .menu-item {
-    display: flex;
-    align-items: center;
-}
-
-.header-inner .menu-item a {
-    display: inline-flex;
-    align-items: center;
-    line-height: 1.5;
-}
