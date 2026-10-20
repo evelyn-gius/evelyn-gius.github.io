@@ -33,3 +33,11 @@
   outline: 2px solid currentColor;
   outline-offset: 3px;
 }
+
+.header-inner {
+    flex-wrap: nowrap;
+}
+
+.menu {
+    white-space: nowrap;
+}
