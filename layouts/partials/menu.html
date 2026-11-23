@@ -29,19 +29,7 @@
                         {{- with .Name -}}
                             <span class="menu-item-name">{{ . }}</span>
                         {{- end -}}
-                        <!--{{ if .HasChildren }}
-                            <span class="drop-icon" for="{{ .Name }}">▾</span>
-                            <ul class="sub-menu">
-                                {{- $parentIdentifier := .Identifier -}}
-                                {{- range .Children }}
-                                    {{- if eq .Parent $parentIdentifier }}
-                                        <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
-                                            <a href="#{{ .Identifier }}">{{ .Name }}</a>
-                                        </li>
-                                    {{- end }}
-                                {{- end }}
-                            </ul>
-                        {{ end }}-->
+
                     </span>
                 </a>
             </li>
@@ -51,73 +39,3 @@
     </ul>
 </nav>
 
-
-<!--style>
-
-    .sub-menu {
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        display: none;
-        z-index: 999;
-        background-color: transparent;
-        padding: 0.5rem 0;
-        white-space: nowrap;
-        width: max-content; /*passt breite des drodpowns an inhalt an */
-    }
-  
-
-
-    .sub-menu li {
-        display: inline-block;
-        margin-right: 0.5rem;
-    }
-    
-    .sub-menu li::before {
-        content: '\00B7'; /* Fügt einen Punkt als Trennzeichen hinzu */
-        margin-right: 0.5rem; /* Fügt einen Abstand zwischen dem Punkt und dem Text hinzu */
-        color: #000; /* Ändert die Farbe des Punkts (falls gewünscht) */
-    }    
-    
-    .sub-menu .sub-menu {
-        top: 0;
-        left: 100%;
-    }
-    
-    .menu-item:hover .sub-menu {
-        display: block;
-    }
-</style-->
-
-
-<!--script>
-    const menuItems = document.querySelectorAll('.menu-item');
-
-menuItems.forEach(item => {
-  const dropIcon = item.querySelector('.drop-icon');
-  const subMenu = item.querySelector('.sub-menu');
-
-  if (dropIcon && subMenu) {
-    item.addEventListener('mouseenter', () => {
-      subMenu.style.display = 'block';
-    });
-
-    item.addEventListener('mouseleave', () => {
-      subMenu.style.display = 'none';
-    });
-
-    const submenuLinks = subMenu.querySelectorAll('a');
-    submenuLinks.forEach(link => {
-      link.addEventListener('click', (event) => {
-        event.preventDefault();
-        const targetId = link.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-        const offset = targetElement.offsetTop - 100; // Hier wird der Offset von 20 Pixeln berücksichtigt
-        window.scrollTo({ top: offset, behavior: 'smooth' });
-      });
-    });
-  }
-});
-
-</script-->
